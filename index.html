@@ -180,7 +180,7 @@
     <option value="q_t">t. BUỔI DẠY TIẾNG ANH (6 Tình huống)</option>
     <option value="q_u">u. ĐI CHỢ MUA HẢI SẢN & RAU CỦ (6 Tình huống)</option>
     <option value="q_v">v. THĂM BỆNH Ở BỆNH VIỆN (6 Tình huống)</option>
-    <option value="q_w">w. HỎI ĐƯỜNG BẰNG GOOGLE MAPS (6 Tình huống)</option>
+    <option value="q_w">w. HỎI ĐƯỜNG (14 Tình huống)</option>
     <option value="q_x">x. ĐI NGÂN HÀNG & ĐỔI NGOẠI TỆ (6 Tình huống)</option>
     <option value="q_y">y. THUÊ XE & GẶP SỰ CỐ GIAO THÔNG (6 Tình huống)</option>
     <option value="q_z">z. ĐẶT VÉ MÁY BAY & THỦ TỤC BAY (6 Tình huống)</option>
@@ -855,6 +855,171 @@
                         aVi: "Tôi là nhân viên thiết kế đồ họa. Còn bạn làm nghề gì?",
                         keywordsAsk: ["what do you do", "job", "work"],
                         keywordsAns: ["graphic designer", "designer", "teacher", "engineer", "doctor", "student", "work as", "job"]
+                    },
+                    // 42. Hỏi thăm ngắn gọn (Short Greeting)
+                    {
+                        id: 46,
+                        subTopic: "Hỏi thăm ngắn (Short Greeting)",
+                        qEn: "How's it going?",
+                        qVi: "Dạo này mọi việc thế nào rồi?",
+                        aEn: "Pretty good, thanks!",
+                        aVi: "Khá tốt, cảm ơn bạn!",
+                        keywordsAsk: ["how's it going", "how is it going", "going"],
+                        keywordsAns: ["pretty good", "good", "great", "fine", "not bad", "okay", "thanks"]
+                    },
+                    // 43. Hỏi tình hình gần đây (What's Up)
+                    {
+                        id: 47,
+                        subTopic: "Chào thân mật (Casual Greeting)",
+                        qEn: "What's up?",
+                        qVi: "Có chuyện gì mới không? / Dạo này sao rồi?",
+                        aEn: "Not much, just working.",
+                        aVi: "Không có gì nhiều, chỉ đang làm việc thôi.",
+                        keywordsAsk: ["what's up", "what is up", "sup"],
+                        keywordsAns: ["not much", "nothing much", "working", "studying", "relaxing", "good", "busy"]
+                    },
+                    // 44. Cảm ơn ngắn gọn (Quick Thanks)
+                    {
+                        id: 48,
+                        subTopic: "Đáp lại lời cảm ơn (Responding to Thanks)",
+                        qEn: "Thanks a lot for your help!",
+                        qVi: "Cảm ơn bạn rất nhiều vì đã giúp đỡ!",
+                        aEn: "You're welcome! Anytime.",
+                        aVi: "Không có gì! Bất cứ lúc nào.",
+                        keywordsAsk: ["thanks", "thank you", "help"],
+                        keywordsAns: ["welcome", "anytime", "no problem", "my pleasure", "sure", "glad"]
+                    },
+                    // 45. Xin lỗi nhẹ nhàng (Quick Apology)
+                    {
+                        id: 49,
+                        subTopic: "Đáp lại lời xin lỗi (Responding to Apology)",
+                        qEn: "Sorry I'm late!",
+                        qVi: "Xin lỗi tôi đến muộn!",
+                        aEn: "No worries! Take a seat.",
+                        aVi: "Đừng lo! Ngồi xuống đi.",
+                        keywordsAsk: ["sorry", "late", "apologize"],
+                        keywordsAns: ["no worries", "that's okay", "it's okay", "never mind", "fine", "alright", "seat"]
+                    },
+                    // 46. Hỏi ý kiến nhanh (Asking Opinion)
+                    {
+                        id: 50,
+                        subTopic: "Hỏi ý kiến nhanh (Quick Opinion)",
+                        qEn: "What do you think?",
+                        qVi: "Bạn nghĩ sao?",
+                        aEn: "Sounds good to me!",
+                        aVi: "Tôi thấy nghe ổn đấy!",
+                        keywordsAsk: ["what do you think", "think"],
+                        keywordsAns: ["sounds good", "great idea", "agree", "good", "nice", "awesome", "not sure"]
+                    },
+                    // 47. Xác nhận thông tin (Confirmation)
+                    {
+                        id: 51,
+                        subTopic: "Xác nhận (Confirmation)",
+                        qEn: "Are you sure about that?",
+                        qVi: "Bạn có chắc chắn về điều đó không?",
+                        aEn: "Yes, I'm completely sure.",
+                        aVi: "Vâng, tôi hoàn toàn chắc chắn.",
+                        keywordsAsk: ["are you sure", "sure"],
+                        keywordsAns: ["yes", "sure", "completely", "definitely", "of course", "certain", "no"]
+                    },
+                    // 48. Hỏi giờ nhanh (Asking Time)
+                    {
+                        id: 52,
+                        subTopic: "Hỏi giờ nhanh (Asking Time)",
+                        qEn: "What time is it?",
+                        qVi: "Mấy giờ rồi?",
+                        aEn: "It's half past eight.",
+                        aVi: "Bây giờ là tám giờ rưỡi.",
+                        keywordsAsk: ["what time", "time is it"],
+                        keywordsAns: ["o'clock", "half past", "quarter", "eight", "nine", "ten", "seven", "am", "pm", "morning", "evening"]
+                    },
+                    // 49. Mời uống nước (Offering a Drink)
+                    {
+                        id: 53,
+                        subTopic: "Mời nước (Offering a Drink)",
+                        qEn: "Would you like some water?",
+                        qVi: "Bạn có muốn uống chút nước không?",
+                        aEn: "Yes, please. Thank you!",
+                        aVi: "Vâng, làm ơn. Cảm ơn bạn!",
+                        keywordsAsk: ["some water", "would you like", "drink"],
+                        keywordsAns: ["yes", "please", "thank", "no thanks", "good", "love some"]
+                    },
+                    // 50. Hỏi thăm sức khỏe khi mệt (Checking In)
+                    {
+                        id: 54,
+                        subTopic: "Hỏi thăm nhanh (Checking In)",
+                        qEn: "Are you feeling better now?",
+                        qVi: "Bây giờ bạn thấy đỡ hơn chưa?",
+                        aEn: "Much better, thanks for asking.",
+                        aVi: "Đỡ hơn nhiều rồi, cảm ơn bạn đã hỏi thăm.",
+                        keywordsAsk: ["feeling better", "better now", "okay"],
+                        keywordsAns: ["much better", "better", "thanks", "fine", "good", "okay", "recovering"]
+                    },
+                    // 51. Đề nghị giúp đỡ (Offering Help)
+                    {
+                        id: 55,
+                        subTopic: "Đề nghị giúp đỡ (Offering Help)",
+                        qEn: "Can I give you a hand?",
+                        qVi: "Tôi giúp bạn một tay nhé?",
+                        aEn: "That would be great, thanks!",
+                        aVi: "Thế thì tuyệt quá, cảm ơn bạn!",
+                        keywordsAsk: ["give you a hand", "help you", "can i help"],
+                        keywordsAns: ["great", "thanks", "thank you", "please", "kind", "i'm good", "no thanks"]
+                    },
+                    // 52. Hỏi đã ăn cơm chưa (Meal Check)
+                    {
+                        id: 56,
+                        subTopic: "Hỏi thăm ăn uống (Meal Check)",
+                        qEn: "Have you had lunch yet?",
+                        qVi: "Bạn đã ăn trưa chưa?",
+                        aEn: "Not yet. Let's eat together!",
+                        aVi: "Vẫn chưa. Chúng ta cùng đi ăn nhé!",
+                        keywordsAsk: ["had lunch", "had dinner", "eat yet", "lunch yet"],
+                        keywordsAns: ["not yet", "yes", "already", "let's eat", "together", "hungry", "ate"]
+                    },
+                    // 53. Rủ đi chơi ngắn gọn (Quick Hangout)
+                    {
+                        id: 57,
+                        subTopic: "Rủ đi chơi (Quick Hangout)",
+                        qEn: "Are you free tonight?",
+                        qVi: "Tối nay bạn có rảnh không?",
+                        aEn: "Yes, I'm free after seven.",
+                        aVi: "Có, tôi rảnh sau 7 giờ tối.",
+                        keywordsAsk: ["free tonight", "are you free", "tonight"],
+                        keywordsAns: ["yes", "free", "after", "seven", "busy", "sorry", "maybe", "sure"]
+                    },
+                    // 54. Khen ngợi ngắn gọn (Quick Compliment)
+                    {
+                        id: 58,
+                        subTopic: "Lời khen ngắn (Quick Compliment)",
+                        qEn: "I really like your new shirt!",
+                        qVi: "Tôi rất thích chiếc áo mới của bạn!",
+                        aEn: "Thanks! I just bought it.",
+                        aVi: "Cảm ơn nhé! Tôi vừa mới mua đấy.",
+                        keywordsAsk: ["like your", "nice shirt", "looks good"],
+                        keywordsAns: ["thanks", "thank you", "bought", "glad", "gift", "new"]
+                    },
+                    // 55. Nhờ nhắc lại câu nói (Asking to Repeat)
+                    {
+                        id: 59,
+                        subTopic: "Nhờ nhắc lại (Asking to Repeat)",
+                        qEn: "Could you say that again, please?",
+                        qVi: "Bạn có thể nói lại câu đó được không?",
+                        aEn: "Sure, no problem at all.",
+                        aVi: "Chắc chắn rồi, không vấn đề gì cả.",
+                        keywordsAsk: ["say that again", "repeat", "pardon"],
+                        keywordsAns: ["sure", "no problem", "of course", "certainly", "repeat", "okay"]
+                    },
+                    // 56. Chúc ngủ ngon / Chúc cuối tuần (Good Wishes)
+                    {
+                        id: 60,
+                        subTopic: "Lời chúc ngắn (Good Wishes)",
+                        qEn: "Have a great weekend!",
+                        qVi: "Chúc bạn cuối tuần vui vẻ!",
+                        aEn: "Thanks! Same to you!",
+                        aVi: "Cảm ơn bạn! Bạn cũng vậy nhé!",
+                        keywordsAsk: ["great weekend", "nice weekend", "good night"],
+                        keywordsAns: ["thanks", "thank you", "same to you", "you too", "weekend"]
                     }
 
 ]
@@ -880,10 +1045,102 @@
                     { id: 3, subTopic: "Tình huống 3: Gọi món tráng miệng", qEn: "Would you like some dessert after the meal?", qVi: "Quý khách có muốn dùng chút món tráng miệng sau bữa ăn không?", aEn: "Yes, please give me a portion of chocolate cake.", aVi: "Vâng, làm ơn cho tôi một phần bánh sô-cô-la.", keywordsAsk: ["dessert", "after the meal"], keywordsAns: ["chocolate", "cake", "ice cream", "fruit", "dessert", "please", "portion"] },
                     { id: 4, subTopic: "Tình huống 4: Thanh toán hóa đơn", qEn: "Can I pay by credit card or cash?", qVi: "Tôi có thể thanh toán bằng thẻ tín dụng hay tiền mặt?", aEn: "We accept both cash and international credit cards.", aVi: "Chúng tôi nhận cả tiền mặt lẫn thẻ tín dụng quốc tế.", keywordsAsk: ["credit card", "cash", "pay"], keywordsAns: ["accept", "both", "cash", "credit", "card", "cards", "international"] },
                     { id: 5, subTopic: "Tình huống 5: Gọi thêm nước uống", qEn: "Could you bring me another glass of iced tea?", qVi: "Bạn có thể mang cho tôi thêm một cốc trà đá nữa không?", aEn: "Right away, sir. Anything else?", aVi: "Ngay đây thưa ông. Quý khách dùng thêm gì nữa không?", keywordsAsk: ["iced tea", "another glass", "bring me"], keywordsAns: ["right away", "sure", "certainly", "anything else", "sir", "tea", "minute"] },
-                    { id: 6, subTopic: "Tình huống 6: Đặt bàn nhà hàng", qEn: "I'd like to book a table for four people at 7 PM.", qVi: "Tôi muốn đặt một bàn cho 4 người vào lúc 7 giờ tối.", aEn: "Understood, your table is reserved in the main hall.", aVi: "Đã rõ, bàn của quý khách được đặt ở sảnh chính.", keywordsAsk: ["book a table", "four people", "7 pm"], keywordsAns: ["understood", "table", "reserved", "main hall", "window", "ready", "four"] }
-                ]
+                    { id: 6, subTopic: "Tình huống 6: Đặt bàn nhà hàng", qEn: "I'd like to book a table for four people at 7 PM.", qVi: "Tôi muốn đặt một bàn cho 4 người vào lúc 7 giờ tối.", aEn: "Understood, your table is reserved in the main hall.", aVi: "Đã rõ, bàn của quý khách được đặt ở sảnh chính.", keywordsAsk: ["book a table", "four people", "7 pm"], keywordsAns: ["understood", "table", "reserved", "main hall", "window", "ready", "four"] },
+                     // 57. Hỏi giúp đỡ trong cửa hàng (Store Assistance)
+                    {
+                        id: 61,
+                        subTopic: "Mua sắm: Nhân viên chào hỏi (Store Greeting)",
+                        qEn: "Can I help you find anything?",
+                        qVi: "Tôi có thể giúp bạn tìm gì không?",
+                        aEn: "No thanks, I'm just looking.",
+                        aVi: "Không cảm ơn, tôi chỉ đang xem thôi.",
+                        keywordsAsk: ["help you find", "can i help", "looking for"],
+                        keywordsAns: ["just looking", "no thanks", "looking for", "shirt", "shoes", "bag", "yes"]
+                    },
+                    // 58. Hỏi giá nhanh (Quick Price Check)
+                    {
+                        id: 62,
+                        subTopic: "Mua sắm: Hỏi giá (Asking Price)",
+                        qEn: "How much is this one?",
+                        qVi: "Cái này giá bao nhiêu vậy?",
+                        aEn: "It's twenty dollars.",
+                        aVi: "Cái này giá hai mươi đô la.",
+                        keywordsAsk: ["how much", "price", "cost"],
+                        keywordsAns: ["twenty", "dollars", "dong", "thousand", "price", "costs", "20"]
+                    },
+                    // 59. Hỏi kích cỡ quần áo (Asking Size)
+                    {
+                        id: 63,
+                        subTopic: "Mua sắm: Hỏi kích cỡ (Asking Size)",
+                        qEn: "Do you have this in a larger size?",
+                        qVi: "Bạn có cái này cỡ lớn hơn không?",
+                        aEn: "Let me check in the back for you.",
+                        aVi: "Để tôi vào kho kiểm tra giúp bạn nhé.",
+                        keywordsAsk: ["larger size", "medium", "small", "size"],
+                        keywordsAns: ["check", "back", "stock", "yes", "sorry", "sold out", "size"]
+                    },
+                    // 60. Xin mặc thử đồ (Trying On)
+                    {
+                        id: 64,
+                        subTopic: "Mua sắm: Thử đồ (Trying On)",
+                        qEn: "Can I try this jacket on?",
+                        qVi: "Tôi có thể mặc thử chiếc áo khoác này không?",
+                        aEn: "Sure, the fitting room is right over there.",
+                        aVi: "Chắc chắn rồi, phòng thử đồ ở ngay đằng kia ạ.",
+                        keywordsAsk: ["try this", "try on", "fitting room"],
+                        keywordsAns: ["sure", "fitting room", "over there", "yes", "go ahead", "left", "right"]
+                    },
+                    // 61. Hỏi giảm giá (Asking for Discount)
+                    {
+                        id: 65,
+                        subTopic: "Mua sắm: Hỏi khuyến mãi (Asking Discount)",
+                        qEn: "Is this item on sale today?",
+                        qVi: "Món này hôm nay có đang giảm giá không?",
+                        aEn: "Yes, it's twenty percent off!",
+                        aVi: "Có ạ, món này đang được giảm giá 20%!",
+                        keywordsAsk: ["on sale", "discount", "sale"],
+                        keywordsAns: ["percent off", "discount", "sale", "twenty", "yes", "no", "20"]
+                    },
+                    // 62. Hỏi màu sắc khác (Asking Colors)
+                    {
+                        id: 66,
+                        subTopic: "Mua sắm: Hỏi màu sắc (Asking Colors)",
+                        qEn: "Does this come in black or white?",
+                        qVi: "Mẫu này có màu đen hoặc trắng không?",
+                        aEn: "We only have it in black right now.",
+                        aVi: "Hiện tại chúng tôi chỉ còn màu đen thôi ạ.",
+                        keywordsAsk: ["black", "white", "other colors", "color"],
+                        keywordsAns: ["black", "white", "blue", "red", "only have", "color", "colors"]
+                    },
+                    // 63. Quyết định mua hàng (Deciding to Buy)
+                    {
+                        id: 67,
+                        subTopic: "Mua sắm: Chốt đơn (Buying Decision)",
+                        qEn: "How does it fit you?",
+                        qVi: "Bạn mặc thấy có vừa không?",
+                        aEn: "It fits perfectly! I'll take it.",
+                        aVi: "Vừa vặn hoàn hảo! Tôi sẽ lấy cái này.",
+                        keywordsAsk: ["how does it fit", "fit you", "look"],
+                        keywordsAns: ["perfectly", "fits", "take it", "buy", "too big", "too small", "great"]
+                    },
+                    // 64. Hỏi hóa đơn / túi đựng (Receipt & Bag)
+                    {
+                        id: 68,
+                        subTopic: "Mua sắm: Thanh toán & Túi (Checkout)",
+                        qEn: "Would you like a bag and a receipt?",
+                        qVi: "Bạn có cần lấy túi và hóa đơn không?",
+                        aEn: "Just the receipt, please. I have my own bag.",
+                        aVi: "Cho tôi xin hóa đơn thôi. Tôi có mang túi riêng rồi.",
+                        keywordsAsk: ["bag", "receipt"],
+                        keywordsAns: ["receipt", "bag", "yes", "please", "no thanks", "own bag"]
+                    },
+
+               
+]
             },
-            q_e: {
+            
+
+q_e: {
                 id: "q_e",
                 title: "e. CÔNG SỞ VÀ ĐỜI SỐNG (6 Tình huống)",
                 items: [
@@ -1053,8 +1310,98 @@ items: [
 },
 q_w: {
 id: "q_w",
-title: "w. HỎI ĐƯỜNG BẰNG GOOGLE MAPS (6 Tình huống)",
+title: "w. HỎI ĐƯỜNG ",
 items: [
+// 65. Hỏi đường đến ga tàu / bến xe (Station Direction)
+                    {
+                        id: 69,
+                        subTopic: "Hỏi đường: Tìm trạm xe/ga (Finding Station)",
+                        qEn: "Excuse me, where is the nearest bus stop?",
+                        qVi: "Xin lỗi, trạm xe buýt gần nhất ở đâu vậy?",
+                        aEn: "It's right across the street.",
+                        aVi: "Nó ở ngay phía bên kia đường.",
+                        keywordsAsk: ["bus stop", "train station", "nearest", "where is"],
+                        keywordsAns: ["across the street", "street", "corner", "straight", "left", "right", "over there"]
+                    },
+                    // 66. Chỉ đường đi thẳng và rẽ (Go Straight & Turn)
+                    {
+                        id: 70,
+                        subTopic: "Hỏi đường: Chỉ hướng rẽ (Turning Directions)",
+                        qEn: "How do I get to the post office?",
+                        qVi: "Làm sao để tôi đi đến bưu điện?",
+                        aEn: "Go straight ahead and turn left at the corner.",
+                        aVi: "Bạn cứ đi thẳng về phía trước rồi rẽ trái ở góc đường.",
+                        keywordsAsk: ["get to", "post office", "how do i"],
+                        keywordsAns: ["go straight", "straight", "turn left", "turn right", "corner", "ahead"]
+                    },
+                    // 67. Hỏi khoảng cách bao xa (Asking Distance)
+                    {
+                        id: 71,
+                        subTopic: "Hỏi đường: Khoảng cách (Asking Distance)",
+                        qEn: "Is the supermarket far from here?",
+                        qVi: "Siêu thị có xa đây không?",
+                        aEn: "No, it's only a five-minute walk.",
+                        aVi: "Không xa đâu, chỉ mất khoảng 5 phút đi bộ thôi.",
+                        keywordsAsk: ["far from here", "how far", "supermarket"],
+                        keywordsAns: ["five-minute", "minute", "walk", "close", "near", "not far", "minutes", "5"]
+                    },
+                    // 68. Hỏi tìm cây ATM / Ngân hàng (Finding ATM)
+                    {
+                        id: 72,
+                        subTopic: "Hỏi đường: Tìm ATM (Finding ATM)",
+                        qEn: "Is there an ATM near here?",
+                        qVi: "Gần đây có cây ATM nào không?",
+                        aEn: "Yes, there's one next to the bank.",
+                        aVi: "Có, có một cái nằm ngay cạnh ngân hàng.",
+                        keywordsAsk: ["atm", "near here", "bank"],
+                        keywordsAns: ["next to", "bank", "corner", "inside", "yes", "there is", "across"]
+                    },
+                    // 69. Hỏi đường đi bộ hay đi xe (Walk or Taxi)
+                    {
+                        id: 73,
+                        subTopic: "Hỏi đường: Phương tiện (Transport Advice)",
+                        qEn: "Can I walk to the museum from here?",
+                        qVi: "Từ đây tôi đi bộ tới bảo tàng được không?",
+                        aEn: "It's quite far. You should take a taxi.",
+                        aVi: "Khá xa đấy. Bạn nên bắt taxi đi thì hơn.",
+                        keywordsAsk: ["walk to", "museum", "can i walk"],
+                        keywordsAns: ["take a taxi", "taxi", "bus", "far", "walk", "yes", "easily"]
+                    },
+                    // 70. Hỏi xác nhận đúng hướng (Confirming Direction)
+                    {
+                        id: 74,
+                        subTopic: "Hỏi đường: Xác nhận hướng (Confirming Direction)",
+                        qEn: "Am I going the right way to the beach?",
+                        qVi: "Tôi đi hướng này ra bãi biển có đúng không?",
+                        aEn: "Yes, just keep going straight.",
+                        aVi: "Đúng rồi, bạn cứ tiếp tục đi thẳng nhé.",
+                        keywordsAsk: ["right way", "beach", "going"],
+                        keywordsAns: ["keep going", "straight", "right way", "yes", "wrong way", "turn around"]
+                    },
+                    // 71. Hỏi tìm nhà vệ sinh công cộng (Finding Restroom)
+{
+id: 75,
+subTopic: "Hỏi đường: Tìm nhà vệ sinh (Finding Restroom)",
+qEn: "Excuse me, where is the restroom?",
+qVi: "Xin lỗi, nhà vệ sinh ở đâu vậy ạ?",
+aEn: "It's down the hall on your right.",
+aVi: "Nó ở cuối hành lang phía bên tay phải của bạn.",
+keywordsAsk: ["restroom", "toilet", "bathroom", "washroom"],
+keywordsAns: ["down the hall", "on your right", "on your left", "upstairs", "downstairs", "corner"]
+},
+// 72. Cảm ơn người chỉ đường (Thanking for Directions)
+{
+id: 76,
+subTopic: "Hỏi đường: Cảm ơn (Thanking)",
+qEn: "Thank you so much for your directions!",
+qVi: "Cảm ơn bạn rất nhiều vì đã chỉ đường!",
+aEn: "You're very welcome! Have a safe trip.",
+aVi: "Không có gì đâu! Chúc bạn đi đường bình an.",
+keywordsAsk: ["thank you", "directions", "thanks"],
+keywordsAns: ["welcome", "safe trip", "no problem", "glad to help", "anytime"]
+},
+
+
 { id: 1, subTopic: "Tình huống 1: Xác định vị trí hiện tại", qEn: "Excuse me, could you show me where we are on Google Maps?", qVi: "Xin lỗi, bạn có thể chỉ giúp tôi vị trí hiện tại của chúng ta trên Google Maps không?", aEn: "Sure, the blue dot here shows we are right next to the central park.", aVi: "Được chứ, chấm xanh ở đây cho thấy chúng ta đang đứng ngay cạnh công viên trung tâm.", keywordsAsk: ["where we are", "google maps"], keywordsAns: ["blue dot", "next to", "central park", "here", "street", "location"] },
 { id: 2, subTopic: "Tình huống 2: Kiểm tra hướng đi bộ", qEn: "Google Maps says walk north, but I am not sure which way that is.", qVi: "Google Maps chỉ đi về hướng Bắc, nhưng tôi không chắc là hướng nào.", aEn: "Walk straight ahead down this street for about two hundred meters.", aVi: "Bạn cứ đi thẳng về phía trước theo con đường này khoảng 200 mét nhé.", keywordsAsk: ["walk north", "which way"], keywordsAns: ["straight", "ahead", "street", "hundred", "meters", "direction", "200"] },
 { id: 3, subTopic: "Tình huống 3: Tìm lối vào địa điểm", qEn: "The map says I have arrived, but I cannot see the museum entrance.", qVi: "Bản đồ báo tôi đã đến nơi rồi, nhưng tôi không thấy cổng vào bảo tàng đâu cả.", aEn: "The main entrance is around the corner on the other side of the building.", aVi: "Cổng chính nằm ở góc rẽ phía bên kia tòa nhà bạn ạ.", keywordsAsk: ["museum entrance", "arrived"], keywordsAns: ["entrance", "around the corner", "other side", "building", "gate", "behind"] },
