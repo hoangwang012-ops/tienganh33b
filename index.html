@@ -152,7 +152,8 @@
                 <div>
                     <span class="text-[11px] font-extrabold uppercase tracking-wider text-indigo-600 block">Chủ đề đang luyện tập</span>
                     <select id="topic-selector" onchange="onTopicChange(this.value)" class="text-sm sm:text-base font-extrabold text-slate-800 bg-transparent focus:outline-none cursor-pointer max-w-[260px] sm:max-w-md truncate">
-    <option value="personal_life">a. ĐỜI TƯ & TRẢI NGHIỆM VIỆT NAM </option>
+    <option value="personal_life">a. ĐỜI TƯ & GIAO TIẾP HẰNG NGÀY</option>
+    <option value="vietnam_exp">b. DU LỊCH & TRẢI NGHIỆM VIỆT NAM </option>
     <option value="q_c">c. DU LỊCH VÀ KHÁCH SẠN</option>
     <option value="q_d">d. MUA SẮM VÀ ĂN UỐNG </option>
     <option value="q_e">e. CÔNG SỞ VÀ ĐỜI SỐNG </option>
@@ -178,6 +179,7 @@
     <option value="q_z">z. ĐẶT VÉ MÁY BAY & THỦ TỤC BAY </option>
     <option value="q_aa">aa. PHỎNG VẤN XIN VIỆC </option>
     <option value="q_bb">bb. GIAO TIẾP QUA ĐIỆN THOẠI </option>
+    <option value="q_cc">cc. THỜI TIẾT & KHÍ HẬU </option>
 
 </select>
 
@@ -730,7 +732,177 @@
                         keywordsAsk: ["why", "reason", "what makes"],
                         keywordsAns: ["because", "cool", "weather", "air", "friendly", "people", "delicious", "food", "taste", "nice"]
                     },
-                    // 30. Lời chào tạm biệt & Chúc thượng lộ bình an (Farewell)
+                                        // 1. Những món ăn ưa thích (Favorite Foods)
+                    {
+                        id: 233,
+                        subTopic: "Ẩm thực Việt: Món ăn ưa thích (Favorite Foods)",
+                        qEn: "What are your favorite Vietnamese dishes?",
+                        qVi: "Những món ăn Việt Nam ưa thích của bạn là gì?",
+                        aEn: "My favorite Vietnamese dishes are banh mi, pho, and bun cha.",
+                        aVi: "Những món ăn Việt Nam ưa thích của tôi là bánh mì, phở và bún chả.",
+                        keywordsAsk: ["favorite", "vietnamese dishes", "foods", "like to eat"],
+                        keywordsAns: ["banh mi", "pho", "bun cha", "bread", "noodles", "dishes", "favorite"]
+                    },
+                    // 2. Món ăn thích nhất & Lý do (Favorite Dish & Reason)
+                    {
+                        id: 234,
+                        subTopic: "Ẩm thực Việt: Món thích nhất (Best Dish & Reason)",
+                        qEn: "Which dish do you like the most, and why?",
+                        qVi: "Bạn thích món ăn nào nhất, và vì sao?",
+                        aEn: "I like banh mi the most because the bread is crispy and the filling is very flavorful.",
+                        aVi: "Tôi thích bánh mì nhất vì vỏ bánh giòn rụm và phần nhân bên trong rất đậm đà hương vị.",
+                        keywordsAsk: ["like the most", "which dish", "why", "best dish"],
+                        keywordsAns: ["banh mi", "because", "crispy", "bread", "filling", "flavorful", "delicious", "tasty"]
+                    },
+                    // 3. Nơi làm việc (Workplace)
+                    {
+                        id: 235,
+                        subTopic: "Công việc: Nơi làm việc (Workplace)",
+                        qEn: "Where do you work?",
+                        qVi: "Bạn làm việc ở đâu?",
+                        aEn: "I work at an international company in the city center.",
+                        aVi: "Tôi làm việc tại một công ty quốc tế ở trung tâm thành phố.",
+                        keywordsAsk: ["where do you work", "workplace", "office", "company"],
+                        keywordsAns: ["work at", "company", "office", "school", "hospital", "city center", "downtown", "firm"]
+                    },
+                    // 4. Thời gian về nước (Returning Home)
+                    {
+                        id: 236,
+                        subTopic: "Du lịch: Thời gian về nước (Returning Home)",
+                        qEn: "When will you return to your home country?",
+                        qVi: "Khi nào bạn sẽ về nước?",
+                        aEn: "I am flying back to my home country next Sunday.",
+                        aVi: "Tôi sẽ bay về nước vào Chủ Nhật tuần tới.",
+                        keywordsAsk: ["return", "home country", "go back", "fly back", "when"],
+                        keywordsAns: ["flying back", "return", "sunday", "next week", "next month", "tomorrow", "home country", "leave"]
+                    },
+                    // 5. Dự định quay lại Việt Nam (Coming Back)
+                    {
+                        id: 237,
+                        subTopic: "Du lịch: Dự định quay lại (Coming Back)",
+                        qEn: "Will you come back to Vietnam again in the future?",
+                        qVi: "Bạn có quay lại Việt Nam lần nữa trong tương lai không?",
+                        aEn: "Definitely! I will definitely come back to Vietnam next year.",
+                        aVi: "Chắc chắn rồi! Tôi nhất định sẽ quay lại Việt Nam vào năm sau.",
+                        keywordsAsk: ["come back", "return to vietnam", "visit again", "future"],
+                        keywordsAns: ["definitely", "come back", "next year", "again", "certainly", "of course", "visit again", "sure"]
+                    },
+                    // 6. Quà lưu niệm mua về nước (Souvenirs & Gifts)
+                    {
+                        id: 238,
+                        subTopic: "Trải nghiệm: Mua quà lưu niệm (Souvenirs)",
+                        qEn: "What souvenirs did you buy for your family and friends?",
+                        qVi: "Bạn đã mua những món quà lưu niệm gì cho gia đình và bạn bè?",
+                        aEn: "I bought some Vietnamese coffee, silk scarves, and handmade lanterns.",
+                        aVi: "Tôi đã mua một ít cà phê Việt Nam, khăn choàng lụa và đèn lồng thủ công.",
+                        keywordsAsk: ["souvenirs", "gifts", "buy", "family and friends"],
+                        keywordsAns: ["coffee", "silk", "scarves", "lanterns", "souvenirs", "gifts", "bought", "tea"]
+                    },
+                    // 7. Ấn tượng về giao thông Việt Nam (Traffic Experience)
+                    {
+                        id: 239,
+                        subTopic: "Trải nghiệm: Giao thông (Traffic Experience)",
+                        qEn: "How do you feel about the traffic in Vietnam?",
+                        qVi: "Bạn cảm thấy thế nào về giao thông ở Việt Nam?",
+                        aEn: "It was a bit overwhelming at first, but now I know how to cross the street safely.",
+                        aVi: "Lúc đầu hơi choáng ngợp một chút, nhưng giờ tôi đã biết cách băng qua đường an toàn rồi.",
+                        keywordsAsk: ["traffic", "cross the street", "motorbikes", "feel about"],
+                        keywordsAns: ["overwhelming", "busy", "motorbikes", "cross", "street", "safely", "crazy", "used to"]
+                    },
+                    // 8. Thử đi xe máy / GrabBike (Riding a Motorbike)
+                    {
+                        id: 240,
+                        subTopic: "Trải nghiệm: Đi xe máy (Riding a Motorbike)",
+                        qEn: "Have you ever tried riding on the back of a motorbike?",
+                        qVi: "Bạn đã từng thử ngồi sau xe máy chưa?",
+                        aEn: "Yes, riding a motorbike through the city streets is exciting and convenient.",
+                        aVi: "Rồi, đi xe máy qua các con phố rất thú vị và tiện lợi.",
+                        keywordsAsk: ["motorbike", "riding", "grab", "tried"],
+                        keywordsAns: ["exciting", "convenient", "fun", "motorbike", "riding", "grab", "fast", "tried"]
+                    },
+                    // 9. Cà phê Việt Nam (Vietnamese Coffee)
+                    {
+                        id: 241,
+                        subTopic: "Ẩm thực Việt: Cà phê Việt Nam (Vietnamese Coffee)",
+                        qEn: "Have you tried Vietnamese egg coffee or iced milk coffee?",
+                        qVi: "Bạn đã thử cà phê trứng hay cà phê sữa đá Việt Nam chưa?",
+                        aEn: "Yes! Egg coffee is so creamy and rich, it tastes like a dessert.",
+                        aVi: "Rồi! Cà phê trứng rất béo ngậy và đậm đà, vị của nó ngon như một món tráng miệng vậy.",
+                        keywordsAsk: ["egg coffee", "milk coffee", "vietnamese coffee", "tried"],
+                        keywordsAns: ["egg coffee", "creamy", "rich", "dessert", "milk coffee", "strong", "delicious", "love"]
+                    },
+                    // 10. Kỷ niệm đáng nhớ nhất (Most Memorable Experience)
+                    {
+                        id: 242,
+                        subTopic: "Trải nghiệm: Kỷ niệm đáng nhớ (Best Memory)",
+                        qEn: "What is your most memorable experience during this trip?",
+                        qVi: "Kỷ niệm đáng nhớ nhất của bạn trong chuyến đi này là gì?",
+                        aEn: "Watching the sunrise over the beach and taking a boat tour in Ha Long Bay.",
+                        aVi: "Ngắm bình minh trên biển và đi thuyền tham quan vịnh Hạ Long.",
+                        keywordsAsk: ["memorable", "experience", "best memory", "trip"],
+                        keywordsAns: ["sunrise", "beach", "boat tour", "ha long", "bay", "lantern", "mountains", "unforgettable"]
+                    },
+                    // 11. Học tiếng Việt (Learning Vietnamese Phrases)
+                    {
+                        id: 243,
+                        subTopic: "Văn hóa: Học tiếng Việt (Vietnamese Phrases)",
+                        qEn: "Can you speak any Vietnamese phrases?",
+                        qVi: "Bạn có nói được câu tiếng Việt nào không?",
+                        aEn: "I can say Xin chao, Cam on, and Mot hai ba yo!",
+                        aVi: "Tôi có thể nói Xin chào, Cảm ơn và Một hai ba dzô!",
+                        keywordsAsk: ["vietnamese", "phrases", "speak", "words"],
+                        keywordsAns: ["xin chao", "cam on", "hello", "thank you", "a little", "phrases", "words"]
+                    },
+                    // 12. Trải nghiệm chợ đêm / Chợ địa phương (Night Market)
+                    {
+                        id: 244,
+                        subTopic: "Trải nghiệm: Chợ đêm (Night Market)",
+                        qEn: "Did you visit any night markets or local markets?",
+                        qVi: "Bạn có ghé thăm chợ đêm hay chợ địa phương nào không?",
+                        aEn: "Yes, the night markets are super lively with lots of street food and souvenirs.",
+                        aVi: "Có, các khu chợ đêm cực kỳ nhộn nhịp với rất nhiều đồ ăn đường phố và quà lưu niệm.",
+                        keywordsAsk: ["night market", "local market", "market"],
+                        keywordsAns: ["lively", "street food", "souvenirs", "night market", "crowded", "fun", "visited"]
+                    },
+                    // 13. So sánh chi phí sinh hoạt (Cost of Living & Travel)
+                    {
+                        id: 245,
+                        subTopic: "Du lịch: Chi phí (Travel Costs)",
+                        qEn: "Do you find traveling in Vietnam affordable?",
+                        qVi: "Bạn có thấy chi phí du lịch ở Việt Nam phải chăng không?",
+                        aEn: "Very affordable! Food, hotels, and transportation offer great value for money.",
+                        aVi: "Rất phải chăng! Đồ ăn, khách sạn và phương tiện đi lại đều rất đáng đồng tiền.",
+                        keywordsAsk: ["affordable", "expensive", "cheap", "cost", "prices"],
+                        keywordsAns: ["affordable", "cheap", "reasonable", "value", "money", "good price", "inexpensive"]
+                    },
+                    // 14. Chụp ảnh kỷ niệm (Taking Photos)
+                    {
+                        id: 246,
+                        subTopic: "Giao tiếp: Nhờ chụp ảnh (Taking Photos)",
+                        qEn: "Excuse me, could you take a photo of us in front of this landmark?",
+                        qVi: "Xin lỗi, bạn có thể chụp giúp chúng tôi một tấm ảnh trước địa danh này không?",
+                        aEn: "Sure! Stand a little closer together and say cheese!",
+                        aVi: "Chắc chắn rồi! Mọi người đứng xích lại gần nhau một chút và cười tươi nhé!",
+                        keywordsAsk: ["take a photo", "picture", "camera", "landmark"],
+                        keywordsAns: ["sure", "cheese", "smile", "closer", "photo", "picture", "happy to"]
+                    },
+                    // 15. Giữ liên lạc qua mạng xã hội (Staying in Touch)
+                    {
+                        id: 247,
+                        subTopic: "Kết nối: Giữ liên lạc (Staying in Touch)",
+                        qEn: "How can we stay in touch after you go back home?",
+                        qVi: "Làm thế nào để chúng ta giữ liên lạc sau khi bạn về nước?",
+                        aEn: "Let's connect on Facebook or Instagram so we can chat anytime.",
+                        aVi: "Chúng ta hãy kết bạn qua Facebook hoặc Instagram để có thể trò chuyện bất cứ lúc nào nhé.",
+                        keywordsAsk: ["stay in touch", "keep in touch", "contact", "social media"],
+                        keywordsAns: ["facebook", "instagram", "zalo", "whatsapp", "email", "connect", "chat", "contact"]
+                    },
+
+
+
+
+
+// 30. Lời chào tạm biệt & Chúc thượng lộ bình an (Farewell)
                     {
                         id: 20,
                         subTopic: "Chào tạm biệt (Farewell)",
@@ -1030,7 +1202,246 @@
 
 ]
                   },       
-            q_c: {
+                        vietnam_exp: {
+                id: "vietnam_exp",
+                title: "b. Du lịch & Trải nghiệm Việt Nam (Vietnam Travel & Experience)",
+                items: [
+                    // 1. Thời gian lưu trú
+                    {
+                        id: 301,
+                        subTopic: "Thời gian lưu trú (Duration of Stay)",
+                        qEn: "How long have you been here?",
+                        qVi: "Bạn đến đây được bao lâu rồi?",
+                        aEn: "I have been here for one week.",
+                        aVi: "Tôi đến đây được một tuần rồi.",
+                        keywordsAsk: ["how long", "been here", "staying"],
+                        keywordsAns: ["one week", "a week", "for a week", "seven days", "days", "week", "been here"]
+                    },
+                    // 2. Số lần đến Việt Nam
+                    {
+                        id: 302,
+                        subTopic: "Lịch sử du lịch (Previous Visits)",
+                        qEn: "Have you ever been to Vietnam before?",
+                        qVi: "Bạn đã từng đến Việt Nam trước đó chưa?",
+                        aEn: "Yes, I have been here twice before.",
+                        aVi: "Có, tôi đã đến đây được 2 lần rồi.",
+                        keywordsAsk: ["ever been", "before", "first time"],
+                        keywordsAns: ["twice", "two times", "2 times", "before", "been here", "second", "third", "visited"]
+                    },
+                    // 3. Hỏi thăm sau chuyến đi dài
+                    {
+                        id: 303,
+                        subTopic: "Sức khỏe chuyến đi (Travel Fatigue)",
+                        qEn: "Are you tired from the long journey?",
+                        qVi: "Đi đường xa, bạn có mệt không?",
+                        aEn: "Yes, I feel a little bit tired.",
+                        aVi: "Vâng, hơi mệt một chút.",
+                        keywordsAsk: ["tired", "long journey", "flight", "trip"],
+                        keywordsAns: ["little", "bit", "tired", "exhausted", "sleepy", "jet lag", "fine", "okay"]
+                    },
+                    // 4. Các địa danh đã tham quan
+                    {
+                        id: 304,
+                        subTopic: "Điểm tham quan (Visited Places)",
+                        qEn: "Which places have you visited in Vietnam?",
+                        qVi: "Bạn đã đi tham quan ở những nơi nào?",
+                        aEn: "I have visited Saigon, Phu Quoc, Da Nang, Hai Phong, Hanoi, and Sa Pa.",
+                        aVi: "Tôi đã đi tham quan Sài Gòn, Phú Quốc, Đà Nẵng, Hải Phòng, Hà Nội và Sa Pa.",
+                        keywordsAsk: ["which places", "visited", "sightseeing", "where have you been"],
+                        keywordsAns: ["visited", "saigon", "phu quoc", "da nang", "hai phong", "hanoi", "sapa", "sa pa", "ho chi minh", "places"]
+                    },
+                    // 5. Địa điểm yêu thích nhất
+                    {
+                        id: 305,
+                        subTopic: "Điểm đến yêu thích (Favorite Destination)",
+                        qEn: "Among those places, which one do you like the most?",
+                        qVi: "Trong các nơi đó, bạn thích nơi nào nhất?",
+                        aEn: "I like Sa Pa the most.",
+                        aVi: "Tôi thích Sa Pa nhất.",
+                        keywordsAsk: ["which one", "like the most", "favorite place", "among those"],
+                        keywordsAns: ["sapa", "sa pa", "hanoi", "saigon", "da nang", "phu quoc", "hai phong", "most", "favorite"]
+                    },
+                    // 6. Lý do yêu thích địa điểm đó
+                    {
+                        id: 306,
+                        subTopic: "Lý do yêu thích (Reasons)",
+                        qEn: "Why do you like it so much?",
+                        qVi: "Vì sao bạn lại thích nơi đó?",
+                        aEn: "Because the weather is very cool, the people are friendly, and the food is delicious and suits my taste.",
+                        aVi: "Vì ở đó không khí rất mát mẻ, mọi người thân thiện và thức ăn rất ngon, hợp khẩu vị.",
+                        keywordsAsk: ["why", "reason", "what makes"],
+                        keywordsAns: ["because", "cool", "weather", "air", "friendly", "people", "delicious", "food", "taste", "nice"]
+                    },
+                    // 7. Điều thích nhất ở Việt Nam
+                    {
+                        id: 307,
+                        subTopic: "Trải nghiệm Việt Nam (Favorites in Vietnam)",
+                        qEn: "What do you like most about Vietnam?",
+                        qVi: "Bạn thích gì nhất ở Việt Nam?",
+                        aEn: "I like the people and the food the most.",
+                        aVi: "Tôi thích con người và thức ăn nhất.",
+                        keywordsAsk: ["like most", "vietnam", "best about", "favorite thing"],
+                        keywordsAns: ["people", "food", "culture", "weather", "scenery", "most", "best", "like", "love"]
+                    },
+                    // 8. Những món ăn ưa thích
+                    {
+                        id: 308,
+                        subTopic: "Ẩm thực Việt: Món ăn ưa thích (Favorite Foods)",
+                        qEn: "What are your favorite Vietnamese dishes?",
+                        qVi: "Những món ăn Việt Nam ưa thích của bạn là gì?",
+                        aEn: "My favorite Vietnamese dishes are banh mi, pho, and bun cha.",
+                        aVi: "Những món ăn Việt Nam ưa thích của tôi là bánh mì, phở và bún chả.",
+                        keywordsAsk: ["favorite", "vietnamese dishes", "foods", "like to eat"],
+                        keywordsAns: ["banh mi", "pho", "bun cha", "bread", "noodles", "dishes", "favorite"]
+                    },
+                    // 9. Món ăn thích nhất & Lý do
+                    {
+                        id: 309,
+                        subTopic: "Ẩm thực Việt: Món thích nhất (Best Dish & Reason)",
+                        qEn: "Which dish do you like the most, and why?",
+                        qVi: "Bạn thích món ăn nào nhất, và vì sao?",
+                        aEn: "I like banh mi the most because the bread is crispy and the filling is very flavorful.",
+                        aVi: "Tôi thích bánh mì nhất vì vỏ bánh giòn rụm và phần nhân bên trong rất đậm đà hương vị.",
+                        keywordsAsk: ["like the most", "which dish", "why", "best dish"],
+                        keywordsAns: ["banh mi", "because", "crispy", "bread", "filling", "flavorful", "delicious", "tasty"]
+                    },
+                    // 10. Cà phê Việt Nam
+                    {
+                        id: 310,
+                        subTopic: "Ẩm thực Việt: Cà phê Việt Nam (Vietnamese Coffee)",
+                        qEn: "Have you tried Vietnamese egg coffee or iced milk coffee?",
+                        qVi: "Bạn đã thử cà phê trứng hay cà phê sữa đá Việt Nam chưa?",
+                        aEn: "Yes! Egg coffee is so creamy and rich, it tastes like a dessert.",
+                        aVi: "Rồi! Cà phê trứng rất béo ngậy và đậm đà, vị của nó ngon như một món tráng miệng vậy.",
+                        keywordsAsk: ["egg coffee", "milk coffee", "vietnamese coffee", "tried"],
+                        keywordsAns: ["egg coffee", "creamy", "rich", "dessert", "milk coffee", "strong", "delicious", "love"]
+                    },
+                    // 11. Ăn đồ cay & Uống bia Việt Nam
+                    {
+                        id: 311,
+                        subTopic: "Khẩu vị địa phương (Spicy Food & Beer)",
+                        qEn: "Can you eat spicy food and drink Vietnamese beer?",
+                        qVi: "Bạn ăn đồ cay và uống bia Việt Nam được không?",
+                        aEn: "I can eat a little spicy food, and Vietnamese beer is really great!",
+                        aVi: "Tôi ăn được một chút đồ cay, còn bia Việt Nam thì thực sự rất tuyệt!",
+                        keywordsAsk: ["spicy", "beer", "hot food"],
+                        keywordsAns: ["little", "spicy", "beer", "great", "delicious", "okay", "love", "can"]
+                    },
+                    // 12. Ấn tượng về giao thông Việt Nam
+                    {
+                        id: 312,
+                        subTopic: "Trải nghiệm: Giao thông (Traffic Experience)",
+                        qEn: "How do you feel about the traffic in Vietnam?",
+                        qVi: "Bạn cảm thấy thế nào về giao thông ở Việt Nam?",
+                        aEn: "It was a bit overwhelming at first, but now I know how to cross the street safely.",
+                        aVi: "Lúc đầu hơi choáng ngợp một chút, nhưng giờ tôi đã biết cách băng qua đường an toàn rồi.",
+                        keywordsAsk: ["traffic", "cross the street", "motorbikes", "feel about"],
+                        keywordsAns: ["overwhelming", "busy", "motorbikes", "cross", "street", "safely", "crazy", "used to"]
+                    },
+                    // 13. Thử đi xe máy / GrabBike
+                    {
+                        id: 313,
+                        subTopic: "Trải nghiệm: Đi xe máy (Riding a Motorbike)",
+                        qEn: "Have you ever tried riding on the back of a motorbike?",
+                        qVi: "Bạn đã từng thử ngồi sau xe máy chưa?",
+                        aEn: "Yes, riding a motorbike through the city streets is exciting and convenient.",
+                        aVi: "Rồi, đi xe máy qua các con phố rất thú vị và tiện lợi.",
+                        keywordsAsk: ["motorbike", "riding", "grab", "tried"],
+                        keywordsAns: ["exciting", "convenient", "fun", "motorbike", "riding", "grab", "fast", "tried"]
+                    },
+                    // 14. Trải nghiệm chợ đêm
+                    {
+                        id: 314,
+subTopic: "Trải nghiệm: Chợ đêm (Night Market)",
+qEn: "Did you visit any night markets or local markets?",
+qVi: "Bạn có ghé thăm chợ đêm hay chợ địa phương nào không?",
+aEn: "Yes, the night markets are super lively with lots of street food and souvenirs.",
+aVi: "Có, các khu chợ đêm cực kỳ nhộn nhịp với rất nhiều đồ ăn đường phố và quà lưu niệm.",
+keywordsAsk: ["night market", "local market", "market"],
+keywordsAns: ["lively", "street food", "souvenirs", "night market", "crowded", "fun", "visited"]
+},
+// 15. Quà lưu niệm mua về nước
+{
+id: 315,
+subTopic: "Trải nghiệm: Mua quà lưu niệm (Souvenirs)",
+qEn: "What souvenirs did you buy for your family and friends?",
+qVi: "Bạn đã mua những món quà lưu niệm gì cho gia đình và bạn bè?",
+aEn: "I bought some Vietnamese coffee, silk scarves, and handmade lanterns.",
+aVi: "Tôi đã mua một ít cà phê Việt Nam, khăn choàng lụa và đèn lồng thủ công.",
+keywordsAsk: ["souvenirs", "gifts", "buy", "family and friends"],
+keywordsAns: ["coffee", "silk", "scarves", "lanterns", "souvenirs", "gifts", "bought", "tea"]
+},
+// 16. Kỷ niệm đáng nhớ nhất
+{
+id: 316,
+subTopic: "Trải nghiệm: Kỷ niệm đáng nhớ (Best Memory)",
+qEn: "What is your most memorable experience during this trip?",
+qVi: "Kỷ niệm đáng nhớ nhất của bạn trong chuyến đi này là gì?",
+aEn: "Watching the sunrise over the beach and taking a boat tour in Ha Long Bay.",
+aVi: "Ngắm bình minh trên biển và đi thuyền tham quan vịnh Hạ Long.",
+keywordsAsk: ["memorable", "experience", "best memory", "trip"],
+keywordsAns: ["sunrise", "beach", "boat tour", "ha long", "bay", "lantern", "mountains", "unforgettable"]
+},
+// 17. Học tiếng Việt
+{
+id: 317,
+subTopic: "Văn hóa: Học tiếng Việt (Vietnamese Phrases)",
+qEn: "Can you speak any Vietnamese phrases?",
+qVi: "Bạn có nói được câu tiếng Việt nào không?",
+aEn: "I can say Xin chao, Cam on, and Mot hai ba yo!",
+aVi: "Tôi có thể nói Xin chào, Cảm ơn và Một hai ba dzô!",
+keywordsAsk: ["vietnamese", "phrases", "speak", "words"],
+keywordsAns: ["xin chao", "cam on", "hello", "thank you", "a little", "phrases", "words"]
+},
+// 18. Chi phí du lịch
+{
+id: 318,
+subTopic: "Du lịch: Chi phí (Travel Costs)",
+qEn: "Do you find traveling in Vietnam affordable?",
+qVi: "Bạn có thấy chi phí du lịch ở Việt Nam phải chăng không?",
+aEn: "Very affordable! Food, hotels, and transportation offer great value for money.",
+aVi: "Rất phải chăng! Đồ ăn, khách sạn và phương tiện đi lại đều rất đáng đồng tiền.",
+keywordsAsk: ["affordable", "expensive", "cheap", "cost", "prices"],
+keywordsAns: ["affordable", "cheap", "reasonable", "value", "money", "good price", "inexpensive"]
+},
+// 19. Thời gian về nước
+{
+id: 319,
+subTopic: "Du lịch: Thời gian về nước (Returning Home)",
+qEn: "When will you return to your home country?",
+qVi: "Khi nào bạn sẽ về nước?",
+aEn: "I am flying back to my home country next Sunday.",
+aVi: "Tôi sẽ bay về nước vào Chủ Nhật tuần tới.",
+keywordsAsk: ["return", "home country", "go back", "fly back", "when"],
+keywordsAns: ["flying back", "return", "sunday", "next week", "next month", "tomorrow", "home country", "leave"]
+},
+// 20. Dự định quay lại Việt Nam
+{
+id: 320,
+subTopic: "Du lịch: Dự định quay lại (Coming Back)",
+qEn: "Will you come back to Vietnam again in the future?",
+qVi: "Bạn có quay lại Việt Nam lần nữa trong tương lai không?",
+aEn: "Definitely! I will definitely come back to Vietnam next year.",
+aVi: "Chắc chắn rồi! Tôi nhất định sẽ quay lại Việt Nam vào năm sau.",
+keywordsAsk: ["come back", "return to vietnam", "visit again", "future"],
+keywordsAns: ["definitely", "come back", "next year", "again", "certainly", "of course", "visit again", "sure"]
+},
+// 21. Chào tạm biệt & Chúc thượng lộ bình an
+{
+id: 321,
+subTopic: "Chào tạm biệt (Farewell)",
+qEn: "Goodbye! Have a nice trip.",
+qVi: "Tạm biệt bạn. Chúc bạn có chuyến đi tốt đẹp.",
+aEn: "Thank you very much! Goodbye.",
+aVi: "Cảm ơn bạn rất nhiều! Tạm biệt.",
+keywordsAsk: ["goodbye", "bye", "nice trip", "safe trip", "see you"],
+keywordsAns: ["thank", "thanks", "goodbye", "bye", "see you", "you too", "appreciate"]
+}
+]
+},
+
+
+                q_c: {
                 id: "q_c",
                 title: "c. DU LỊCH VÀ KHÁCH SẠN ",
                 items: [
@@ -1247,8 +1658,97 @@ q_e: {
                     { id: 79, subTopic: "Tình huống 3: Trò chuyện cuối tuần", qEn: "Do you have any fun plans for this weekend?", qVi: "Cuối tuần này bạn có dự định vui chơi gì chưa?", aEn: "I am planning to visit my grandparents in the countryside.", aVi: "Tôi dự định về quê thăm ông bà.", keywordsAsk: ["plans", "weekend"], keywordsAns: ["planning", "visit", "grandparents", "countryside", "travel", "relax", "home", "friends"] },
                     { id: 80, subTopic: "Tình huống 4: Hỏi thăm sức khỏe", qEn: "You look tired. Are you feeling okay?", qVi: "Trông bạn mệt mỏi quá. Bạn thấy trong người ổn chứ?", aEn: "I caught a mild cold, but I'm taking medicine now.", aVi: "Tôi bị cảm lạnh nhẹ, nhưng giờ đang uống thuốc rồi.", keywordsAsk: ["tired", "feeling okay"], keywordsAns: ["cold", "sick", "tired", "medicine", "better", "fine", "okay", "headache"] },
                     { id: 81, subTopic: "Tình huống 5: Hỏi ý kiến công việc", qEn: "Could you help me review this financial report?", qVi: "Bạn có thể giúp tôi xem lại báo cáo tài chính này được không?", aEn: "Sure, let me check the numbers right now.", aVi: "Chắc chắn rồi, để tôi kiểm tra các con số ngay đây.", keywordsAsk: ["review", "financial report"], keywordsAns: ["sure", "check", "numbers", "right now", "help", "report", "look"] },
-                    { id: 82, subTopic: "Tình huống 6: Khen ngợi đồng nghiệp", qEn: "Your presentation today was exceptionally impressive!", qVi: "Bài thuyết trình hôm nay của bạn vô cùng ấn tượng!", aEn: "Thank you so much for your kind encouragement.", aVi: "Cảm ơn bạn rất nhiều vì lời động viên tốt đẹp.", keywordsAsk: ["presentation", "impressive"], keywordsAns: ["thank you", "thanks", "kind", "encouragement", "glad", "happy", "appreciate"] }
-                ]
+                    { id: 82, subTopic: "Tình huống 6: Khen ngợi đồng nghiệp", qEn: "Your presentation today was exceptionally impressive!", qVi: "Bài thuyết trình hôm nay của bạn vô cùng ấn tượng!", aEn: "Thank you so much for your kind encouragement.", aVi: "Cảm ơn bạn rất nhiều vì lời động viên tốt đẹp.", keywordsAsk: ["presentation", "impressive"], keywordsAns: ["thank you", "thanks", "kind", "encouragement", "glad", "happy", "appreciate"] },
+                             // 7. Xin gia hạn thời gian hoàn thành (Extending Deadline)
+                    {
+                        id: 322,
+                        subTopic: "Công sở: Xin gia hạn (Extending Deadline)",
+                        qEn: "Can we finish the project report by this Friday afternoon?",
+                        qVi: "Chúng ta có thể hoàn thành báo cáo dự án trước chiều thứ Sáu tuần này không?",
+                        aEn: "We need a little more time to double-check the data. Could we extend the deadline to Monday?",
+                        aVi: "Chúng tôi cần thêm chút thời gian để kiểm tra lại số liệu. Chúng ta có thể dời hạn chót sang thứ Hai được không?",
+                        keywordsAsk: ["project report", "friday", "finish", "deadline"],
+                        keywordsAns: ["extend", "deadline", "monday", "more time", "double-check", "data", "friday"]
+                    },
+                    // 8. Nhờ hỗ trợ kỹ thuật IT (IT Support)
+                    {
+                        id: 323,
+                        subTopic: "Công sở: Hỗ trợ kỹ thuật (IT Support)",
+                        qEn: "Hi IT team, my office computer won't connect to the printer.",
+                        qVi: "Chào bộ phận IT, máy tính văn phòng của tôi không kết nối được với máy in.",
+                        aEn: "No problem, let me check your network settings and reinstall the driver.",
+                        aVi: "Không vấn đề gì, để tôi kiểm tra cài đặt mạng và cài lại trình điều khiển cho bạn.",
+                        keywordsAsk: ["computer", "printer", "connect", "it team"],
+                        keywordsAns: ["network", "settings", "driver", "check", "printer", "fix", "reinstall"]
+                    },
+                    // 9. Xin nghỉ phép (Requesting Time Off)
+                    {
+                        id: 324,
+                        subTopic: "Công sở: Xin nghỉ phép (Requesting Leave)",
+                        qEn: "Excuse me, may I take two days off next week for a family event?",
+                        qVi: "Xin lỗi, tuần tới tôi có thể xin nghỉ phép hai ngày để lo việc gia đình được không?",
+                        aEn: "Sure, please send me a formal leave request email and hand over your tasks.",
+                        aVi: "Được chứ, bạn vui lòng gửi cho tôi email xin nghỉ phép chính thức và bàn giao công việc nhé.",
+                        keywordsAsk: ["days off", "leave", "next week", "family event"],
+                        keywordsAns: ["leave request", "email", "hand over", "tasks", "sure", "approved", "take"]
+                    },
+                    // 10. Đặt phòng họp (Booking a Meeting Room)
+                    {
+                        id: 325,
+                        subTopic: "Công sở: Đặt phòng họp (Meeting Room)",
+                        qEn: "Is the main conference room available at 2 PM today?",
+                        qVi: "Phòng họp chính có trống vào lúc 2 giờ chiều nay không?",
+                        aEn: "Yes, it is free until 4 PM. Would you like me to book it for your team?",
+                        aVi: "Có, phòng trống đến 4 giờ chiều. Bạn có muốn tôi đặt phòng đó cho nhóm bạn không?",
+                        keywordsAsk: ["conference room", "meeting room", "available", "2 pm"],
+                        keywordsAns: ["free", "available", "book", "four", "team", "reserved", "yes"]
+                    },
+                    // 11. Hỏi tiến độ công việc (Checking Progress)
+                    {
+                        id: 326,
+                        subTopic: "Công sở: Cập nhật tiến độ (Progress Update)",
+                        qEn: "How is the new website design coming along?",
+                        qVi: "Tiến độ thiết kế trang web mới đang diễn ra thế nào rồi?",
+                        aEn: "Everything is on schedule. We have completed eighty percent of the layout.",
+                        aVi: "Mọi thứ đều đúng tiến độ. Chúng tôi đã hoàn thành 80% bố cục rồi.",
+                        keywordsAsk: ["coming along", "progress", "website design", "update"],
+                        keywordsAns: ["on schedule", "completed", "eighty", "percent", "layout", "almost", "done", "80"]
+                    },
+                    // 12. Tiếp đón khách hàng tại văn phòng (Welcoming a Client)
+                    {
+                        id: 327,
+                        subTopic: "Công sở: Đón tiếp khách hàng (Welcoming Client)",
+                        qEn: "Welcome to our office! Would you like some coffee or tea while waiting?",
+                        qVi: "Chào mừng quý khách đến văn phòng chúng tôi! Quý khách có muốn dùng chút cà phê hay trà trong lúc chờ không?",
+                        aEn: "A cup of green tea would be wonderful, thank you very much.",
+                        aVi: "Một tách trà xanh thì tuyệt quá, cảm ơn bạn rất nhiều.",
+                        keywordsAsk: ["welcome to our office", "coffee or tea", "waiting"],
+                        keywordsAns: ["green tea", "tea", "coffee", "water", "wonderful", "thank", "please"]
+                    },
+                    // 13. Thảo luận làm thêm giờ (Working Overtime)
+                    {
+                        id: 328,
+                        subTopic: "Công sở: Làm thêm giờ (Overtime)",
+                        qEn: "Could you stay an extra hour tonight to help prepare for tomorrow's event?",
+                        qVi: "Tối nay bạn có thể ở lại thêm một tiếng để giúp chuẩn bị cho sự kiện ngày mai không?",
+                        aEn: "Of course, I am happy to help make sure everything goes smoothly.",
+                        aVi: "Tất nhiên rồi, tôi rất sẵn lòng hỗ trợ để đảm bảo mọi việc diễn ra suôn sẻ.",
+                        keywordsAsk: ["extra hour", "stay", "overtime", "prepare", "event"],
+                        keywordsAns: ["of course", "happy to help", "smoothly", "sure", "no problem", "stay", "tonight"]
+                    },
+                    // 14. Chào đồng nghiệp cuối ngày làm việc (End of Workday)
+                    {
+                        id: 329,
+                        subTopic: "Công sở: Tan làm (End of Workday)",
+                        qEn: "I'm heading home now. Don't work too late!",
+                        qVi: "Tôi về nhà đây. Đừng làm việc muộn quá nhé!",
+                        aEn: "Thanks! Have a relaxing evening and see you tomorrow morning.",
+                        aVi: "Cảm ơn bạn! Chúc buổi tối thư giãn và hẹn gặp lại sáng mai nhé.",
+                        keywordsAsk: ["heading home", "too late", "leaving"],
+                        keywordsAns: ["relaxing", "evening", "tomorrow", "morning", "see you", "thanks", "safe"]
+                    }
+      
+ ]
             },
             q_f: {
                 id: "q_f",
@@ -1556,7 +2056,96 @@ title: "i. ĐI TAXI (3 Tình huống)",
 items: [
 { id: 117, subTopic: "Tình huống 1: Đón xe vào trung tâm", qEn: "Excuse me, can you take me to the city center?", qVi: "Xin lỗi, bạn có thể chở tôi đến trung tâm thành phố không?", aEn: "Sure, please get in the car.", aVi: "Chắc chắn rồi, mời bạn lên xe.", keywordsAsk: ["city center", "take me"], keywordsAns: ["sure", "get in", "car", "hop in", "welcome", "course"] },
 { id: 118, subTopic: "Tình huống 2: Xác nhận tài xế Grab", qEn: "Are you my Grab driver? My name is Quang.", qVi: "Bạn có phải tài xế Grab của tôi không? Tên tôi là Quảng.", aEn: "Yes, I am. Please put on your seatbelt.", aVi: "Vâng, đúng là tôi. Bạn vui lòng thắt dây an toàn nhé.", keywordsAsk: ["grab driver", "driver"], keywordsAns: ["seatbelt", "put on", "driver", "destination", "ready", "confirm"] },
-{ id: 119, subTopic: "Tình huống 3: Hỏi giá ra sân bay", qEn: "How much does it cost to the airport?", qVi: "Đi ra sân bay hết bao nhiêu tiền vậy?", aEn: "It is about fifteen dollars by meter.", aVi: "Khoảng 15 đô la tính theo đồng hồ ạ.", keywordsAsk: ["airport", "cost"], keywordsAns: ["fifteen", "dollars", "meter", "about", "fixed", "price", "15"] }
+{ id: 119, subTopic: "Tình huống 3: Hỏi giá ra sân bay", qEn: "How much does it cost to the airport?", qVi: "Đi ra sân bay hết bao nhiêu tiền vậy?", aEn: "It is about fifteen dollars by meter.", aVi: "Khoảng 15 đô la tính theo đồng hồ ạ.", keywordsAsk: ["airport", "cost"], keywordsAns: ["fifteen", "dollars", "meter", "about", "fixed", "price", "15"] },
+                    // 4. Hỏi thời gian di chuyển đến điểm đến (Estimated Travel Time)
+                    {
+                        id: 362,
+                        subTopic: "Đi taxi: Hỏi thời gian tới nơi (Travel Time)",
+                        qEn: "How long will it take to get to the train station with this traffic?",
+                        qVi: "Với tình trạng giao thông thế này thì mất bao lâu để tới ga tàu hỏa?",
+                        aEn: "It should take around twenty minutes if there are no traffic jams.",
+                        aVi: "Sẽ mất khoảng 20 phút nếu không bị kẹt xe ạ.",
+                        keywordsAsk: ["how long", "train station", "traffic", "take"],
+                        keywordsAns: ["twenty minutes", "minutes", "traffic jams", "around", "about", "20"]
+                    },
+                    // 5. Nhờ tài xế mở cốp xe để hành lý (Opening the Trunk)
+                    {
+                        id: 363,
+                        subTopic: "Đi taxi: Cất hành lý vào cốp (Trunk Luggage)",
+                        qEn: "Could you please open the trunk so I can put my heavy suitcase inside?",
+                        qVi: "Bạn có thể mở cốp xe để tôi bỏ chiếc vali nặng vào bên trong không?",
+                        aEn: "Sure! Let me step out and help you load your luggage.",
+                        aVi: "Được chứ! Để tôi bước xuống giúp bạn xếp hành lý lên xe.",
+                        keywordsAsk: ["open the trunk", "trunk", "suitcase", "luggage"],
+                        keywordsAns: ["step out", "help you", "load", "luggage", "trunk", "sure", "suitcase"]
+                    },
+                    // 6. Nhờ bật điều hòa / hạ kính xe (AC & Window Request)
+                    {
+                        id: 364,
+                        subTopic: "Đi taxi: Chỉnh điều hòa (Adjusting AC)",
+                        qEn: "Excuse me, could you turn up the air conditioning a little bit? It's quite warm.",
+                        qVi: "Xin lỗi, bạn có thể tăng điều hòa lên một chút không? Trong xe hơi nóng.",
+                        aEn: "Of course! Let me make it cooler for you right away.",
+                        aVi: "Tất nhiên rồi! Để tôi chỉnh mát hơn cho bạn ngay đây.",
+                        keywordsAsk: ["air conditioning", "ac", "warm", "hot", "turn up"],
+                        keywordsAns: ["cooler", "right away", "of course", "sure", "temperature", "ac"]
+                    },
+                    // 7. Nhờ dừng xe dọc đường mua đồ (Quick Stop on the Way)
+                    {
+                        id: 365,
+                        subTopic: "Đi taxi: Dừng dọc đường (Quick Stop)",
+                        qEn: "Could we make a quick stop at that convenience store on the corner?",
+                        qVi: "Chúng ta có thể ghé dừng nhanh ở cửa hàng tiện lợi góc đường kia không?",
+                        aEn: "No problem, I will pull over right in front of the store and wait for you.",
+                        aVi: "Không vấn đề gì, tôi sẽ tấp vào ngay trước cửa hàng và đợi bạn.",
+                        keywordsAsk: ["quick stop", "convenience store", "corner", "stop"],
+                        keywordsAns: ["pull over", "in front", "wait", "no problem", "store", "sure"]
+                    },
+                    // 8. Nhờ đi chậm lại / Cẩn thận hơn (Asking to Slow Down)
+                    {
+                        id: 366,
+                        subTopic: "Đi taxi: Nhắc lái xe chậm (Slowing Down)",
+                        qEn: "Please slow down a little, the road ahead is very wet and slippery.",
+                        qVi: "Làm ơn chạy chậm lại một chút, đường phía trước rất ướt và trơn trượt.",
+                        aEn: "Got it, I will drive more slowly and carefully.",
+                        aVi: "Tôi rõ rồi, tôi sẽ lái chậm và cẩn thận hơn.",
+                        keywordsAsk: ["slow down", "slippery", "wet", "fast"],
+                        keywordsAns: ["got it", "slowly", "carefully", "drive", "okay", "sure", "safe"]
+                    },
+                    // 9. Hướng dẫn điểm thả khách cụ thể (Drop-off Spot)
+                    {
+                        id: 367,
+                        subTopic: "Đi taxi: Điểm xuống xe (Drop-off Location)",
+                        qEn: "You can drop me off right next to the main entrance of the hotel.",
+                        qVi: "Bạn có thể thả tôi xuống ngay cạnh cổng chính của khách sạn nhé.",
+                        aEn: "Alright, we are arriving now. Please watch out for motorbikes when opening the door.",
+                        aVi: "Được rồi, chúng ta đang tới nơi. Vui lòng quan sát xe máy khi mở cửa nhé.",
+                        keywordsAsk: ["drop me off", "main entrance", "hotel", "stop here"],
+                        keywordsAns: ["arriving", "watch out", "motorbikes", "opening the door", "door", "alright"]
+                    },
+                    // 10. Hỏi phí cầu đường / phí sân bay (Toll & Airport Fees)
+                    {
+                        id: 368,
+                        subTopic: "Đi taxi: Phí cầu đường (Toll Fees)",
+                        qEn: "Does this fare include the airport toll fee?",
+                        qVi: "Giá cước này đã bao gồm phí ra vào cổng sân bay chưa ạ?",
+                        aEn: "The airport toll fee is an extra one dollar on top of the meter.",
+                        aVi: "Phí cổng sân bay sẽ tính thêm một đô la ngoài tiền đồng hồ ạ.",
+                        keywordsAsk: ["toll fee", "include", "fare", "airport"],
+                        keywordsAns: ["extra", "one dollar", "meter", "toll", "fee", "included", "1"]
+                    },
+                    // 11. Quên đồ trên xe taxi (Left Item in Taxi)
+                    {
+                        id: 369,
+                        subTopic: "Đi taxi: Quên đồ trên xe (Forgotten Item)",
+                        qEn: "Wait a second! I think I left my phone on the back seat.",
+                        qVi: "Khoan đã! Tôi nghĩ mình để quên điện thoại ở hàng ghế sau rồi.",
+                        aEn: "Let me check the back seat for you. Yes, here it is!",
+                        aVi: "Để tôi kiểm tra ghế sau giúp bạn. Đúng rồi, nó ở đây này!",
+                        keywordsAsk: ["left my phone", "back seat", "forgot", "wait"],
+                        keywordsAns: ["check", "back seat", "here it is", "found", "phone", "seat"]
+                    }
+
 ]
 },
 q_k: {
@@ -1653,7 +2242,95 @@ aEn: "Thank you! Have a good day.",
 aVi: "Cảm ơn bạn! Chúc một ngày tốt lành.",
 keywordsAsk: ["get well soon", "your medicine", "total"],
 keywordsAns: ["thank", "thanks", "good day", "you too", "appreciate"]
-}
+},
+                    // 12. Hỏi mua thuốc hạ sốt & giảm đau (Fever & Pain Relief)
+                    {
+                        id: 354,
+                        subTopic: "Tiệm thuốc: Thuốc hạ sốt (Fever Relief)",
+                        qEn: "I have a high fever and body aches. What medicine do you recommend?",
+                        qVi: "Tôi bị sốt cao và đau nhức toàn thân. Bạn khuyên tôi nên dùng thuốc gì?",
+                        aEn: "These paracetamol tablets will help reduce your fever and relieve pain.",
+                        aVi: "Những viên thuốc paracetamol này sẽ giúp hạ sốt và giảm đau cho bạn.",
+                        keywordsAsk: ["high fever", "body aches", "fever", "recommend"],
+                        keywordsAns: ["paracetamol", "tablets", "reduce", "fever", "relieve", "pain", "medicine"]
+                    },
+                    // 13. Mua thuốc dị ứng / nổi mề đay (Allergy & Rash)
+                    {
+                        id: 355,
+                        subTopic: "Tiệm thuốc: Thuốc dị ứng (Allergy Relief)",
+                        qEn: "Do you have any antihistamines for seasonal allergies or itchy skin?",
+                        qVi: "Bạn có thuốc kháng dị ứng nào trị dị ứng thời tiết hoặc ngứa da không?",
+                        aEn: "Yes, take one non-drowsy allergy pill every morning.",
+                        aVi: "Có ạ, bạn uống một viên thuốc dị ứng không gây buồn ngủ vào mỗi buổi sáng.",
+                        keywordsAsk: ["antihistamines", "allergies", "itchy skin", "rash"],
+                        keywordsAns: ["non-drowsy", "allergy", "pill", "morning", "tablets", "yes", "one"]
+                    },
+                    // 14. Hỏi mua thuốc nhỏ mắt (Eye Drops)
+                    {
+                        id: 356,
+                        subTopic: "Tiệm thuốc: Thuốc nhỏ mắt (Eye Drops)",
+                        qEn: "My eyes feel very dry and irritated. Could I get some eye drops?",
+                        qVi: "Mắt tôi cảm thấy rất khô và rát. Cho tôi mua một lọ thuốc nhỏ mắt được không?",
+                        aEn: "Sure, these artificial tears are gentle and safe for daily use.",
+                        aVi: "Được ạ, loại nước mắt nhân tạo này rất dịu nhẹ và an toàn để dùng hằng ngày.",
+                        keywordsAsk: ["dry", "irritated", "eye drops", "eyes"],
+                        keywordsAns: ["artificial tears", "eye drops", "gentle", "safe", "daily", "sure", "drops"]
+                    },
+                    // 15. Hỏi mua dung dịch bù nước điện giải (Electrolyte Powder)
+                    {
+                        id: 357,
+                        subTopic: "Tiệm thuốc: Bù nước điện giải (Rehydration)",
+                        qEn: "Do you sell electrolyte packets for dehydration and food poisoning?",
+                        qVi: "Quầy mình có bán gói bù điện giải trị mất nước và ngộ độc thực phẩm không?",
+                        aEn: "Yes, dissolve one packet in a glass of clean water and drink it slowly.",
+                        aVi: "Có ạ, bạn hòa tan một gói vào một cốc nước sạch rồi uống từ từ nhé.",
+                        keywordsAsk: ["electrolyte", "dehydration", "food poisoning", "packets"],
+                        keywordsAns: ["dissolve", "packet", "glass", "water", "slowly", "yes", "drink"]
+                    },
+                    // 16. Hỏi mua thuốc say tàu xe (Motion Sickness)
+                    {
+                        id: 358,
+                        subTopic: "Tiệm thuốc: Thuốc say xe (Motion Sickness)",
+                        qEn: "I get carsick easily on long bus rides. Do you have motion sickness pills?",
+                        qVi: "Tôi dễ bị say xe khi đi đường dài. Bạn có thuốc chống say tàu xe không?",
+                        aEn: "Yes, take one tablet thirty minutes before your trip starts.",
+                        aVi: "Có ạ, bạn uống một viên trước khi chuyến đi bắt đầu 30 phút nhé.",
+                        keywordsAsk: ["carsick", "motion sickness", "bus rides", "dizzy"],
+                        keywordsAns: ["thirty minutes", "before", "trip", "tablet", "one", "yes", "30"]
+                    },
+                    // 17. Hỏi mua nhiệt kế điện tử (Digital Thermometer)
+                    {
+                        id: 359,
+                        subTopic: "Tiệm thuốc: Mua nhiệt kế (Thermometer)",
+                        qEn: "Could I buy a digital thermometer to check my temperature at home?",
+                        qVi: "Tôi có thể mua một chiếc nhiệt kế điện tử để đo nhiệt độ tại nhà không?",
+                        aEn: "Certainly! This model gives an accurate reading in ten seconds.",
+                        aVi: "Chắc chắn rồi! Mẫu này cho kết quả chính xác chỉ trong 10 giây.",
+                        keywordsAsk: ["thermometer", "temperature", "digital"],
+                        keywordsAns: ["accurate", "reading", "ten seconds", "thermometer", "certainly", "seconds", "10"]
+                    },
+                    // 18. Hỏi cách bảo quản thuốc (Medicine Storage)
+                    {
+                        id: 360,
+                        subTopic: "Tiệm thuốc: Cách bảo quản (Storage Instructions)",
+                        qEn: "Does this liquid medicine need to be kept in the refrigerator?",
+                        qVi: "Loại thuốc nước này có cần bảo quản trong tủ lạnh không ạ?",
+                        aEn: "No, just store it in a cool, dry place away from direct sunlight.",
+                        aVi: "Không cần ạ, chỉ cần cất ở nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.",
+                        keywordsAsk: ["refrigerator", "fridge", "kept", "store", "liquid"],
+                        keywordsAns: ["cool", "dry place", "sunlight", "store", "no", "room temperature"]
+                    },
+                    // 19. Kiểm tra hạn sử dụng của thuốc (Expiration Date)
+                    {
+                        id: 361,
+                        subTopic: "Tiệm thuốc: Hạn sử dụng (Expiration Date)",
+                        qEn: "Where can I check the expiration date on this medicine box?",
+                        qVi: "Tôi có thể xem hạn sử dụng trên hộp thuốc này ở chỗ nào ạ?",
+                        aEn: "It is stamped right on the bottom of the box; it is valid until next year.",
+                        aVi: "Hạn sử dụng được in dập ngay dưới đáy hộp; thuốc còn hạn đến năm sau ạ.",
+                        keywordsAsk: ["expiration date", "expire", "valid", "box"],
+                        keywordsAns: ["bottom", "box", "next year", "valid", "stamped", "date"]
+                    }
 
 ]
 },
@@ -1663,7 +2340,96 @@ title: "l. Ở TIỆM HỚT TÓC (3 Tình huống)",
 items: [
 { id: 131, subTopic: "Tình huống 1: Cắt tóc & Gội đầu", qEn: "I would like a haircut and a shampoo, please.", qVi: "Tôi muốn cắt tóc và gội đầu ạ.", aEn: "Sure, please have a seat right here.", aVi: "Vâng, mời bạn ngồi vào ghế này ạ.", keywordsAsk: ["haircut", "shampoo"], keywordsAns: ["sure", "seat", "chair", "right here", "welcome", "wait"] },
 { id: 132, subTopic: "Tình huống 2: Chọn kiểu tóc", qEn: "How would you like your hair cut?", qVi: "Bạn muốn cắt tóc kiểu như thế nào?", aEn: "Just trim it a little bit on the sides.", aVi: "Chỉ cần tỉa ngắn một chút ở hai bên thôi.", keywordsAsk: ["how would you like", "hair cut"], keywordsAns: ["trim", "little bit", "sides", "short", "layer", "bangs", "top"] },
-{ id: 133, subTopic: "Tình huống 3: Dặn dò độ dài", qEn: "Please do not cut it too short.", qVi: "Làm ơn đừng cắt ngắn quá nhé.", aEn: "Do not worry, I will keep it natural.", aVi: "Đừng lo, tôi sẽ giữ độ dài tự nhiên cho bạn.", keywordsAsk: ["too short", "do not cut"], keywordsAns: ["worry", "natural", "okay", "sure", "careful", "length"] }
+{ id: 133, subTopic: "Tình huống 3: Dặn dò độ dài", qEn: "Please do not cut it too short.", qVi: "Làm ơn đừng cắt ngắn quá nhé.", aEn: "Do not worry, I will keep it natural.", aVi: "Đừng lo, tôi sẽ giữ độ dài tự nhiên cho bạn.", keywordsAsk: ["too short", "do not cut"], keywordsAns: ["worry", "natural", "okay", "sure", "careful", "length"] },
+                    // 4. Hỏi đặt lịch hẹn cắt tóc (Booking an Appointment)
+                    {
+                        id: 378,
+                        subTopic: "Tiệm hớt tóc: Hỏi lịch hẹn (Appointment)",
+                        qEn: "Hello! Do you have an appointment today, or are you a walk-in?",
+                        qVi: "Xin chào! Hôm nay bạn có đặt lịch hẹn trước không hay là khách vãng lai?",
+                        aEn: "I didn't book in advance. How long is the wait right now?",
+                        aVi: "Tôi chưa đặt lịch trước. Hiện tại phải chờ khoảng bao lâu ạ?",
+                        keywordsAsk: ["appointment", "walk-in", "booked"],
+                        keywordsAns: ["advance", "how long", "wait", "minutes", "walk-in", "booked", "appointment"]
+                    },
+                    // 5. Yêu cầu cạo râu / Tỉa râu (Shaving & Beard Trim)
+                    {
+                        id: 379,
+                        subTopic: "Tiệm hớt tóc: Cạo râu & Tỉa râu (Beard Trim)",
+                        qEn: "Would you also like a beard trim or a clean shave today?",
+                        qVi: "Hôm nay bạn có muốn tỉa râu hoặc cạo râu sạch sẽ luôn không?",
+                        aEn: "Just a neat beard trim around my chin, please.",
+                        aVi: "Chỉ cần tỉa gọn phần râu quanh cằm giúp tôi thôi ạ.",
+                        keywordsAsk: ["beard trim", "clean shave", "shave", "beard"],
+                        keywordsAns: ["neat", "beard", "trim", "chin", "clean shave", "yes", "no thanks", "please"]
+                    },
+                    // 6. Hỏi về nhuộm tóc (Hair Coloring / Dyeing)
+                    {
+                        id: 380,
+                        subTopic: "Tiệm hớt tóc: Nhuộm tóc (Hair Coloring)",
+                        qEn: "I'm thinking about dyeing my hair dark brown. What do you think?",
+                        qVi: "Tôi đang định nhuộm tóc màu nâu trầm. Bạn thấy thế nào?",
+                        aEn: "That shade will suit your skin tone very well! Let me show you the color chart.",
+                        aVi: "Tông màu đó sẽ rất hợp với màu da của bạn! Để tôi đưa bảng màu cho bạn xem nhé.",
+                        keywordsAsk: ["dyeing", "dark brown", "color", "hair"],
+                        keywordsAns: ["shade", "suit", "skin tone", "color chart", "great", "brown", "looks good"]
+                    },
+                    // 7. Điều chỉnh nhiệt độ nước khi gội đầu (Water Temperature Check)
+                    {
+                        id: 381,
+                        subTopic: "Tiệm hớt tóc: Gội đầu (Shampoo Water Temp)",
+                        qEn: "How is the water temperature? Is it too hot or too cold for you?",
+                        qVi: "Nhiệt độ nước thế nào ạ? Có quá nóng hay quá lạnh với bạn không?",
+                        aEn: "It's just right, very warm and relaxing. Thank you!",
+                        aVi: "Vừa vặn rồi ạ, rất ấm và thư giãn. Cảm ơn bạn!",
+                        keywordsAsk: ["water temperature", "too hot", "too cold"],
+                        keywordsAns: ["just right", "warm", "relaxing", "perfect", "little cooler", "hotter", "thank"]
+                    },
+                    // 8. Yêu cầu sấy tạo kiểu & Vuốt sáp (Blow-dry & Styling)
+                    {
+                        id: 382,
+                        subTopic: "Tiệm hớt tóc: Sấy & Tạo kiểu (Hair Styling)",
+                        qEn: "Would you like me to put some hair wax or gel in after blow-drying?",
+                        qVi: "Sau khi sấy khô bạn có muốn tôi vuốt một ít sáp hoặc gel tạo kiểu không?",
+                        aEn: "Yes, just a little bit of matte wax for a natural hold, please.",
+                        aVi: "Có, chỉ cần một chút sáp mờ để giữ nếp tự nhiên thôi nhé.",
+                        keywordsAsk: ["hair wax", "gel", "blow-drying", "styling"],
+                        keywordsAns: ["little bit", "wax", "gel", "natural", "hold", "no thanks", "please"]
+                    },
+                    // 9. Tỉa mỏng tóc dày (Thinning Out Thick Hair)
+                    {
+                        id: 383,
+                        subTopic: "Tiệm hớt tóc: Tỉa mỏng tóc (Thinning Hair)",
+                        qEn: "My hair feels very thick and heavy. Could you thin it out a bit?",
+                        qVi: "Tóc tôi cảm giác rất dày và nặng. Bạn có thể tỉa mỏng bớt một chút không?",
+                        aEn: "Sure, I will use thinning scissors to make it lighter and easier to style.",
+                        aVi: "Chắc chắn rồi, tôi sẽ dùng kéo tỉa để tóc nhẹ và dễ vào nếp hơn.",
+                        keywordsAsk: ["thick", "heavy", "thin it out", "thinning"],
+                        keywordsAns: ["thinning scissors", "lighter", "style", "sure", "easier", "scissors"]
+                    },
+                    // 10. Kiểm tra phần gáy bằng gương cầm tay (Checking the Back)
+                    {
+                        id: 384,
+                        subTopic: "Tiệm hớt tóc: Kiểm tra sau gáy (Checking the Back)",
+                        qEn: "Here is a hand mirror. How does the back look to you?",
+                        qVi: "Đây là gương cầm tay. Bạn thấy phần tóc phía sau gáy thế nào?",
+                        aEn: "It looks super clean and even! I'm really happy with it.",
+                        aVi: "Trông cực kỳ gọn gàng và đều đẹp! Tôi thực sự rất hài lòng.",
+                        keywordsAsk: ["hand mirror", "back look", "mirror"],
+                        keywordsAns: ["clean", "even", "happy", "looks great", "perfect", "satisfied", "good"]
+                    },
+                    // 11. Thanh toán & Tiền boa cho thợ cắt tóc (Payment & Tipping)
+                    {
+                        id: 385,
+                        subTopic: "Tiệm hớt tóc: Thanh toán (Haircut Payment)",
+                        qEn: "How much do I owe you for the haircut and wash?",
+                        qVi: "Tổng tiền cắt tóc và gội đầu của tôi hết bao nhiêu vậy?",
+                        aEn: "It's fifteen dollars in total. Keep the change!",
+                        aVi: "Tổng cộng hết 15 đô la ạ. Bạn cứ giữ lấy tiền thừa nhé!",
+                        keywordsAsk: ["how much", "owe you", "haircut and wash", "total"],
+                        keywordsAns: ["fifteen", "dollars", "keep the change", "total", "cash", "card", "15"]
+                    }
+
 ]
 },
 q_m: {
@@ -1672,7 +2438,96 @@ title: "m. Ở HẢI QUAN (3 Tình huống)",
 items: [
 { id: 134, subTopic: "Tình huống 1: Xuất trình hộ chiếu", qEn: "May I see your passport and boarding pass?", qVi: "Tôi có thể xem hộ chiếu và thẻ lên máy bay của bạn không?", aEn: "Here you go, officer.", aVi: "Của tôi đây ạ, thưa cán bộ hải quan.", keywordsAsk: ["passport", "boarding pass"], keywordsAns: ["here", "officer", "passport", "please", "thank"] },
 { id: 135, subTopic: "Tình huống 2: Mục đích nhập cảnh", qEn: "What is the purpose of your visit?", qVi: "Mục đích chuyến đi của bạn là gì?", aEn: "I am here for sightseeing and vacation.", aVi: "Tôi đến đây để tham quan và nghỉ dưỡng.", keywordsAsk: ["purpose", "visit"], keywordsAns: ["sightseeing", "vacation", "holiday", "travel", "business", "visit", "family"] },
-{ id: 136, subTopic: "Tình huống 3: Khai báo hành lý", qEn: "Do you have anything to declare?", qVi: "Bạn có đồ gì cần khai báo hải quan không?", aEn: "No, I only have personal belongings.", aVi: "Không, tôi chỉ có hành lý cá nhân thôi ạ.", keywordsAsk: ["declare", "anything"], keywordsAns: ["personal", "belongings", "nothing", "clothes", "gifts", "declare"] }
+{ id: 136, subTopic: "Tình huống 3: Khai báo hành lý", qEn: "Do you have anything to declare?", qVi: "Bạn có đồ gì cần khai báo hải quan không?", aEn: "No, I only have personal belongings.", aVi: "Không, tôi chỉ có hành lý cá nhân thôi ạ.", keywordsAsk: ["declare", "anything"], keywordsAns: ["personal", "belongings", "nothing", "clothes", "gifts", "declare"] },
+                    // 4. Hỏi thời gian lưu trú tại quốc gia đến (Length of Stay)
+                    {
+                        id: 370,
+                        subTopic: "Hải quan: Thời gian lưu trú (Length of Stay)",
+                        qEn: "How long do you plan to stay in our country?",
+                        qVi: "Bạn dự định lưu trú tại đất nước chúng tôi trong bao lâu?",
+                        aEn: "I will be staying for ten days and flying back on the 15th.",
+                        aVi: "Tôi sẽ ở lại trong 10 ngày và bay về vào ngày 15.",
+                        keywordsAsk: ["how long", "plan to stay", "stay"],
+                        keywordsAns: ["ten days", "days", "weeks", "flying back", "staying", "10", "15th"]
+                    },
+                    // 5. Hỏi địa chỉ nơi lưu trú (Accommodation Address)
+                    {
+                        id: 371,
+                        subTopic: "Hải quan: Nơi ở khi du lịch (Where Staying)",
+                        qEn: "Where will you be staying during your visit?",
+                        qVi: "Bạn sẽ lưu trú ở đâu trong suốt chuyến thăm này?",
+                        aEn: "I am staying at the Sunrise Hotel in District 1. Here is my booking confirmation.",
+                        aVi: "Tôi ở tại khách sạn Sunrise ở Quận 1. Đây là giấy xác nhận đặt phòng của tôi.",
+                        keywordsAsk: ["where will you be staying", "hotel", "address", "visit"],
+                        keywordsAns: ["hotel", "district", "booking", "confirmation", "staying at", "friend's house"]
+                    },
+                    // 6. Kiểm tra hành lý qua máy soi / Mở vali (Baggage Inspection)
+                    {
+                        id: 372,
+                        subTopic: "Hải quan: Kiểm tra hành lý (Baggage Inspection)",
+                        qEn: "Could you please place your bags on the belt and open this suitcase for inspection?",
+                        qVi: "Vui lòng đặt túi lên băng chuyền và mở chiếc vali này ra để kiểm tra?",
+                        aEn: "Of course, officer. I will unlock it for you right now.",
+                        aVi: "Vâng ạ, thưa cán bộ. Tôi sẽ mở khóa ngay bây giờ.",
+                        keywordsAsk: ["open this suitcase", "inspection", "belt", "bags"],
+                        keywordsAns: ["unlock", "right now", "of course", "officer", "sure", "open"]
+                    },
+                    // 7. Khai báo tiền mặt mang theo (Currency Declaration)
+                    {
+                        id: 373,
+                        subTopic: "Hải quan: Khai báo tiền mặt (Carrying Cash)",
+                        qEn: "Are you carrying more than ten thousand US dollars in cash?",
+                        qVi: "Bạn có mang theo hơn 10.000 đô la Mỹ tiền mặt không?",
+                        aEn: "No, I only have about eight hundred dollars for my travel expenses.",
+                        aVi: "Không, tôi chỉ mang khoảng 800 đô la cho chi phí đi lại thôi.",
+                        keywordsAsk: ["carrying", "ten thousand", "cash", "money"],
+                        keywordsAns: ["eight hundred", "dollars", "travel expenses", "no", "only have", "800"]
+                    },
+                    // 8. Khai báo thực phẩm / Nông sản (Food & Agricultural Items)
+                    {
+                        id: 374,
+                        subTopic: "Hải quan: Kiểm tra thực phẩm (Food Items)",
+                        qEn: "Are you bringing any fresh fruit, meat, or plant products into the country?",
+                        qVi: "Bạn có mang theo trái cây tươi, thịt hay sản phẩm thực vật nào nhập cảnh không?",
+                        aEn: "No, I only have some packaged snacks and sealed coffee beans.",
+                        aVi: "Không ạ, tôi chỉ có một ít đồ ăn nhẹ đóng gói và hạt cà phê ép kín thôi.",
+                        keywordsAsk: ["fresh fruit", "meat", "plant", "food"],
+                        keywordsAns: ["packaged", "snacks", "sealed", "coffee", "no", "only have"]
+                    },
+                    // 9. Lấy dấu vân tay & Chụp ảnh nhập cảnh (Biometrics Check)
+                    {
+                        id: 375,
+                        subTopic: "Hải quan: Lấy vân tay & Chụp ảnh (Biometrics)",
+                        qEn: "Please place your four right fingers on the scanner and look at the camera.",
+                        qVi: "Vui lòng đặt bốn ngón tay phải lên máy quét và nhìn thẳng vào camera.",
+                        aEn: "Okay, should I take off my glasses and hat first?",
+                        aVi: "Vâng, tôi có cần tháo kính và mũ ra trước không ạ?",
+                        keywordsAsk: ["fingers", "scanner", "camera", "look at"],
+                        keywordsAns: ["glasses", "hat", "take off", "okay", "sure", "ready"]
+                    },
+                    // 10. Hỏi về vé máy bay khứ hồi (Return Ticket Check)
+                    {
+                        id: 376,
+                        subTopic: "Hải quan: Kiểm tra vé khứ hồi (Return Ticket)",
+                        qEn: "Do you have a return ticket showing when you will leave?",
+                        qVi: "Bạn có vé máy bay khứ hồi thể hiện ngày rời đi không?",
+                        aEn: "Yes, here is my return flight itinerary on my phone.",
+                        aVi: "Có ạ, đây là lịch trình chuyến bay về của tôi trên điện thoại.",
+                        keywordsAsk: ["return ticket", "leave", "showing"],
+                        keywordsAns: ["return flight", "itinerary", "phone", "here", "yes", "ticket"]
+                    },
+                    // 11. Hoàn tất thủ tục & Chào đón nhập cảnh (Entry Approved)
+                    {
+                        id: 377,
+                        subTopic: "Hải quan: Hoàn tất nhập cảnh (Entry Stamp)",
+                        qEn: "Everything looks good. Here is your stamped passport. Welcome to Vietnam!",
+                        qVi: "Mọi giấy tờ đều hợp lệ. Hộ chiếu đã đóng dấu của bạn đây. Chào mừng đến Việt Nam!",
+                        aEn: "Thank you very much! I'm really excited to be here.",
+                        aVi: "Cảm ơn bạn rất nhiều! Tôi thực sự rất hào hứng khi được đến đây.",
+                        keywordsAsk: ["stamped passport", "welcome", "looks good"],
+                        keywordsAns: ["thank", "thanks", "excited", "happy", "appreciate", "goodbye"]
+                    }
+
 ]
 },
 q_n: {
@@ -1681,7 +2536,96 @@ title: "n. THỨC ĂN NHANH (3 Tình huống)",
 items: [
 { id: 137, subTopic: "Tình huống 1: Gọi bánh mì & khoai tây", qEn: "Hi, can I get a cheeseburger and large fries?", qVi: "Chào bạn, cho tôi một bánh mì kẹp phô mai và khoai tây chiên cỡ lớn?", aEn: "Would you like a drink with that?", aVi: "Bạn có muốn gọi thêm đồ uống kèm theo không?", keywordsAsk: ["cheeseburger", "fries"], keywordsAns: ["drink", "soda", "coke", "combo", "meal", "anything else"] },
 { id: 138, subTopic: "Tình huống 2: Ăn tại chỗ hay mang đi", qEn: "For here or to go?", qVi: "Bạn dùng tại quán hay mang đi?", aEn: "To go, please. Can I have extra ketchup?", aVi: "Cho tôi mang đi nhé. Cho tôi xin thêm tương cà chua.", keywordsAsk: ["for here", "to go"], keywordsAns: ["to go", "for here", "take away", "ketchup", "sauce", "please"] },
-{ id: 139, subTopic: "Tình huống 3: Thời gian chờ món", qEn: "How long will my order take?", qVi: "Món của tôi mất khoảng bao lâu thì xong?", aEn: "It will be ready in five minutes.", aVi: "Sẽ xong sau 5 phút nữa ạ.", keywordsAsk: ["how long", "order"], keywordsAns: ["ready", "five", "minutes", "shortly", "soon", "wait", "5"] }
+{ id: 139, subTopic: "Tình huống 3: Thời gian chờ món", qEn: "How long will my order take?", qVi: "Món của tôi mất khoảng bao lâu thì xong?", aEn: "It will be ready in five minutes.", aVi: "Sẽ xong sau 5 phút nữa ạ.", keywordsAsk: ["how long", "order"], keywordsAns: ["ready", "five", "minutes", "shortly", "soon", "wait", "5"] },
+                    // 4. Chọn phần ăn Combo (Combo Meal Upgrade)
+                    {
+                        id: 386,
+                        subTopic: "Thức ăn nhanh: Chọn Combo (Combo Meal)",
+                        qEn: "Would you like to make that a combo meal with fries and a drink?",
+                        qVi: "Bạn có muốn nâng cấp thành phần ăn combo gồm khoai tây chiên và nước ngọt không?",
+                        aEn: "Yes, make it a medium combo with a diet cola, please.",
+                        aVi: "Có, cho tôi nâng cấp thành combo cỡ vừa kèm một ly coca ăn kiêng nhé.",
+                        keywordsAsk: ["combo meal", "fries and a drink", "make that a combo"],
+                        keywordsAns: ["medium", "combo", "diet cola", "cola", "soda", "yes", "no thanks", "please"]
+                    },
+                    // 5. Gọi gà rán cay hay không cay (Spicy vs Original Chicken)
+                    {
+                        id: 387,
+                        subTopic: "Thức ăn nhanh: Gà rán cay/truyền thống (Fried Chicken)",
+                        qEn: "Would you prefer original crispy chicken or hot and spicy?",
+                        qVi: "Bạn thích gà rán giòn truyền thống hay loại cay nóng ạ?",
+                        aEn: "Two pieces of hot and spicy chicken, please.",
+                        aVi: "Cho tôi hai miếng gà rán cay nóng nhé.",
+                        keywordsAsk: ["original", "crispy", "hot and spicy", "chicken"],
+                        keywordsAns: ["two pieces", "spicy", "original", "crispy", "chicken", "please", "2"]
+                    },
+                    // 6. Yêu cầu bỏ bớt nguyên liệu trong burger (Customizing Burger)
+                    {
+                        id: 388,
+                        subTopic: "Thức ăn nhanh: Tùy chỉnh bánh (Customizing Order)",
+                        qEn: "Could I get the double beef burger without pickles or onions?",
+                        qVi: "Cho tôi gọi bánh mì kẹp bò hai lớp nhưng không bỏ dưa chuột muối và hành tây nhé?",
+                        aEn: "No problem! One double beef burger, no pickles, no onions.",
+                        aVi: "Không vấn đề gì! Một bánh bò hai lớp, không dưa muối, không hành tây.",
+                        keywordsAsk: ["without", "pickles", "onions", "double beef"],
+                        keywordsAns: ["no problem", "double beef", "no pickles", "no onions", "noted", "sure"]
+                    },
+                    // 7. Chọn loại sốt chấm (Choosing Dipping Sauces)
+                    {
+                        id: 389,
+                        subTopic: "Thức ăn nhanh: Chọn nước sốt (Dipping Sauces)",
+                        qEn: "What kind of dipping sauce would you like with your chicken nuggets?",
+                        qVi: "Bạn muốn dùng loại sốt chấm nào kèm với gà viên chiên ạ?",
+                        aEn: "Barbecue sauce and sweet chili sauce, please.",
+                        aVi: "Cho tôi sốt thịt nướng BBQ và tương ớt ngọt nhé.",
+                        keywordsAsk: ["dipping sauce", "sauce", "nuggets"],
+                        keywordsAns: ["barbecue", "bbq", "sweet chili", "ketchup", "mayonnaise", "mustard", "sauce"]
+                    },
+                    // 8. Gọi thêm kem tráng miệng (Ordering Ice Cream)
+                    {
+                        id: 390,
+                        subTopic: "Thức ăn nhanh: Kem tráng miệng (Ice Cream)",
+                        qEn: "Would you like to add a vanilla ice cream cone for just one dollar?",
+                        qVi: "Bạn có muốn gọi thêm một cây kem ốc quế vani với giá chỉ 1 đô la không?",
+                        aEn: "Sure, add two vanilla cones to my order, please.",
+                        aVi: "Được chứ, thêm hai cây kem vani vào đơn giúp tôi nhé.",
+                        keywordsAsk: ["vanilla", "ice cream", "cone", "one dollar"],
+                        keywordsAns: ["two", "vanilla", "cones", "ice cream", "sure", "no thanks", "add", "2"]
+                    },
+                    // 9. Nhận số thứ tự chờ lấy đồ ăn (Order Number)
+                    {
+                        id: 391,
+                        subTopic: "Thức ăn nhanh: Số thứ tự (Order Number)",
+                        qEn: "Here is your receipt. Your order number is 45.",
+                        qVi: "Hóa đơn của bạn đây ạ. Số thứ tự lấy đồ ăn của bạn là 45.",
+                        aEn: "Thank you! I will wait by the pickup counter.",
+                        aVi: "Cảm ơn bạn! Tôi sẽ đứng đợi ở gần quầy nhận đồ ăn.",
+                        keywordsAsk: ["order number", "receipt", "45"],
+                        keywordsAns: ["thank", "wait", "pickup", "counter", "got it", "okay"]
+                    },
+                    // 10. Hỏi xin thêm khăn giấy và ống hút (Napkins & Straws)
+                    {
+                        id: 392,
+                        subTopic: "Thức ăn nhanh: Xin khăn giấy & ống hút (Napkins & Straws)",
+                        qEn: "Excuse me, could I get some extra napkins and a drinking straw?",
+                        qVi: "Xin lỗi, cho tôi xin thêm một ít khăn giấy và một cái ống hút được không?",
+                        aEn: "Of course! They are right here on the side counter.",
+                        aVi: "Tất nhiên rồi! Chúng ở ngay trên quầy bên cạnh đây ạ.",
+                        keywordsAsk: ["napkins", "straw", "extra"],
+                        keywordsAns: ["of course", "right here", "side counter", "counter", "sure", "napkins", "straw"]
+                    },
+                    // 11. Báo thiếu món trong khay đồ ăn (Missing Item in Order)
+                    {
+                        id: 393,
+                        subTopic: "Thức ăn nhanh: Báo thiếu món (Missing Item)",
+                        qEn: "Excuse me, I think my large fries are missing from this tray.",
+                        qVi: "Xin lỗi, tôi nghĩ khay đồ ăn này bị thiếu phần khoai tây chiên cỡ lớn của tôi.",
+                        aEn: "I'm so sorry about that! Let me get a fresh portion for you right away.",
+                        aVi: "Thành thật xin lỗi bạn! Để tôi lấy ngay một phần khoai tây nóng hổi mới ra cho bạn.",
+                        keywordsAsk: ["missing", "large fries", "tray", "forgot"],
+                        keywordsAns: ["sorry", "fresh", "portion", "right away", "fries", "apologize"]
+                    }
+
 ]
 },
 q_o: {
@@ -1788,7 +2732,96 @@ title: "p. RẠP CHIẾU PHIM (3 Tình huống)",
 items: [
 { id: 151, subTopic: "Tình huống 1: Mua vé xem phim", qEn: "Two tickets for the action movie at 7 PM, please.", qVi: "Cho tôi 2 vé xem phim hành động lúc 7 giờ tối nhé.", aEn: "Which row would you like to sit in?", aVi: "Bạn muốn ngồi ở hàng ghế nào ạ?", keywordsAsk: ["tickets", "action movie"], keywordsAns: ["row", "seat", "middle", "front", "back", "screen", "sit"] },
 { id: 152, subTopic: "Tình huống 2: Chọn ghế ngồi", qEn: "I prefer seats in the middle of the theater.", qVi: "Tôi thích ngồi ở hàng ghế giữa rạp chiếu phim.", aEn: "Here are your tickets and popcorn.", aVi: "Vé và bắp rang bơ của bạn đây ạ.", keywordsAsk: ["seats", "middle"], keywordsAns: ["tickets", "popcorn", "drinks", "enjoy", "movie", "here"] },
-{ id: 153, subTopic: "Tình huống 3: Giờ bắt đầu hòa nhạc", qEn: "What time does the live music concert start?", qVi: "Buổi hòa nhạc trực tiếp bắt đầu lúc mấy giờ?", aEn: "It starts at eight o'clock tonight.", aVi: "Chương trình bắt đầu lúc 8 giờ tối nay ạ.", keywordsAsk: ["concert", "start"], keywordsAns: ["starts", "eight", "o'clock", "tonight", "pm", "doors", "8"] }
+{ id: 153, subTopic: "Tình huống 3: Giờ bắt đầu hòa nhạc", qEn: "What time does the live music concert start?", qVi: "Buổi hòa nhạc trực tiếp bắt đầu lúc mấy giờ?", aEn: "It starts at eight o'clock tonight.", aVi: "Chương trình bắt đầu lúc 8 giờ tối nay ạ.", keywordsAsk: ["concert", "start"], keywordsAns: ["starts", "eight", "o'clock", "tonight", "pm", "doors", "8"] },
+                    // 4. Hỏi lịch chiếu phim trong ngày (Movie Showtimes)
+                    {
+                        id: 394,
+                        subTopic: "Rạp phim: Hỏi suất chiếu (Showtimes)",
+                        qEn: "What are the showtimes for the new sci-fi movie this evening?",
+                        qVi: "Tối nay bộ phim khoa học viễn tưởng mới có những suất chiếu nào ạ?",
+                        aEn: "There is a 3D screening at 6:30 PM and a regular 2D show at 8:45 PM.",
+                        aVi: "Có một suất chiếu 3D lúc 6 giờ 30 tối và một suất 2D thường lúc 8 giờ 45 tối ạ.",
+                        keywordsAsk: ["showtimes", "sci-fi movie", "this evening", "screening"],
+                        keywordsAns: ["3d", "2d", "screening", "6:30", "8:45", "evening", "pm"]
+                    },
+                    // 5. Hỏi ưu đãi vé sinh viên / trẻ em (Student & Child Discounts)
+                    {
+                        id: 395,
+                        subTopic: "Rạp phim: Giảm giá vé (Ticket Discounts)",
+                        qEn: "Do you offer discounted tickets for university students?",
+                        qVi: "Rạp mình có áp dụng giá vé ưu đãi cho sinh viên đại học không ạ?",
+                        aEn: "Yes, just show your valid student ID card to get twenty percent off.",
+                        aVi: "Có ạ, bạn chỉ cần xuất trình thẻ sinh viên còn hiệu lực để được giảm giá 20%.",
+                        keywordsAsk: ["discounted", "university students", "student", "discount"],
+                        keywordsAns: ["student id", "id card", "twenty percent", "off", "valid", "yes", "20"]
+                    },
+                    // 6. Mua combo bắp nước tại quầy (Popcorn & Soda Combo)
+                    {
+                        id: 396,
+                        subTopic: "Rạp phim: Mua bắp nước (Popcorn & Drinks)",
+                        qEn: "Would you like sweet caramel popcorn or salty butter popcorn?",
+                        qVi: "Bạn thích bắp rang bơ vị caramel ngọt hay vị bơ mặn ạ?",
+                        aEn: "Half sweet and half salty, plus two large sodas, please.",
+                        aVi: "Cho tôi nửa ngọt nửa mặn, kèm theo hai ly nước ngọt cỡ lớn nhé.",
+                        keywordsAsk: ["caramel", "popcorn", "salty", "butter"],
+                        keywordsAns: ["half sweet", "half salty", "caramel", "salty", "two", "sodas", "popcorn", "2"]
+                    },
+                    // 7. Hỏi vị trí phòng chiếu số mấy (Finding Theater Room)
+                    {
+                        id: 397,
+                        subTopic: "Rạp phim: Tìm phòng chiếu (Finding Screen Room)",
+                        qEn: "Excuse me, where is Screen Room 5 located?",
+                        qVi: "Xin lỗi, phòng chiếu số 5 nằm ở phía nào vậy ạ?",
+                        aEn: "Go up the escalator and turn left; it is the second door on your right.",
+                        aVi: "Bạn đi lên thang cuốn rồi rẽ trái; đó là cánh cửa thứ hai bên tay phải ạ.",
+                        keywordsAsk: ["screen room", "where is", "located", "theater"],
+                        keywordsAns: ["escalator", "turn left", "second door", "right", "upstairs", "room"]
+                    },
+                    // 8. Nhận kính xem phim 3D (3D Glasses Pickup)
+                    {
+                        id: 398,
+                        subTopic: "Rạp phim: Nhận kính 3D (3D Glasses)",
+                        qEn: "Here are your 3D glasses. Please return them in the bin after the movie.",
+                        qVi: "Kính xem phim 3D của bạn đây ạ. Vui lòng bỏ lại vào thùng thu hồi sau khi xem xong nhé.",
+                        aEn: "Got it, thank you! What time do the trailers end?",
+                        aVi: "Tôi rõ rồi, cảm ơn bạn! Mấy giờ thì hết phần quảng cáo giới thiệu phim ạ?",
+                        keywordsAsk: ["3d glasses", "return them", "bin"],
+                        keywordsAns: ["got it", "thank", "trailers", "end", "minutes", "okay", "sure"]
+                    },
+                    // 9. Hỏi phim có phụ đề hay lồng tiếng (Subtitles vs Dubbed)
+                    {
+                        id: 399,
+                        subTopic: "Rạp phim: Phụ đề & Lồng tiếng (Subtitles & Dubbing)",
+                        qEn: "Is this animated movie dubbed in Vietnamese or in English with subtitles?",
+                        qVi: "Bộ phim hoạt hình này là bản lồng tiếng Việt hay tiếng Anh có phụ đề ạ?",
+                        aEn: "The 7 PM show is in original English with Vietnamese subtitles.",
+                        aVi: "Suất chiếu lúc 7 giờ tối là bản tiếng Anh gốc có phụ đề tiếng Việt ạ.",
+                        keywordsAsk: ["dubbed", "subtitles", "animated movie", "english"],
+                        keywordsAns: ["original", "english", "subtitles", "vietnamese", "dubbed", "7 pm"]
+                    },
+                    // 10. Nhắc nhở giữ trật tự trong rạp (Theater Etiquette)
+                    {
+                        id: 400,
+                        subTopic: "Rạp phim: Quy định trong rạp (Theater Rules)",
+                        qEn: "Please remember to switch your mobile phones to silent mode before the film begins.",
+                        qVi: "Quý khách vui lòng chuyển điện thoại sang chế độ im lặng trước khi phim bắt đầu.",
+                        aEn: "Sure, I have already turned my phone off.",
+                        aVi: "Chắc chắn rồi, tôi đã tắt nguồn điện thoại của mình rồi.",
+                        keywordsAsk: ["mobile phones", "silent mode", "film begins"],
+                        keywordsAns: ["turned", "phone off", "silent", "sure", "already", "okay"]
+                    },
+                    // 11. Cảm nhận sau khi xem phim (Movie Review Chat)
+                    {
+                        id: 401,
+                        subTopic: "Rạp phim: Bình luận sau phim (After the Movie)",
+                        qEn: "What did you think of the ending of that movie?",
+                        qVi: "Bạn nghĩ sao về cái kết của bộ phim vừa rồi?",
+                        aEn: "The plot twist at the end was totally unexpected and super exciting!",
+                        aVi: "Cú ngoặt bất ngờ ở đoạn cuối hoàn toàn ngoài dự đoán và cực kỳ hấp dẫn!",
+                        keywordsAsk: ["ending", "think of", "movie"],
+                        keywordsAns: ["plot twist", "unexpected", "exciting", "amazing", "emotional", "ending", "great"]
+                    }
+
 ]
 },
 q_q: {
@@ -1797,7 +2830,96 @@ title: "q. PHÒNG TRIỂN LÃM (3 Tình huống)",
 items: [
 { id: 154, subTopic: "Tình huống 1: Giá vé vào cổng", qEn: "How much is the entrance ticket to the art gallery?", qVi: "Vé vào cổng phòng triển lãm tranh là bao nhiêu?", aEn: "Admission is free for all visitors today.", aVi: "Hôm nay miễn phí vé vào cửa cho tất cả khách tham quan.", keywordsAsk: ["entrance ticket", "art gallery"], keywordsAns: ["admission", "free", "visitors", "today", "dollars", "ticket"] },
 { id: 155, subTopic: "Tình huống 2: Quy định chụp ảnh", qEn: "Am I allowed to take photos of the paintings?", qVi: "Tôi có được phép chụp ảnh các bức tranh không?", aEn: "Yes, but please turn off your flash.", aVi: "Được ạ, nhưng vui lòng tắt đèn flash nhé.", keywordsAsk: ["take photos", "paintings"], keywordsAns: ["turn off", "flash", "photos", "allowed", "camera", "please"] },
-{ id: 156, subTopic: "Tình huống 3: Hỏi tác giả bức tranh", qEn: "Who painted this beautiful landscape?", qVi: "Ai đã vẽ bức tranh phong cảnh tuyệt đẹp này vậy?", aEn: "It was painted by a famous Vietnamese artist.", aVi: "Nó được vẽ bởi một họa sĩ nổi tiếng người Việt Nam.", keywordsAsk: ["who painted", "landscape"], keywordsAns: ["painted", "famous", "vietnamese", "artist", "painter", "century"] }
+{ id: 156, subTopic: "Tình huống 3: Hỏi tác giả bức tranh", qEn: "Who painted this beautiful landscape?", qVi: "Ai đã vẽ bức tranh phong cảnh tuyệt đẹp này vậy?", aEn: "It was painted by a famous Vietnamese artist.", aVi: "Nó được vẽ bởi một họa sĩ nổi tiếng người Việt Nam.", keywordsAsk: ["who painted", "landscape"], keywordsAns: ["painted", "famous", "vietnamese", "artist", "painter", "century"] },
+                    // 4. Hỏi mượn thiết bị thuyết minh tự động (Audio Guide)
+                    {
+                        id: 402,
+                        subTopic: "Triển lãm: Thuê tai nghe thuyết minh (Audio Guide)",
+                        qEn: "Do you have an English audio guide available for this exhibition?",
+                        qVi: "Triển lãm này có thiết bị thuyết minh tự động bằng tiếng Anh không ạ?",
+                        aEn: "Yes, you can rent a headset at the information desk for two dollars.",
+                        aVi: "Có ạ, bạn có thể thuê tai nghe thuyết minh tại quầy thông tin với giá 2 đô la.",
+                        keywordsAsk: ["audio guide", "english", "exhibition", "headset"],
+                        keywordsAns: ["headset", "information desk", "two dollars", "rent", "available", "yes", "2"]
+                    },
+                    // 5. Hỏi ý nghĩa bức tranh trừu tượng (Meaning of Artwork)
+                    {
+                        id: 403,
+                        subTopic: "Triển lãm: Ý nghĩa tác phẩm (Artwork Meaning)",
+                        qEn: "What is the main theme or message behind this abstract painting?",
+                        qVi: "Chủ đề chính hoặc thông điệp đằng sau bức tranh trừu tượng này là gì vậy?",
+                        aEn: "It represents harmony between modern city life and peaceful nature.",
+                        aVi: "Nó thể hiện sự hài hòa giữa nhịp sống đô thị hiện đại và thiên nhiên yên bình.",
+                        keywordsAsk: ["theme", "message", "abstract painting", "meaning"],
+                        keywordsAns: ["harmony", "modern", "nature", "represents", "peaceful", "city life", "artist"]
+                    },
+                    // 6. Hỏi mua tranh bản sao / bưu thiếp (Buying Art Prints)
+                    {
+                        id: 404,
+                        subTopic: "Triển lãm: Mua tranh lưu niệm (Gallery Gift Shop)",
+                        qEn: "Are any of these artworks for sale, or do you sell printed postcards?",
+                        qVi: "Các tác phẩm ở đây có bán không, hay phòng tranh có bán bưu thiếp in lại không ạ?",
+                        aEn: "The originals are private collections, but you can buy postcards in our souvenir shop.",
+                        aVi: "Các bản gốc thuộc bộ sưu tập tư nhân, nhưng bạn có thể mua bưu thiếp ở cửa hàng lưu niệm ạ.",
+                        keywordsAsk: ["for sale", "postcards", "artworks", "buy"],
+                        keywordsAns: ["postcards", "souvenir shop", "collections", "originals", "prints", "gift shop"]
+                    },
+                    // 7. Nhắc nhở không chạm tay vào hiện vật (Do Not Touch Rule)
+                    {
+                        id: 405,
+                        subTopic: "Triển lãm: Quy định bảo quản (Gallery Etiquette)",
+                        qEn: "Excuse me, please step back behind the yellow line and do not touch the sculpture.",
+                        qVi: "Xin lỗi, vui lòng lùi lại phía sau vạch vàng và không chạm tay vào tác phẩm điêu khắc ạ.",
+                        aEn: "Oh, I'm so sorry! I didn't notice the line.",
+                        aVi: "Ôi, tôi thành thật xin lỗi! Tôi đã không để ý vạch kẻ.",
+                        keywordsAsk: ["step back", "yellow line", "do not touch", "sculpture"],
+                        keywordsAns: ["sorry", "notice", "line", "apologize", "step back", "careful"]
+                    },
+                    // 8. Hỏi giờ đóng cửa phòng triển lãm (Gallery Closing Time)
+                    {
+                        id: 406,
+                        subTopic: "Triển lãm: Giờ đóng cửa (Closing Hours)",
+                        qEn: "What time does the art gallery close this evening?",
+                        qVi: "Tối nay phòng triển lãm nghệ thuật đóng cửa lúc mấy giờ vậy ạ?",
+                        aEn: "We close at 6 PM, and the last entry is at 5:30 PM.",
+                        aVi: "Chúng tôi đóng cửa lúc 6 giờ tối, và lượt khách cuối cùng vào lúc 5 giờ 30 chiều ạ.",
+                        keywordsAsk: ["close", "closing time", "what time", "art gallery"],
+                        keywordsAns: ["6 pm", "six", "last entry", "5:30", "evening", "close", "6"]
+                    },
+                    // 9. Hỏi chất liệu tạo nên tác phẩm (Art Medium & Materials)
+                    {
+                        id: 407,
+                        subTopic: "Triển lãm: Chất liệu nghệ thuật (Art Materials)",
+                        qEn: "Is this traditional Vietnamese painting made with silk or lacquer?",
+                        qVi: "Bức tranh truyền thống Việt Nam này được vẽ trên lụa hay tranh sơn mài vậy?",
+                        aEn: "It is a traditional lacquer painting inlaid with crushed eggshells.",
+                        aVi: "Đây là tranh sơn mài truyền thống có khảm vỏ trứng nghiền nhỏ ạ.",
+                        keywordsAsk: ["silk", "lacquer", "made with", "traditional"],
+                        keywordsAns: ["lacquer", "eggshells", "silk", "traditional", "inlaid", "oil", "watercolor"]
+                    },
+                    // 10. Hỏi về khu vực triển lãm nhiếp ảnh (Photography Section)
+                    {
+                        id: 408,
+                        subTopic: "Triển lãm: Khu nhiếp ảnh (Photography Wing)",
+                        qEn: "Where can I find the black-and-white photography exhibition?",
+                        qVi: "Tôi có thể tìm khu vực triển lãm ảnh đen trắng ở đâu vậy?",
+                        aEn: "It is in the East Wing on the second floor, right next to the staircase.",
+                        aVi: "Khu vực đó nằm ở cánh Đông trên tầng hai, ngay cạnh cầu thang bộ ạ.",
+                        keywordsAsk: ["photography", "black-and-white", "where can i find"],
+                        keywordsAns: ["east wing", "second floor", "staircase", "upstairs", "wing", "floor"]
+                    },
+                    // 11. Gửi ba lô lớn tại quầy giữ đồ (Cloakroom / Bag Check)
+                    {
+                        id: 409,
+                        subTopic: "Triển lãm: Gửi túi xách lớn (Bag Storage)",
+                        qEn: "Large backpacks are not allowed inside. May I store yours in the locker for free?",
+                        qVi: "Ba lô cỡ lớn không được mang vào trong. Tôi có thể cất giúp bạn vào tủ khóa miễn phí nhé?",
+                        aEn: "Yes, please! That would make walking around much easier.",
+                        aVi: "Vâng, làm ơn giúp tôi! Như vậy việc đi tham quan sẽ nhẹ nhàng hơn nhiều.",
+                        keywordsAsk: ["backpacks", "not allowed", "locker", "store"],
+                        keywordsAns: ["yes", "please", "easier", "locker", "thank", "sure", "free"]
+                    }
+
 ]
 },
 q_r: {
@@ -1806,7 +2928,96 @@ title: "r. Ở TIỆM ĐỒ CỔ (3 Tình huống)",
 items: [
 { id: 157, subTopic: "Tình huống 1: Tuổi đời bình gốm", qEn: "How old is this ceramic vase?", qVi: "Chiếc bình gốm cổ này có tuổi đời bao lâu rồi?", aEn: "It is over one hundred years old.", aVi: "Nó đã hơn một trăm năm tuổi rồi ạ.", keywordsAsk: ["ceramic vase", "how old"], keywordsAns: ["over", "hundred", "years old", "antique", "dynasty", "100"] },
 { id: 158, subTopic: "Tình huống 2: Tình trạng đồng hồ cổ", qEn: "Is this antique watch still working?", qVi: "Chiếc đồng hồ cổ này vẫn còn chạy tốt chứ?", aEn: "Yes, it is authentic and works very well.", aVi: "Vâng, đây là đồ thật nguyên bản và chạy rất chuẩn.", keywordsAsk: ["antique watch", "working"], keywordsAns: ["authentic", "works", "well", "original", "condition", "running"] },
-{ id: 159, subTopic: "Tình huống 3: Trả giá đồng xu cổ", qEn: "Can you lower the price a little for this coin?", qVi: "Bạn có thể bớt giá một chút cho đồng xu cổ này không?", aEn: "I can give you a special collector price.", aVi: "Tôi có thể để cho bạn mức giá ưu đãi dành cho người sưu tầm.", keywordsAsk: ["lower the price", "coin"], keywordsAns: ["special", "collector", "price", "discount", "offer", "deal"] }
+{ id: 159, subTopic: "Tình huống 3: Trả giá đồng xu cổ", qEn: "Can you lower the price a little for this coin?", qVi: "Bạn có thể bớt giá một chút cho đồng xu cổ này không?", aEn: "I can give you a special collector price.", aVi: "Tôi có thể để cho bạn mức giá ưu đãi dành cho người sưu tầm.", keywordsAsk: ["lower the price", "coin"], keywordsAns: ["special", "collector", "price", "discount", "offer", "deal"] },
+                    // 4. Hỏi nguồn gốc xuất xứ món đồ cổ (Origin & Provenance)
+                    {
+                        id: 410,
+                        subTopic: "Tiệm đồ cổ: Nguồn gốc món đồ (Item Origin)",
+                        qEn: "Where did you find this carved wooden jewelry box?",
+                        qVi: "Bạn tìm thấy chiếc hộp trang sức bằng gỗ chạm khắc này ở đâu vậy?",
+                        aEn: "I acquired it from an old family estate in Hue many years ago.",
+                        aVi: "Tôi mua lại nó từ một gia đình cổ ở Huế nhiều năm trước.",
+                        keywordsAsk: ["where did you find", "wooden", "jewelry box", "origin"],
+                        keywordsAns: ["hue", "family", "estate", "acquired", "years ago", "central", "found"]
+                    },
+                    // 5. Kiểm tra giấy chứng nhận đồ cổ (Certificate of Authenticity)
+                    {
+                        id: 411,
+                        subTopic: "Tiệm đồ cổ: Giấy chứng nhận (Authenticity)",
+                        qEn: "Does this porcelain teapot come with a certificate of authenticity?",
+                        qVi: "Chiếc ấm trà bằng sứ này có kèm theo giấy chứng nhận đồ cổ thật không?",
+                        aEn: "Yes, we provide an official certificate verifying its age and origin.",
+                        aVi: "Có ạ, chúng tôi cung cấp giấy chứng nhận chính thức xác minh niên đại và nguồn gốc.",
+                        keywordsAsk: ["certificate", "authenticity", "porcelain teapot", "genuine"],
+                        keywordsAns: ["certificate", "official", "verifying", "age", "origin", "yes", "genuine"]
+                    },
+                    // 6. Hỏi quy định hải quan khi mang đồ cổ về nước (Export Regulations)
+                    {
+                        id: 412,
+                        subTopic: "Tiệm đồ cổ: Thủ tục mang xuất cảnh (Customs Rules)",
+                        qEn: "Will I have any trouble taking this antique painting through airport customs?",
+                        qVi: "Tôi mang bức tranh cổ này qua hải quan sân bay có gặp rắc rối gì không?",
+                        aEn: "Not at all, as long as you keep our stamped export receipt with you.",
+                        aVi: "Không hề ạ, miễn là bạn giữ kèm hóa đơn xuất khẩu có đóng dấu của cửa hàng.",
+                        keywordsAsk: ["trouble", "airport customs", "taking this", "export"],
+                        keywordsAns: ["not at all", "stamped", "receipt", "export", "customs", "paperwork", "safe"]
+                    },
+                    // 7. Hỏi dịch vụ đóng gói chống vỡ (Fragile Packaging)
+                    {
+                        id: 413,
+                        subTopic: "Tiệm đồ cổ: Đóng gói chống sốc (Safe Packaging)",
+                        qEn: "This glass lamp is very fragile. Can you pack it safely for my flight?",
+                        qVi: "Chiếc đèn thủy tinh này rất dễ vỡ. Bạn có thể đóng gói an toàn cho chuyến bay của tôi không?",
+                        aEn: "Certainly! We will wrap it in thick bubble wrap and put it in a wooden box.",
+                        aVi: "Chắc chắn rồi! Chúng tôi sẽ bọc xốp nổ dày và đặt vào hộp gỗ cẩn thận.",
+                        keywordsAsk: ["fragile", "pack it", "flight", "glass lamp"],
+                        keywordsAns: ["bubble wrap", "wooden box", "wrap", "safely", "certainly", "box", "protect"]
+                    },
+                    // 8. Hỏi tìm máy ảnh cơ cổ điển (Vintage Film Cameras)
+                    {
+                        id: 414,
+                        subTopic: "Tiệm đồ cổ: Máy ảnh phim cổ (Vintage Cameras)",
+                        qEn: "Do you have any vintage film cameras from the 1970s?",
+                        qVi: "Cửa hàng có chiếc máy ảnh phim cổ điển nào từ thập niên 1970 không?",
+                        aEn: "Yes, we have two classic Japanese cameras on the glass shelf over there.",
+                        aVi: "Có ạ, chúng tôi có hai chiếc máy ảnh Nhật cổ điển trên kệ kính đằng kia.",
+                        keywordsAsk: ["vintage", "film cameras", "1970s", "camera"],
+                        keywordsAns: ["japanese", "cameras", "glass shelf", "classic", "over there", "yes", "shelf"]
+                    },
+                    // 9. Soi vết nứt / tình trạng phục chế (Checking Restoration)
+                    {
+                        id: 415,
+                        subTopic: "Tiệm đồ cổ: Tình trạng nguyên bản (Condition Check)",
+                        qEn: "Has this bronze statue ever been repaired or repainted?",
+                        qVi: "Bức tượng đồng này đã từng được sửa chữa hay sơn lại bao giờ chưa?",
+                        aEn: "No, it is in completely original condition with its natural patina.",
+                        aVi: "Chưa ạ, nó vẫn giữ nguyên trạng ban đầu với lớp màu gỉ đồng tự nhiên.",
+                        keywordsAsk: ["repaired", "repainted", "bronze statue", "restored"],
+                        keywordsAns: ["original", "condition", "patina", "natural", "no", "untouched", "never"]
+                    },
+                    // 10. Hỏi vận chuyển quốc tế tận nhà (International Shipping)
+                    {
+                        id: 416,
+                        subTopic: "Tiệm đồ cổ: Vận chuyển quốc tế (Global Shipping)",
+                        qEn: "This wooden cabinet is too big for my luggage. Do you ship internationally?",
+                        qVi: "Chiếc tủ gỗ này quá lớn so với hành lý của tôi. Bạn có giao hàng quốc tế không?",
+                        aEn: "Yes, we offer insured international shipping directly to your home address.",
+                        aVi: "Có ạ, chúng tôi có dịch vụ vận chuyển quốc tế có bảo hiểm giao thẳng tới tận nhà bạn.",
+                        keywordsAsk: ["ship internationally", "shipping", "too big", "cabinet"],
+                        keywordsAns: ["insured", "international", "shipping", "home address", "deliver", "yes", "courier"]
+                    },
+                    // 11. Hỏi cách vệ sinh, bảo quản đồ gỗ cổ (Antique Care)
+                    {
+                        id: 417,
+                        subTopic: "Tiệm đồ cổ: Cách bảo quản (Antique Maintenance)",
+                        qEn: "How should I clean and polish this antique silver tray?",
+                        qVi: "Tôi nên làm sạch và đánh bóng chiếc khay bạc cổ này như thế nào?",
+                        aEn: "Just wipe it gently with a soft dry microfiber cloth; avoid harsh chemicals.",
+                        aVi: "Chỉ cần lau nhẹ bằng khăn mềm khô; tránh dùng các hóa chất tẩy rửa mạnh nhé.",
+                        keywordsAsk: ["clean", "polish", "silver tray", "care"],
+                        keywordsAns: ["soft", "cloth", "gently", "avoid", "chemicals", "wipe", "dry"]
+                    }
+
 ]
 },
 q_s: {
@@ -1815,7 +3026,96 @@ title: "s. HOẠT ĐỘNG TỪ THIỆN (3 Tình huống)",
 items: [
 { id: 160, subTopic: "Tình huống 1: Quyên góp quần áo & sách", qEn: "I would like to donate some clothes and books.", qVi: "Tôi muốn quyên góp một ít quần áo và sách vở.", aEn: "Thank you so much for your kind heart.", aVi: "Cảm ơn tấm lòng nhân ái của bạn rất nhiều.", keywordsAsk: ["donate", "clothes"], keywordsAns: ["thank you", "thanks", "kind", "heart", "generous", "appreciate"] },
 { id: 161, subTopic: "Tình huống 2: Tham gia tình nguyện", qEn: "How can I join this volunteer program?", qVi: "Làm thế nào để tôi tham gia chương trình tình nguyện này?", aEn: "You can fill out this registration form.", aVi: "Bạn có thể điền thông tin vào phiếu đăng ký này ạ.", keywordsAsk: ["join", "volunteer"], keywordsAns: ["fill out", "registration", "form", "sign up", "welcome", "join"] },
-{ id: 162, subTopic: "Tình huống 3: Mục đích quỹ từ thiện", qEn: "Where will the charity funds go?", qVi: "Số tiền từ thiện này sẽ được chuyển đến đâu?", aEn: "All money goes to help poor children go to school.", aVi: "Toàn bộ số tiền sẽ dùng để giúp trẻ em nghèo đến trường.", keywordsAsk: ["charity funds", "where"], keywordsAns: ["money", "help", "poor", "children", "school", "education", "support"] }
+{ id: 162, subTopic: "Tình huống 3: Mục đích quỹ từ thiện", qEn: "Where will the charity funds go?", qVi: "Số tiền từ thiện này sẽ được chuyển đến đâu?", aEn: "All money goes to help poor children go to school.", aVi: "Toàn bộ số tiền sẽ dùng để giúp trẻ em nghèo đến trường.", keywordsAsk: ["charity funds", "where"], keywordsAns: ["money", "help", "poor", "children", "school", "education", "support"] },
+                    // 4. Quyên góp tiền mặt / Chuyển khoản quỹ từ thiện (Monetary Donation)
+                    {
+                        id: 418,
+                        subTopic: "Từ thiện: Đóng góp tài chính (Financial Donation)",
+                        qEn: "Can I make a cash donation or transfer money directly to your charity fund?",
+                        qVi: "Tôi có thể quyên góp tiền mặt hoặc chuyển khoản trực tiếp vào quỹ từ thiện của bạn không?",
+                        aEn: "Both are great! You can scan this QR code or place cash in the donation box.",
+                        aVi: "Cả hai cách đều tuyệt vời! Bạn có thể quét mã QR này hoặc bỏ tiền mặt vào thùng quyên góp.",
+                        keywordsAsk: ["cash donation", "transfer money", "charity fund", "donate money"],
+                        keywordsAns: ["qr code", "donation box", "cash", "transfer", "both", "thank", "receipt"]
+                    },
+                    // 5. Hỏi thời gian & địa điểm chiến dịch tình nguyện (Campaign Schedule)
+                    {
+                        id: 419,
+                        subTopic: "Từ thiện: Lịch trình hoạt động (Campaign Details)",
+                        qEn: "When and where will the community clean-up event take place?",
+                        qVi: "Sự kiện dọn dẹp vệ sinh cộng đồng sẽ diễn ra vào khi nào và ở đâu vậy?",
+                        aEn: "We are meeting at 7 AM this Sunday at the central beach park.",
+                        aVi: "Chúng tôi sẽ tập trung lúc 7 giờ sáng Chủ Nhật tuần này tại công viên bãi biển trung tâm.",
+                        keywordsAsk: ["when", "where", "clean-up", "take place", "event"],
+                        keywordsAns: ["7 am", "sunday", "beach park", "meeting", "morning", "central", "7"]
+                    },
+                    // 6. Hỏi kỹ năng cần thiết khi làm tình nguyện viên (Volunteer Skills)
+                    {
+                        id: 420,
+                        subTopic: "Từ thiện: Yêu cầu tình nguyện viên (Volunteer Requirements)",
+                        qEn: "Do I need any special teaching experience to volunteer at the shelter?",
+                        qVi: "Tôi có cần kinh nghiệm giảng dạy đặc biệt nào để làm tình nguyện viên tại mái ấm không?",
+                        aEn: "No experience is needed, just enthusiasm and a willingness to help the kids.",
+                        aVi: "Không cần kinh nghiệm đâu ạ, chỉ cần sự nhiệt tình và tấm lòng sẵn sàng giúp đỡ các em nhỏ.",
+                        keywordsAsk: ["experience", "volunteer", "shelter", "skills"],
+                        keywordsAns: ["no experience", "enthusiasm", "willingness", "help", "kids", "heart", "welcome"]
+                    },
+                    // 7. Quyên góp sách vở và đồ dùng học tập (Donating School Supplies)
+                    {
+                        id: 421,
+                        subTopic: "Từ thiện: Tặng dụng cụ học tập (School Supplies)",
+                        qEn: "What kind of school supplies do the mountain students need the most?",
+                        qVi: "Các em học sinh vùng cao đang cần nhất những loại đồ dùng học tập nào ạ?",
+                        aEn: "Notebooks, pens, backpacks, and warm winter jackets are most needed right now.",
+                        aVi: "Vở viết, bút, ba lô và áo khoác ấm mùa đông là những thứ cần thiết nhất lúc này ạ.",
+                        keywordsAsk: ["school supplies", "mountain students", "need the most"],
+                        keywordsAns: ["notebooks", "pens", "backpacks", "jackets", "warm", "books", "supplies"]
+                    },
+                    // 8. Tham gia bếp ăn từ thiện phát cơm miễn phí (Community Soup Kitchen)
+                    {
+                        id: 422,
+                        subTopic: "Từ thiện: Bếp ăn thiện nguyện (Charity Kitchen)",
+                        qEn: "How can I help at the free charity kitchen this weekend?",
+                        qVi: "Cuối tuần này tôi có thể phụ giúp gì tại bếp ăn từ thiện miễn phí ạ?",
+                        aEn: "You can help us pack lunch boxes and hand them out to patients at the hospital.",
+                        aVi: "Bạn có thể giúp chúng tôi đóng hộp cơm trưa và phát tận tay cho bệnh nhân ở bệnh viện.",
+                        keywordsAsk: ["charity kitchen", "how can i help", "free meals", "weekend"],
+                        keywordsAns: ["pack", "lunch boxes", "hand them out", "patients", "hospital", "meals", "help"]
+                    },
+                    // 9. Hiến máu nhân đạo (Blood Donation Drive)
+                    {
+                        id: 423,
+                        subTopic: "Từ thiện: Hiến máu nhân đạo (Blood Donation)",
+                        qEn: "Where is the nearest blood donation center, and what should I do before donating?",
+                        qVi: "Trung tâm hiến máu gần nhất ở đâu, và tôi nên chuẩn bị gì trước khi hiến máu?",
+                        aEn: "It is at the Red Cross building. Make sure you eat a light meal and drink plenty of water.",
+                        aVi: "Trung tâm ở tòa nhà Hội Chữ Thập Đỏ. Bạn nhớ ăn nhẹ và uống nhiều nước trước khi đi nhé.",
+                        keywordsAsk: ["blood donation", "donating", "before", "center"],
+                        keywordsAns: ["red cross", "light meal", "drink", "water", "sleep", "eat", "center"]
+                    },
+                    // 10. Mua sản phẩm thủ công gây quỹ từ thiện (Charity Fundraising Sale)
+                    {
+                        id: 424,
+                        subTopic: "Từ thiện: Mua hàng gây quỹ (Fundraising Sale)",
+                        qEn: "Are these handmade bracelets sold to raise money for disabled artisans?",
+                        qVi: "Những chiếc vòng tay thủ công này được bán để gây quỹ cho các nghệ nhân khuyết tật phải không?",
+                        aEn: "Yes, one hundred percent of the profits go directly to support their workshops.",
+                        aVi: "Đúng vậy ạ, 100% lợi nhuận sẽ được chuyển trực tiếp để hỗ trợ xưởng làm việc của họ.",
+                        keywordsAsk: ["bracelets", "raise money", "disabled", "fundraising"],
+                        keywordsAns: ["one hundred percent", "profits", "support", "workshops", "yes", "directly", "100"]
+                    },
+                    // 11. Cảm ơn và trao giấy chứng nhận tình nguyện (Volunteer Appreciation)
+                    {
+                        id: 425,
+                        subTopic: "Từ thiện: Trao chứng nhận (Volunteer Certificate)",
+                        qEn: "Thank you for dedicating your time to our charity project. Here is your certificate!",
+                        qVi: "Cảm ơn bạn đã dành thời gian cống hiến cho dự án từ thiện. Giấy chứng nhận của bạn đây!",
+                        aEn: "It was a meaningful experience for me. I will definitely join again next time!",
+                        aVi: "Đó là một trải nghiệm vô cùng ý nghĩa đối với tôi. Lần sau tôi nhất định sẽ tham gia tiếp!",
+                        keywordsAsk: ["dedicating", "certificate", "charity project", "thank you"],
+                        keywordsAns: ["meaningful", "experience", "join again", "definitely", "happy", "pleasure", "thank"]
+                    }
+
 ]
 },
 q_t: {
@@ -1965,7 +3265,96 @@ items: [
 { id: 198, subTopic: "Tình huống 3: Mở tài khoản ngân hàng", qEn: "I would like to open a personal savings account.", qVi: "Tôi muốn mở một tài khoản tiết kiệm cá nhân.", aEn: "Please fill out this application form and provide your ID card.", aVi: "Vui lòng điền vào mẫu đơn đăng ký này và xuất trình căn cước công dân ạ.", keywordsAsk: ["open", "savings account"], keywordsAns: ["fill out", "application form", "id card", "passport", "sign", "account"] },
 { id: 199, subTopic: "Tình huống 4: Chuyển tiền quốc tế", qEn: "How long does an international wire transfer usually take?", qVi: "Chuyển tiền quốc tế thường mất bao lâu thì người nhận nhận được ạ?", aEn: "It normally takes two to three business days to arrive.", aVi: "Thông thường sẽ mất từ 2 đến 3 ngày làm việc tiền sẽ tới nơi ạ.", keywordsAsk: ["wire transfer", "how long"], keywordsAns: ["two", "three", "business days", "arrive", "days", "account"] },
 { id: 200, subTopic: "Tình huống 5: Thẻ ATM bị nuốt / khóa", qEn: "Excuse me, the ATM outside just swallowed my credit card!", qVi: "Xin lỗi, cây ATM bên ngoài vừa mới nuốt thẻ tín dụng của tôi rồi!", aEn: "Do not worry. Please show me your ID so our staff can retrieve it for you.", aVi: "Đừng lo lắng ạ. Vui lòng xuất trình giấy tờ tùy thân để nhân viên lấy thẻ lại giúp bạn.", keywordsAsk: ["atm", "swallowed", "credit card"], keywordsAns: ["worry", "id", "staff", "retrieve", "card", "help", "back"] },
-{ id: 201, subTopic: "Tình huống 6: Đổi tiền lẻ", qEn: "Could you break this one-hundred-dollar bill into smaller notes?", qVi: "Bạn có thể đổi tờ 100 đô này ra các tờ tiền mệnh giá nhỏ hơn giúp tôi không?", aEn: "Sure, would you like twenty-dollar bills or ten-dollar bills?", aVi: "Được ạ, quý khách muốn lấy tờ 20 đô hay tờ 10 đô ạ?", keywordsAsk: ["break", "smaller notes"], keywordsAns: ["sure", "twenty", "ten", "bills", "notes", "change", "20", "10"] }
+{ id: 201, subTopic: "Tình huống 6: Đổi tiền lẻ", qEn: "Could you break this one-hundred-dollar bill into smaller notes?", qVi: "Bạn có thể đổi tờ 100 đô này ra các tờ tiền mệnh giá nhỏ hơn giúp tôi không?", aEn: "Sure, would you like twenty-dollar bills or ten-dollar bills?", aVi: "Được ạ, quý khách muốn lấy tờ 20 đô hay tờ 10 đô ạ?", keywordsAsk: ["break", "smaller notes"], keywordsAns: ["sure", "twenty", "ten", "bills", "notes", "change", "20", "10"] },
+                    // 7. Rút tiền mặt tại quầy giao dịch (Cash Withdrawal)
+                    {
+                        id: 346,
+                        subTopic: "Ngân hàng: Rút tiền tại quầy (Cash Withdrawal)",
+                        qEn: "Good morning! How can I help you with your banking today?",
+                        qVi: "Chào buổi sáng! Hôm nay tôi có thể giúp gì cho giao dịch ngân hàng của bạn?",
+                        aEn: "I would like to withdraw two thousand dollars from my checking account.",
+                        aVi: "Tôi muốn rút hai nghìn đô la từ tài khoản thanh toán của mình.",
+                        keywordsAsk: ["banking", "help you", "good morning"],
+                        keywordsAns: ["withdraw", "two thousand", "dollars", "checking account", "account", "cash", "2000"]
+                    },
+                    // 8. Nộp tiền vào tài khoản (Depositing Money)
+                    {
+                        id: 347,
+                        subTopic: "Ngân hàng: Nộp tiền mặt (Cash Deposit)",
+                        qEn: "Would you like to deposit this cash into your savings or checking account?",
+                        qVi: "Quý khách muốn nộp số tiền mặt này vào tài khoản tiết kiệm hay tài khoản thanh toán?",
+                        aEn: "Please put it into my savings account. Here is my deposit slip.",
+                        aVi: "Vui lòng nộp vào tài khoản tiết kiệm giúp tôi. Phiếu nộp tiền của tôi đây ạ.",
+                        keywordsAsk: ["deposit", "savings", "checking account"],
+                        keywordsAns: ["savings account", "deposit slip", "put it", "checking", "here", "please"]
+                    },
+                    // 9. Báo mất thẻ ngân hàng & Khóa thẻ khẩn cấp (Lost Card)
+                    {
+                        id: 348,
+                        subTopic: "Ngân hàng: Báo mất thẻ (Lost Card)",
+                        qEn: "I lost my wallet and need to block my debit card immediately!",
+                        qVi: "Tôi bị mất ví và cần khóa thẻ ghi nợ ngay lập tức!",
+                        aEn: "I have frozen your card right away. We can issue a replacement card within three days.",
+                        aVi: "Tôi đã khóa thẻ của bạn ngay lập tức rồi. Chúng tôi có thể cấp lại thẻ mới trong vòng 3 ngày.",
+                        keywordsAsk: ["lost my wallet", "block", "debit card", "stolen"],
+                        keywordsAns: ["frozen", "blocked", "right away", "replacement card", "three days", "new card", "safe"]
+                    },
+                    // 10. Kiểm tra số dư tài khoản (Checking Account Balance)
+                    {
+                        id: 349,
+                        subTopic: "Ngân hàng: Kiểm tra số dư (Account Balance)",
+                        qEn: "Could you help me check my current account balance?",
+                        qVi: "Bạn có thể giúp tôi kiểm tra số dư tài khoản hiện tại được không?",
+                        aEn: "Certainly! Please insert your card and enter your PIN on the keypad.",
+                        aVi: "Chắc chắn rồi! Vui lòng đưa thẻ vào và nhập mã PIN trên bàn phím ạ.",
+                        keywordsAsk: ["account balance", "check", "balance"],
+                        keywordsAns: ["insert", "card", "enter", "pin", "keypad", "certainly", "balance"]
+                    },
+                    // 11. Hỏi phí giao dịch / Phí chuyển đổi ngoại tệ (Transaction Fees)
+                    {
+                        id: 350,
+                        subTopic: "Ngân hàng: Hỏi phí dịch vụ (Service Fees)",
+                        qEn: "Is there any commission fee for exchanging foreign currency here?",
+                        qVi: "Đổi ngoại tệ ở đây có mất phí hoa hồng nào không ạ?",
+                        aEn: "No, we offer zero commission fees for currency exchange over one hundred dollars.",
+                        aVi: "Không ạ, chúng tôi miễn phí hoa hồng cho các giao dịch đổi tiền trên 100 đô la.",
+                        keywordsAsk: ["commission fee", "fee", "foreign currency", "charge"],
+                        keywordsAns: ["zero", "no fee", "commission", "free", "over", "hundred", "100"]
+                    },
+                    // 12. Cập nhật số điện thoại / Thông tin cá nhân (Updating Contact Info)
+                    {
+                        id: 351,
+                        subTopic: "Ngân hàng: Cập nhật thông tin (Updating Info)",
+                        qEn: "I changed my phone number and want to update it for SMS banking.",
+                        qVi: "Tôi mới đổi số điện thoại và muốn cập nhật lại cho dịch vụ tin nhắn ngân hàng.",
+                        aEn: "Please sign this customer information update form with your passport.",
+                        aVi: "Vui lòng ký vào mẫu cập nhật thông tin khách hàng này kèm theo hộ chiếu của bạn.",
+                        keywordsAsk: ["changed my phone", "update", "sms banking", "phone number"],
+                        keywordsAns: ["sign", "form", "update", "passport", "id", "information", "customer"]
+                    },
+                    // 13. Hỏi về lãi suất tiết kiệm (Interest Rates)
+                    {
+                        id: 352,
+                        subTopic: "Ngân hàng: Hỏi lãi suất (Interest Rates)",
+                        qEn: "What is the annual interest rate for a twelve-month fixed deposit?",
+                        qVi: "Lãi suất hằng năm cho khoản tiền gửi có kỳ hạn 12 tháng là bao nhiêu ạ?",
+                        aEn: "Our current interest rate is five point five percent per year.",
+                        aVi: "Lãi suất hiện tại của chúng tôi là 5,5% mỗi năm ạ.",
+                        keywordsAsk: ["interest rate", "twelve-month", "fixed deposit", "savings"],
+                        keywordsAns: ["percent", "five", "point", "per year", "interest", "rate", "5.5"]
+                    },
+                    // 14. Kích hoạt thanh toán quốc tế cho thẻ (International Card Activation)
+                    {
+                        id: 353,
+                        subTopic: "Ngân hàng: Mở thanh toán quốc tế (International Usage)",
+                        qEn: "Can I use this Visa card while traveling abroad in Europe?",
+                        qVi: "Tôi có thể sử dụng thẻ Visa này khi đi du lịch nước ngoài ở châu Âu không?",
+                        aEn: "Yes, just let us activate international roaming on your card before your trip.",
+                        aVi: "Được ạ, bạn chỉ cần để chúng tôi kích hoạt tính năng thanh toán quốc tế trên thẻ trước chuyến đi.",
+                        keywordsAsk: ["visa card", "traveling abroad", "europe", "use this card"],
+                        keywordsAns: ["activate", "international", "roaming", "abroad", "yes", "before", "trip"]
+                    }
+
 ]
 },
 q_y: {
@@ -2090,7 +3479,96 @@ items: [
 { id: 224, subTopic: "Tình huống 3: Lý do ứng tuyển", qEn: "Why do you want to work for our company?", qVi: "Tại sao bạn lại muốn làm việc cho công ty chúng tôi?", aEn: "I admire your company's reputation and see great growth opportunities here.", aVi: "Tôi ngưỡng mộ uy tín của công ty và thấy nhiều cơ hội phát triển tại đây.", keywordsAsk: ["why do you want", "our company"], keywordsAns: ["admire", "reputation", "growth", "opportunities", "contribute", "skills"] },
 { id: 225, subTopic: "Tình huống 4: Kỹ năng làm việc nhóm", qEn: "How do you handle disagreements with your coworkers?", qVi: "Bạn xử lý thế nào khi có bất đồng quan điểm với đồng nghiệp?", aEn: "I listen calmly to their ideas and find the best solution together.", aVi: "Tôi bình tĩnh lắng nghe ý kiến của họ và cùng nhau tìm giải pháp tốt nhất.", keywordsAsk: ["disagreements", "coworkers"], keywordsAns: ["listen", "calmly", "ideas", "solution", "together", "respect", "discuss"] },
 { id: 226, subTopic: "Tình huống 5: Mức lương mong muốn", qEn: "What are your salary expectations for this position?", qVi: "Mức lương mong muốn của bạn cho vị trí này là bao nhiêu?", aEn: "I am flexible and open to a fair offer based on my skills.", aVi: "Tôi khá linh hoạt và sẵn sàng đón nhận mức đề xuất xứng đáng với năng lực.", keywordsAsk: ["salary expectations", "position"], keywordsAns: ["flexible", "open", "fair", "offer", "skills", "experience", "negotiable"] },
-{ id: 227, subTopic: "Tình huống 6: Đặt câu hỏi cho nhà tuyển dụng", qEn: "Do you have any questions for us before we finish?", qVi: "Bạn có câu hỏi nào dành cho chúng tôi trước khi kết thúc buổi phỏng vấn không?", aEn: "Yes, could you tell me about the next steps in the hiring process?", aVi: "Vâng, anh/chị có thể cho tôi biết các bước tiếp theo trong quy trình tuyển dụng không ạ?", keywordsAsk: ["any questions", "before we finish"], keywordsAns: ["next steps", "hiring process", "team", "training", "start", "culture"] }
+{ id: 227, subTopic: "Tình huống 6: Đặt câu hỏi cho nhà tuyển dụng", qEn: "Do you have any questions for us before we finish?", qVi: "Bạn có câu hỏi nào dành cho chúng tôi trước khi kết thúc buổi phỏng vấn không?", aEn: "Yes, could you tell me about the next steps in the hiring process?", aVi: "Vâng, anh/chị có thể cho tôi biết các bước tiếp theo trong quy trình tuyển dụng không ạ?", keywordsAsk: ["any questions", "before we finish"], keywordsAns: ["next steps", "hiring process", "team", "training", "start", "culture"] },
+                    // 7. Hỏi về điểm yếu của bản thân (Greatest Weakness)
+                    {
+                        id: 330,
+                        subTopic: "Phỏng vấn: Điểm yếu (Greatest Weakness)",
+                        qEn: "What would you say is your biggest weakness?",
+                        qVi: "Bạn thấy điểm yếu lớn nhất của mình là gì?",
+                        aEn: "Sometimes I focus too much on small details, so I am learning to manage my time better.",
+                        aVi: "Đôi khi tôi quá tập trung vào các chi tiết nhỏ, vì vậy tôi đang học cách quản lý thời gian tốt hơn.",
+                        keywordsAsk: ["biggest weakness", "weakness", "improve"],
+                        keywordsAns: ["details", "manage", "time", "better", "improving", "working on", "focus"]
+                    },
+                    // 8. Lý do nghỉ việc ở công ty cũ (Reason for Leaving)
+                    {
+                        id: 331,
+                        subTopic: "Phỏng vấn: Lý do nghỉ việc (Reason for Leaving)",
+                        qEn: "Why did you decide to leave your previous job?",
+                        qVi: "Tại sao bạn lại quyết định rời bỏ công ty cũ?",
+                        aEn: "I am looking for new challenges and a chance to take on more responsibility.",
+                        aVi: "Tôi đang tìm kiếm những thử thách mới và cơ hội đảm nhận nhiều trách nhiệm hơn.",
+                        keywordsAsk: ["leave", "previous job", "last company", "why did you"],
+                        keywordsAns: ["new challenges", "challenges", "responsibility", "grow", "career", "opportunities", "looking for"]
+                    },
+                    // 9. Xử lý áp lực và hạn chót (Handling Pressure & Deadlines)
+                    {
+                        id: 332,
+                        subTopic: "Phỏng vấn: Chịu áp lực (Handling Pressure)",
+                        qEn: "How do you stay calm when facing tight deadlines?",
+                        qVi: "Bạn giữ bình tĩnh như thế nào khi phải đối mặt với những hạn chót gấp gáp?",
+                        aEn: "I prioritize the most urgent tasks first and break the work into smaller steps.",
+                        aVi: "Tôi ưu tiên giải quyết những việc khẩn cấp nhất trước và chia nhỏ công việc thành từng bước.",
+                        keywordsAsk: ["stay calm", "tight deadlines", "pressure", "stress"],
+                        keywordsAns: ["prioritize", "urgent", "tasks", "smaller steps", "plan", "focus", "calm"]
+                    },
+                    // 10. Thành tựu tự hào nhất (Greatest Achievement)
+                    {
+                        id: 333,
+                        subTopic: "Phỏng vấn: Thành tựu nổi bật (Key Achievement)",
+                        qEn: "What professional achievement are you most proud of?",
+                        qVi: "Thành tựu nghề nghiệp nào khiến bạn tự hào nhất?",
+                        aEn: "I led a team project that increased customer satisfaction by thirty percent.",
+                        aVi: "Tôi đã dẫn dắt một dự án nhóm giúp tăng mức độ hài lòng của khách hàng lên 30%.",
+                        keywordsAsk: ["achievement", "proud of", "accomplishment"],
+                        keywordsAns: ["led", "team", "project", "increased", "thirty", "percent", "customer", "proud", "30"]
+                    },
+                    // 11. Mục tiêu nghề nghiệp 5 năm tới (5-Year Career Goal)
+                    {
+                        id: 334,
+                        subTopic: "Phỏng vấn: Mục tiêu 5 năm (5-Year Plan)",
+                        qEn: "Where do you see yourself in five years?",
+                        qVi: "Bạn thấy mình đang ở vị trí nào trong 5 năm tới?",
+                        aEn: "I hope to become a senior specialist and mentor junior team members.",
+                        aVi: "Tôi hy vọng sẽ trở thành một chuyên viên cao cấp và hướng dẫn cho các thành viên mới.",
+                        keywordsAsk: ["five years", "see yourself", "career goal", "future"],
+                        keywordsAns: ["senior", "specialist", "mentor", "manager", "leader", "grow", "develop", "team"]
+                    },
+                    // 12. Khả năng làm việc độc lập hay theo nhóm (Teamwork vs Independent)
+                    {
+                        id: 335,
+                        subTopic: "Phỏng vấn: Phong cách làm việc (Work Style)",
+                        qEn: "Do you prefer working independently or as part of a team?",
+                        qVi: "Bạn thích làm việc độc lập hay làm việc theo nhóm hơn?",
+                        aEn: "I enjoy both. I can work independently on tasks and collaborate well in a team.",
+                        aVi: "Tôi thích cả hai. Tôi có thể tự chủ hoàn thành nhiệm vụ và cũng phối hợp rất tốt khi làm nhóm.",
+                        keywordsAsk: ["independently", "part of a team", "teamwork", "alone"],
+                        keywordsAns: ["both", "independently", "collaborate", "team", "flexible", "enjoy", "well"]
+                    },
+                    // 13. Thời gian có thể bắt đầu nhận việc (Start Date Availability)
+                    {
+                        id: 336,
+                        subTopic: "Phỏng vấn: Thời gian nhận việc (Start Date)",
+                        qEn: "If hired, how soon would you be able to start working?",
+                        qVi: "Nếu được tuyển dụng, bao lâu nữa bạn có thể bắt đầu đi làm?",
+                        aEn: "I can start immediately, or after giving a two-week notice to my current employer.",
+                        aVi: "Tôi có thể bắt đầu ngay lập tức, hoặc sau khi báo trước hai tuần cho công ty hiện tại.",
+                        keywordsAsk: ["start working", "how soon", "available to start", "if hired"],
+                        keywordsAns: ["immediately", "two-week", "two weeks", "notice", "next month", "monday", "ready", "2 weeks"]
+                    },
+                    // 14. Hỏi về văn hóa công ty (Company Culture Question)
+                    {
+                        id: 337,
+                        subTopic: "Phỏng vấn: Văn hóa công ty (Company Culture)",
+                        qEn: "How would you describe the working environment and team culture here?",
+                        qVi: "Anh/chị có thể mô tả về môi trường làm việc và văn hóa đội ngũ ở đây không?",
+                        aEn: "We value open communication, creativity, and supporting one another every day.",
+                        aVi: "Chúng tôi đề cao sự giao tiếp cởi mở, tính sáng tạo và luôn hỗ trợ lẫn nhau mỗi ngày.",
+                        keywordsAsk: ["working environment", "company culture", "team culture"],
+                        keywordsAns: ["communication", "creativity", "supporting", "friendly", "collaborative", "environment", "culture"]
+                    }
+
 ]
 },
 q_bb: {
@@ -2102,10 +3580,215 @@ items: [
 { id: 229, subTopic: "Tình huống 2: Chờ nối máy", qEn: "Please hold the line for a moment. I will transfer your call.", qVi: "Vui lòng giữ máy một lát ạ. Tôi sẽ chuyển máy cho anh ngay.", aEn: "Thank you very much. I will wait.", aVi: "Cảm ơn bạn rất nhiều. Tôi sẽ chờ máy.", keywordsAsk: ["hold the line", "transfer"], keywordsAns: ["thank you", "thanks", "wait", "hold", "okay", "sure"] },
 { id: 230, subTopic: "Tình huống 3: Người cần gặp đi vắng", qEn: "I am sorry, he is in a meeting right now. Can I take a message?", qVi: "Xin lỗi, anh ấy đang họp rồi ạ. Tôi có thể ghi lại lời nhắn không?", aEn: "Please tell him to call me back when he is free.", aVi: "Làm ơn nhắn anh ấy gọi lại cho tôi khi rảnh nhé.", keywordsAsk: ["in a meeting", "take a message"], keywordsAns: ["tell him", "call me back", "free", "message", "number", "later"] },
 { id: 231, subTopic: "Tình huống 4: Đặt lịch hẹn công việc", qEn: "I am calling to schedule a meeting for next Tuesday morning.", qVi: "Tôi gọi để sắp xếp một cuộc hẹn vào sáng thứ Ba tuần tới.", aEn: "Let me check my calendar. Tuesday at 10 AM works well for me.", aVi: "Để tôi xem lịch nhé. Thứ Ba lúc 10 giờ sáng rất thuận tiện với tôi.", keywordsAsk: ["schedule a meeting", "tuesday"], keywordsAns: ["calendar", "tuesday", "10 am", "works well", "available", "confirm"] },
-{ id: 232, subTopic: "Tình huống 5: Gọi nhầm số", qEn: "Is this the number for the Grand Hotel reception?", qVi: "Đây có phải số điện thoại lễ tân khách sạn Grand không ạ?", aEn: "I think you have dialed the wrong number. This is a private residence.", aVi: "Tôi nghĩ bạn gọi nhầm số rồi. Đây là số nhà riêng ạ.", keywordsAsk: ["grand hotel", "reception"], keywordsAns: ["wrong number", "dialed", "private", "residence", "sorry", "mistake"] }
-]
-}
+{ id: 232, subTopic: "Tình huống 5: Gọi nhầm số", qEn: "Is this the number for the Grand Hotel reception?", qVi: "Đây có phải số điện thoại lễ tân khách sạn Grand không ạ?", aEn: "I think you have dialed the wrong number. This is a private residence.", aVi: "Tôi nghĩ bạn gọi nhầm số rồi. Đây là số nhà riêng ạ.", keywordsAsk: ["grand hotel", "reception"], keywordsAns: ["wrong number", "dialed", "private", "residence", "sorry", "mistake"] },
+                    // 6. Tín hiệu đường truyền kém / Nghe không rõ (Bad Connection)
+                    {
+                        id: 338,
+                        subTopic: "Điện thoại: Sóng yếu / Nghe không rõ (Bad Connection)",
+                        qEn: "Hello? I can barely hear you. The signal is breaking up.",
+                        qVi: "Alo? Tôi hầu như không nghe thấy bạn nói gì. Tín hiệu đang bị ngắt quãng.",
+                        aEn: "Sorry about that! Let me move closer to the window and call you right back.",
+                        aVi: "Xin lỗi nhé! Để tôi di chuyển lại gần cửa sổ rồi gọi lại cho bạn ngay.",
+                        keywordsAsk: ["barely hear", "breaking up", "signal", "connection"],
+                        keywordsAns: ["move closer", "window", "call you back", "right back", "sorry", "signal", "hear"]
+                    },
+                    // 7. Xin phép bật loa ngoài (Putting on Speakerphone)
+                    {
+                        id: 339,
+                        subTopic: "Điện thoại: Bật loa ngoài (Speakerphone)",
+                        qEn: "Do you mind if I put you on speakerphone so my colleague can listen too?",
+                        qVi: "Bạn có phiền không nếu tôi bật loa ngoài để đồng nghiệp của tôi cùng nghe?",
+                        aEn: "Not at all! Go right ahead, I am ready to share the updates.",
+                        aVi: "Không phiền chút nào! Bạn cứ bật đi, tôi sẵn sàng chia sẻ thông tin cập nhật rồi.",
+                        keywordsAsk: ["speakerphone", "do you mind", "colleague", "listen"],
+                        keywordsAns: ["not at all", "go ahead", "right ahead", "sure", "ready", "updates", "no problem"]
+                    },
+                    // 8. Nhờ nhắc lại số điện thoại / Đánh vần tên (Spelling Name & Number)
+                    {
+                        id: 340,
+                        subTopic: "Điện thoại: Đánh vần & Đọc lại số (Confirming Details)",
+                        qEn: "Could you spell your last name and repeat your phone number slowly?",
+                        qVi: "Bạn có thể đánh vần họ của mình và đọc lại số điện thoại thật chậm được không?",
+                        aEn: "Sure, it is N-G-U-Y-E-N, and my number is 0912-345-678.",
+                        aVi: "Chắc chắn rồi, họ tôi đánh vần là N-G-U-Y-E-N, và số của tôi là 0912-345-678.",
+                        keywordsAsk: ["spell", "last name", "repeat", "phone number", "slowly"],
+                        keywordsAns: ["nguyen", "number", "spell", "sure", "zero", "nine", "0912"]
+                    },
+                    // 9. Hẹn gọi lại sau vì đang bận (Busy & Calling Back)
+                    {
+                        id: 341,
+                        subTopic: "Điện thoại: Đang bận lái xe/họp (Busy Right Now)",
+                        qEn: "Hi, is this a good time to talk for a few minutes?",
+                        qVi: "Chào bạn, lúc này có thuận tiện để nói chuyện vài phút không?",
+                        aEn: "I'm actually driving right now. Can I call you back in twenty minutes?",
+                        aVi: "Hiện tại tôi đang lái xe. Tôi gọi lại cho bạn sau 20 phút nữa được không?",
+                        keywordsAsk: ["good time to talk", "free to talk", "few minutes"],
+                        keywordsAns: ["driving", "busy", "call you back", "twenty minutes", "later", "minutes", "20"]
+                    },
+                    // 10. Đặt bàn nhà hàng qua điện thoại (Phone Reservation)
+                    {
+                        id: 342,
+                        subTopic: "Điện thoại: Đặt chỗ trước (Phone Booking)",
+                        qEn: "Good afternoon, Lotus Restaurant. How can I assist you?",
+                        qVi: "Chào buổi chiều, Nhà hàng Hoa Sen xin nghe. Tôi có thể hỗ trợ gì cho quý khách?",
+                        aEn: "I'd like to reserve a table for four people under the name of Nam at 7 PM.",
+                        aVi: "Tôi muốn đặt một bàn cho 4 người dưới tên Nam vào lúc 7 giờ tối.",
+                        keywordsAsk: ["restaurant", "assist you", "booking"],
+                        keywordsAns: ["reserve", "table", "four people", "under the name", "7 pm", "book", "4"]
+                    },
+                    // 11. Gọi xác nhận giao hàng (Delivery Confirmation)
+                    {
+                        id: 343,
+                        subTopic: "Điện thoại: Nhận hàng giao tận nơi (Delivery Call)",
+                        qEn: "Hello, I'm your delivery driver. I'm waiting outside your building gate.",
+                        qVi: "Xin chào, tôi là nhân viên giao hàng. Tôi đang đợi ở ngoài cổng tòa nhà của bạn.",
+                        aEn: "Great! Please wait two minutes, I am coming down to pick up the package now.",
+                        aVi: "Tuyệt quá! Vui lòng đợi 2 phút nhé, tôi đang đi xuống lấy gói hàng ngay đây.",
+                        keywordsAsk: ["delivery driver", "outside", "building gate", "package"],
+                        keywordsAns: ["wait", "two minutes", "coming down", "pick up", "package", "right there", "2"]
+                    },
+                    // 12. Hủy hoặc dời lịch hẹn qua điện thoại (Rescheduling via Phone)
+                    {
+                        id: 344,
+                        subTopic: "Điện thoại: Dời lịch hẹn (Rescheduling)",
+                        qEn: "I'm calling to ask if we can move our Thursday appointment to Friday.",
+                        qVi: "Tôi gọi để hỏi xem chúng ta có thể dời cuộc hẹn thứ Năm sang thứ Sáu được không.",
+                        aEn: "Let me check my schedule. Yes, Friday at the same time works perfectly.",
+                        aVi: "Để tôi kiểm tra lịch nhé. Vâng, thứ Sáu vào cùng khung giờ đó rất ổn ạ.",
+                        keywordsAsk: ["move", "appointment", "thursday", "friday", "reschedule"],
+                        keywordsAns: ["schedule", "friday", "same time", "works perfectly", "available", "sure", "okay"]
+                    },
+                    // 13. Kết thúc cuộc gọi lịch sự (Ending a Phone Call)
+                    {
+                        id: 345,
+                        subTopic: "Điện thoại: Chào kết thúc cuộc gọi (Hanging Up)",
+                        qEn: "Thanks for calling and sharing all the details. Talk to you soon!",
+                        qVi: "Cảm ơn bạn đã gọi và chia sẻ đầy đủ thông tin. Nói chuyện với bạn sau nhé!",
+                        aEn: "You're very welcome! Have a wonderful day. Goodbye!",
+                        aVi: "Không có gì đâu! Chúc bạn một ngày tuyệt vời. Tạm biệt nhé!",
+                        keywordsAsk: ["thanks for calling", "talk to you soon", "details"],
+                        keywordsAns: ["welcome", "wonderful day", "goodbye", "bye", "take care", "thank"]
+                    }
 
+]
+},
+
+            q_cc: {
+                id: "q_cc",
+                title: "cc. THỜI TIẾT & KHÍ HẬU (Weather & Climate)",
+                items: [
+                    // 1. Hỏi thăm thời tiết hôm nay
+                    {
+                        id: 426,
+                        subTopic: "Thời tiết: Hỏi thời tiết hôm nay (Today's Weather)",
+                        qEn: "What is the weather like outside today?",
+                        qVi: "Thời tiết bên ngoài hôm nay như thế nào?",
+                        aEn: "It is sunny and warm with a gentle breeze.",
+                        aVi: "Trời nắng ấm và có gió thổi hiu hiu rất dễ chịu.",
+                        keywordsAsk: ["weather like", "outside", "today", "weather"],
+                        keywordsAns: ["sunny", "warm", "breeze", "rainy", "cloudy", "hot", "cold", "nice"]
+                    },
+                    // 2. Hỏi dự báo thời tiết ngày mai
+                    {
+                        id: 427,
+                        subTopic: "Thời tiết: Dự báo ngày mai (Weather Forecast)",
+                        qEn: "Did you check the weather forecast for tomorrow?",
+                        qVi: "Bạn đã xem dự báo thời tiết cho ngày mai chưa?",
+                        aEn: "Yes, it is supposed to rain heavily in the afternoon.",
+                        aVi: "Rồi, dự báo chiều mai trời sẽ mưa to đấy.",
+                        keywordsAsk: ["forecast", "tomorrow", "rain", "check"],
+                        keywordsAns: ["rain", "heavily", "afternoon", "forecast", "sunny", "cloudy", "storm", "yes"]
+                    },
+                    // 3. Thời tiết nắng nóng mùa hè
+                    {
+                        id: 428,
+                        subTopic: "Thời tiết: Nắng nóng mùa hè (Hot Summer)",
+                        qEn: "It is boiling hot today! How hot is it right now?",
+                        qVi: "Hôm nay trời nóng như thiêu đốt! Bây giờ nhiệt độ là bao nhiêu vậy?",
+                        aEn: "It is thirty-eight degrees Celsius. Remember to drink plenty of water.",
+                        aVi: "Nhiệt độ đang là 38 độ C. Nhớ uống thật nhiều nước nhé.",
+                        keywordsAsk: ["boiling hot", "how hot", "temperature", "degrees"],
+                        keywordsAns: ["thirty-eight", "degrees", "celsius", "water", "hot", "sunscreen", "38"]
+                    },
+                    // 4. Trời mưa rào bất chợt & Mang ô
+                    {
+                        id: 429,
+                        subTopic: "Thời tiết: Trời mưa & Mang ô (Rain & Umbrella)",
+                        qEn: "The sky looks dark and overcast. Did you bring an umbrella?",
+                        qVi: "Bầu trời trông tối sầm và nhiều mây đen. Bạn có mang theo ô không?",
+                        aEn: "Yes, I always keep a folding umbrella in my backpack.",
+                        aVi: "Có, tôi luôn để sẵn một chiếc ô gấp trong ba lô.",
+                        keywordsAsk: ["umbrella", "dark", "overcast", "sky", "rain"],
+                        keywordsAns: ["umbrella", "backpack", "raincoat", "always", "yes", "forgot", "bring"]
+                    },
+                    // 5. Thời tiết lạnh giá mùa đông
+                    {
+                        id: 430,
+                        subTopic: "Thời tiết: Trời rét lạnh (Chilly Winter)",
+                        qEn: "Are you dressed warmly enough? It is freezing cold outside!",
+                        qVi: "Bạn đã mặc đủ ấm chưa? Ngoài trời đang lạnh cóng đấy!",
+                        aEn: "I am wearing a thick winter coat, a scarf, and warm gloves.",
+                        aVi: "Tôi đang mặc áo khoác mùa đông dày, khăn quàng cổ và găng tay ấm rồi.",
+                        keywordsAsk: ["freezing", "cold", "warmly", "coat"],
+                        keywordsAns: ["coat", "scarf", "gloves", "sweater", "warm", "thick", "jacket", "wearing"]
+                    },
+                    // 6. Thời tiết nồm ẩm / Độ ẩm cao
+                    {
+                        id: 431,
+                        subTopic: "Thời tiết: Trời nồm ẩm (High Humidity)",
+                        qEn: "Why does the air feel so sticky and humid today?",
+                        qVi: "Tại sao không khí hôm nay cảm giác dính rít và ẩm ướt thế nhỉ?",
+                        aEn: "Because the humidity is over ninety percent before the rainstorm.",
+                        aVi: "Vì độ ẩm đang ở mức trên 90% trước cơn giông bão đấy.",
+                        keywordsAsk: ["sticky", "humid", "humidity", "air"],
+                        keywordsAns: ["humidity", "ninety", "percent", "rainstorm", "wet", "damp", "90"]
+                    },
+                    // 7. Sương mù dày đặc khi lái xe
+                    {
+                        id: 432,
+                        subTopic: "Thời tiết: Sương mù dày đặc (Heavy Fog)",
+                        qEn: "Be careful driving on the mountain road; it is very foggy this morning.",
+                        qVi: "Cẩn thận khi lái xe trên đường đèo nhé; sáng nay sương mù dày đặc lắm.",
+                        aEn: "Thanks for the warning. I will turn on my fog lights and drive slowly.",
+                        aVi: "Cảm ơn lời cảnh báo của bạn. Tôi sẽ bật đèn sương mù và lái xe thật chậm.",
+                        keywordsAsk: ["foggy", "mountain road", "driving", "visibility"],
+                        keywordsAns: ["fog lights", "slowly", "careful", "warning", "thank", "drive", "lights"]
+                    },
+                    // 8. Mùa yêu thích nhất trong năm
+                    {
+                        id: 433,
+                        subTopic: "Thời tiết: Mùa yêu thích (Favorite Season)",
+                        qEn: "Which season of the year do you like the best, and why?",
+                        qVi: "Bạn thích mùa nào nhất trong năm, và vì sao?",
+                        aEn: "I love autumn because the weather is cool, crisp, and the leaves turn golden.",
+                        aVi: "Tôi thích mùa thu vì thời tiết mát mẻ, trong lành và lá cây chuyển sang màu vàng óng.",
+                        keywordsAsk: ["which season", "favorite season", "like the best", "why"],
+                        keywordsAns: ["autumn", "fall", "spring", "summer", "winter", "cool", "crisp", "because"]
+                    },
+                    // 9. Thời tiết lý tưởng để đi dã ngoại / du lịch
+                    {
+                        id: 434,
+                        subTopic: "Thời tiết: Lên kế hoạch đi chơi (Picnic Weather)",
+                        qEn: "Is this weekend's weather good enough for an outdoor picnic?",
+                        qVi: "Thời tiết cuối tuần này có đủ đẹp để đi dã ngoại ngoài trời không?",
+                        aEn: "Yes, it will be clear skies and twenty-five degrees—perfect for a picnic!",
+                        aVi: "Có, trời sẽ quang mây và nhiệt độ khoảng 25 độ — cực kỳ lý tưởng để đi dã ngoại!",
+                        keywordsAsk: ["picnic", "outdoor", "weekend", "good enough"],
+                        keywordsAns: ["clear skies", "twenty-five", "degrees", "perfect", "picnic", "sunny", "25"]
+                    },
+                    // 10. Hỏi thăm thời tiết quê hương của đối phương
+                    {
+                        id: 435,
+                        subTopic: "Thời tiết: Khí hậu quê hương (Hometown Climate)",
+                        qEn: "Does it ever snow in your hometown during the winter?",
+                        qVi: "Ở quê hương bạn có bao giờ có tuyết rơi vào mùa đông không?",
+                        aEn: "No, it never snows where I live, only in the high northern mountains.",
+                        aVi: "Không, nơi tôi sống không bao giờ có tuyết, chỉ có ở vùng núi cao phía Bắc thôi.",
+                        keywordsAsk: ["ever snow", "snow", "hometown", "winter"],
+                        keywordsAns: ["never snows", "mountains", "northern", "snow", "tropical", "warm", "no", "yes"]
+                    }
+                ]
+            }
 
         };
 
