@@ -180,6 +180,7 @@
     <option value="q_aa">aa. PHỎNG VẤN XIN VIỆC </option>
     <option value="q_bb">bb. GIAO TIẾP QUA ĐIỆN THOẠI </option>
     <option value="q_cc">cc. THỜI TIẾT & KHÍ HẬU </option>
+    <option value="q_dd">dd. CÁC CÂU TRẢ LỜI NGẮN </option>
 
 </select>
 
@@ -4161,9 +4162,908 @@ items: [
                         aVi: "Không, nơi tôi sống không bao giờ có tuyết, chỉ có ở vùng núi cao phía Bắc thôi.",
                         keywordsAsk: ["ever snow", "snow", "hometown", "winter"],
                         keywordsAns: ["never snows", "mountains", "northern", "snow", "tropical", "warm", "no", "yes"]
-                    }
+                  }
                 ]
-            }
+            },
+            q_dd: {
+                id: "q_dd",
+                title: "dd. CÁC CÂU TRẢ LỜI NGẮN (Short Responses)",
+                items: [
+                    // 1. Let's go!
+                    {
+                        id: 470,
+                        subTopic: "Câu ngắn 1: Rủ rê / Xuất phát",
+                        qEn: "Are you ready to head to the airport now?",
+                        qVi: "Bạn đã sẵn sàng để đi ra sân bay ngay bây giờ chưa?",
+                        aEn: "Let's go!",
+                        aVi: "Đi thôi nào!",
+                        keywordsAsk: ["ready", "head to", "airport", "now"],
+                        keywordsAns: ["let's go", "lets go"]
+                    },
+                    // 2. Let me go!
+                    {
+                        id: 471,
+                        subTopic: "Câu ngắn 2: Yêu cầu buông ra / Để tôi đi",
+                        qEn: "Why are you holding onto my arm so tightly?",
+                        qVi: "Tại sao bạn lại giữ chặt tay tôi như vậy?",
+                        aEn: "Let me go!",
+                        aVi: "Buông tôi ra! / Để tôi đi!",
+                        keywordsAsk: ["holding", "arm", "tightly"],
+                        keywordsAns: ["let me go"]
+                    },
+                    // 3. Me too.
+                    {
+                        id: 472,
+                        subTopic: "Câu ngắn 3: Bày tỏ sự đồng cảm",
+                        qEn: "I am so hungry after that long morning class.",
+                        qVi: "Tôi đói bụng quá sau tiết học dài buổi sáng.",
+                        aEn: "Me too.",
+                        aVi: "Tôi cũng vậy.",
+                        keywordsAsk: ["hungry", "morning class", "so"],
+                        keywordsAns: ["me too"]
+                    },
+                    // 4. No way.
+                    {
+                        id: 473,
+                        subTopic: "Câu ngắn 4: Ngạc nhiên / Không đời nào",
+                        qEn: "Did you hear that John just won the grand lottery prize?",
+                        qVi: "Bạn có nghe tin John vừa trúng giải xổ số độc đắc không?",
+                        aEn: "No way!",
+                        aVi: "Không thể nào! / Đùa à!",
+                        keywordsAsk: ["hear", "john", "lottery", "won"],
+                        keywordsAns: ["no way"]
+                    },
+                    // 5. Come on!
+                    {
+                        id: 474,
+                        subTopic: "Câu ngắn 5: Thúc giục / Cổ vũ",
+                        qEn: "I don't think I can finish this five-kilometer run.",
+                        qVi: "Tôi không nghĩ mình có thể chạy hết chặng đường 5 cây số này.",
+                        aEn: "Come on!",
+                        aVi: "Cố lên nào! / Thôi nào!",
+                        keywordsAsk: ["don't think", "finish", "run"],
+                        keywordsAns: ["come on"]
+                    },
+                    // 6. Hold on!
+                    {
+                        id: 475,
+                        subTopic: "Câu ngắn 6: Chờ một chút",
+                        qEn: "Can you transfer my call to the manager right away?",
+                        qVi: "Bạn có thể chuyển cuộc gọi của tôi cho quản lý ngay được không?",
+                        aEn: "Hold on!",
+                        aVi: "Chờ một chút nhé! / Giữ máy nhé!",
+                        keywordsAsk: ["transfer", "call", "manager"],
+                        keywordsAns: ["hold on"]
+                    },
+                    // 7. I agree.
+                    {
+                        id: 476,
+                        subTopic: "Câu ngắn 7: Đồng tình ý kiến",
+                        qEn: "This new project schedule is much more realistic than the old one.",
+                        qVi: "Lịch trình dự án mới này thực tế hơn nhiều so với bản cũ.",
+                        aEn: "I agree.",
+                        aVi: "Tôi đồng ý.",
+                        keywordsAsk: ["project schedule", "realistic", "old one"],
+                        keywordsAns: ["i agree", "agree"]
+                    },
+                    // 8. Not bad.
+                    {
+                        id: 477,
+                        subTopic: "Câu ngắn 8: Cũng tạm ổn / Không tệ",
+                        qEn: "How was your first day at the new office?",
+                        qVi: "Ngày đầu tiên của bạn ở văn phòng mới thế nào?",
+                        aEn: "Not bad.",
+                        aVi: "Không tệ chút nào. / Cũng ổn.",
+                        keywordsAsk: ["first day", "new office", "how was"],
+                        keywordsAns: ["not bad"]
+                    },
+                    // 9. Not yet.
+                    {
+                        id: 478,
+                        subTopic: "Câu ngắn 9: Vẫn chưa xong",
+                        qEn: "Have you finished packing your suitcase for tomorrow's flight?",
+                        qVi: "Bạn đã xếp xong hành lý vào vali cho chuyến bay ngày mai chưa?",
+                        aEn: "Not yet.",
+                        aVi: "Vẫn chưa xong.",
+                        keywordsAsk: ["finished", "packing", "suitcase"],
+                        keywordsAns: ["not yet"]
+                    },
+                    // 10. Shut up!
+                    {
+                        id: 479,
+                        subTopic: "Câu ngắn 10: Yêu cầu im lặng (Thân mật/Gắt)",
+                        qEn: "Why do you keep spoiling the ending of the movie for everyone?",
+                        qVi: "Sao bạn cứ kể trước đoạn kết bộ phim cho mọi người nghe thế?",
+                        aEn: "Shut up!",
+                        aVi: "Im đi nào! / Đừng nói nữa!",
+                        keywordsAsk: ["spoiling", "ending", "movie"],
+                        keywordsAns: ["shut up"]
+                    },
+                    // 11. Why not?
+                    {
+                        id: 480,
+                        subTopic: "Câu ngắn 11: Tại sao không? (Tán thành)",
+                        qEn: "Shall we try that new seafood restaurant by the beach tonight?",
+                        qVi: "Tối nay chúng ta thử ghé nhà hàng hải sản mới ven biển kia nhé?",
+                        aEn: "Why not?",
+                        aVi: "Tại sao lại không chứ? / Triển luôn!",
+                        keywordsAsk: ["shall we", "seafood restaurant", "beach"],
+                        keywordsAns: ["why not"]
+                    },
+                    // 12. Be quiet!
+                    {
+                        id: 481,
+                        subTopic: "Câu ngắn 12: Giữ trật tự / Yên lặng",
+                        qEn: "Can we talk loudly while the baby is sleeping in the next room?",
+                        qVi: "Chúng ta nói chuyện lớn tiếng khi em bé đang ngủ phòng bên được không?",
+                        aEn: "Be quiet!",
+                        aVi: "Hãy giữ yên lặng!",
+                        keywordsAsk: ["talk loudly", "baby", "sleeping"],
+                        keywordsAns: ["be quiet", "quiet"]
+                    },
+                    // 13. Good job!
+                    {
+                        id: 482,
+                        subTopic: "Câu ngắn 13: Khen ngợi làm tốt",
+                        qEn: "I finally fixed the computer bug and submitted the report on time!",
+                        qVi: "Cuối cùng tôi cũng sửa xong lỗi máy tính và nộp báo cáo đúng hạn rồi!",
+                        aEn: "Good job!",
+                        aVi: "Làm tốt lắm!",
+                        keywordsAsk: ["fixed", "bug", "submitted", "report"],
+                        keywordsAns: ["good job"]
+                    },
+                    // 14. Well done!
+                    {
+                        id: 483,
+                        subTopic: "Câu ngắn 14: Khen ngợi xuất sắc",
+                        qEn: "I got the highest score in the entire class on the English speaking exam!",
+                        qVi: "Tôi đã đạt điểm cao nhất cả lớp trong kỳ thi nói tiếng Anh!",
+                        aEn: "Well done!",
+                        aVi: "Xuất sắc lắm! / Giỏi lắm!",
+                        keywordsAsk: ["highest score", "entire class", "exam"],
+                        keywordsAns: ["well done"]
+                    },
+                    // 15. I'm home!
+                    {
+                        id: 484,
+                        subTopic: "Câu ngắn 15: Báo tin đã về đến nhà",
+                        qEn: "Who just unlocked the front door?",
+                        qVi: "Ai vừa mới mở khóa cửa trước vậy?",
+                        aEn: "I'm home!",
+                        aVi: "Tôi về rồi đây! / Con về rồi đây!",
+                        keywordsAsk: ["unlocked", "front door", "who"],
+                        keywordsAns: ["i'm home", "im home", "home"]
+                    },
+                    // 16. How much?
+                    {
+                        id: 485,
+                        subTopic: "Câu ngắn 16: Hỏi giá tiền nhanh",
+                        qEn: "This handmade silk scarf is on special discount today.",
+                        qVi: "Chiếc khăn lụa thủ công này hôm nay đang có ưu đãi đặc biệt.",
+                        aEn: "How much?",
+                        aVi: "Bao nhiêu tiền vậy?",
+                        keywordsAsk: ["silk scarf", "discount", "special"],
+                        keywordsAns: ["how much"]
+                    },
+                    // 17. Have fun!
+                    {
+                        id: 486,
+                        subTopic: "Câu ngắn 17: Chúc vui vẻ",
+                        qEn: "We are heading out to the music festival with our friends now!",
+                        qVi: "Bây giờ chúng tôi đang đi dự lễ hội âm nhạc cùng bạn bè đây!",
+                        aEn: "Have fun!",
+                        aVi: "Chúc chơi vui vẻ nhé!",
+keywordsAsk: ["music festival", "friends", "heading out"],
+keywordsAns: ["have fun"]
+},
+// 18. I'm lost.
+{
+id: 487,
+subTopic: "Câu ngắn 18: Báo bị lạc đường",
+qEn: "You have been walking in circles for ten minutes. Do you need help?",
+qVi: "Bạn đã đi lòng vòng suốt 10 phút rồi. Bạn có cần giúp đỡ không?",
+aEn: "I'm lost.",
+aVi: "Tôi bị lạc đường rồi.",
+keywordsAsk: ["walking in circles", "need help", "ten minutes"],
+keywordsAns: ["i'm lost", "im lost", "lost"]
+},
+// 19. My treat.
+{
+id: 488,
+subTopic: "Câu ngắn 19: Tôi khao / Để tôi trả tiền",
+qEn: "Let's split the coffee bill equally, okay?",
+qVi: "Chúng ta chia đều hóa đơn tiền cà phê nhé, được không?",
+aEn: "My treat.",
+aVi: "Hôm nay tôi khao. / Để tôi trả cho.",
+keywordsAsk: ["split", "coffee bill", "equally"],
+keywordsAns: ["my treat", "treat"]
+},
+// 20. This way.
+{
+id: 489,
+subTopic: "Câu ngắn 20: Chỉ lối đi hướng này",
+qEn: "Excuse me, could you show us to our reserved table?",
+qVi: "Xin lỗi, bạn có thể dẫn chúng tôi tới bàn đã đặt trước không?",
+aEn: "This way.",
+aVi: "Mời đi lối này ạ.",
+keywordsAsk: ["show us", "reserved table", "table"],
+keywordsAns: ["this way"]
+},
+// 21. After you.
+{
+id: 490,
+subTopic: "Câu ngắn 21: Nhường đường lịch sự",
+qEn: "We both reached the elevator door at the exact same time.",
+qVi: "Cả hai chúng ta đều bước tới cửa thang máy cùng một lúc.",
+aEn: "After you.",
+aVi: "Mời bạn đi trước.",
+keywordsAsk: ["elevator door", "same time", "reached"],
+keywordsAns: ["after you"]
+},
+// 22. Bless you!
+{
+id: 491,
+subTopic: "Câu ngắn 22: Chúc sức khỏe khi ai đó hắt hơi",
+qEn: "Achoo! Excuse me, this cold air always makes me sneeze.",
+qVi: "Hắt xì! Xin lỗi nhé, không khí lạnh này luôn làm tôi hắt hơi.",
+aEn: "Bless you!",
+aVi: "Chúc sức khỏe! (Phỉ phui / Trộm vía!)",
+keywordsAsk: ["achoo", "sneeze", "cold air"],
+keywordsAns: ["bless you"]
+},
+// 23. Follow me.
+{
+id: 492,
+subTopic: "Câu ngắn 23: Đi theo tôi",
+qEn: "I don't know where the meeting room on the third floor is.",
+qVi: "Tôi không biết phòng họp trên tầng ba nằm ở chỗ nào.",
+aEn: "Follow me.",
+aVi: "Hãy đi theo tôi.",
+keywordsAsk: ["meeting room", "third floor", "where"],
+keywordsAns: ["follow me"]
+},
+// 24. Forget it.
+{
+id: 493,
+subTopic: "Câu ngắn 24: Quên đi / Thôi bỏ qua đi",
+qEn: "I'm so sorry I forgot to bring your book back again today.",
+qVi: "Tôi thành thật xin lỗi vì hôm nay lại quên mang trả sách cho bạn.",
+aEn: "Forget it.",
+aVi: "Thôi bỏ qua đi. / Quên chuyện đó đi.",
+keywordsAsk: ["forgot", "bring your book", "sorry"],
+keywordsAns: ["forget it"]
+},
+// 25. Good luck!
+{
+id: 494,
+subTopic: "Câu ngắn 25: Chúc may mắn",
+qEn: "I'm walking into the interview room right now!",
+qVi: "Ngay bây giờ tôi đang bước vào phòng phỏng vấn đây!",
+aEn: "Good luck!",
+aVi: "Chúc may mắn nhé!",
+keywordsAsk: ["interview room", "walking into", "right now"],
+keywordsAns: ["good luck"]
+},
+// 26. I promise.
+{
+id: 495,
+subTopic: "Câu ngắn 26: Tôi hứa",
+qEn: "Will you definitely call me as soon as your plane lands?",
+qVi: "Bạn nhất định sẽ gọi cho tôi ngay khi máy bay hạ cánh chứ?",
+aEn: "I promise.",
+aVi: "Tôi hứa đấy.",
+keywordsAsk: ["call me", "plane lands", "definitely"],
+keywordsAns: ["i promise", "promise"]
+},
+// 27. Of course.
+{
+id: 496,
+subTopic: "Câu ngắn 27: Tất nhiên rồi",
+qEn: "Can I borrow your pen for a second to sign this form?",
+qVi: "Tôi mượn cây bút của bạn một lát để ký mẫu đơn này được không?",
+aEn: "Of course.",
+aVi: "Tất nhiên rồi.",
+keywordsAsk: ["borrow", "pen", "sign"],
+keywordsAns: ["of course"]
+},
+// 28. Slow down!
+{
+id: 497,
+subTopic: "Câu ngắn 28: Giảm tốc độ / Chậm lại",
+qEn: "Look! We are approaching a sharp curve on this mountain road.",
+qVi: "Nhìn kìa! Chúng ta đang tới gần một khúc cua gấp trên đường đèo.",
+aEn: "Slow down!",
+aVi: "Chậm lại nào! / Giảm tốc độ!",
+keywordsAsk: ["sharp curve", "mountain road", "approaching"],
+keywordsAns: ["slow down"]
+},
+// 29. Speed up!
+{
+id: 498,
+subTopic: "Câu ngắn 29: Tăng tốc lên",
+qEn: "The train leaves in five minutes and the road ahead is completely clear!",
+qVi: "Tàu sẽ chạy sau 5 phút nữa và đường phía trước đang hoàn toàn thông thoáng!",
+aEn: "Speed up!",
+aVi: "Tăng tốc lên nào!",
+keywordsAsk: ["train leaves", "five minutes", "clear"],
+keywordsAns: ["speed up"]
+},
+// 30. Take care!
+{
+id: 499,
+subTopic: "Câu ngắn 30: Bảo trọng / Giữ gìn sức khỏe",
+qEn: "My taxi is here. Goodbye everyone, see you next year!",
+qVi: "Xe taxi của tôi tới rồi. Tạm biệt mọi người, hẹn gặp lại năm sau nhé!",
+aEn: "Take care!",
+aVi: "Bảo trọng nhé! / Giữ gìn sức khỏe nha!",
+keywordsAsk: ["taxi is here", "goodbye", "next year"],
+keywordsAns: ["take care"]
+},
+// 31. Try again.
+{
+id: 500,
+subTopic: "Câu ngắn 31: Thử lại lần nữa",
+qEn: "Oh no, I mispronounced that long English word.",
+qVi: "Ôi không, tôi phát âm sai từ tiếng Anh dài đó mất rồi.",
+aEn: "Try again.",
+aVi: "Hãy thử lại lần nữa xem.",
+keywordsAsk: ["mispronounced", "english word", "oh no"],
+keywordsAns: ["try again"]
+},
+// 32. Be careful!
+{
+id: 501,
+subTopic: "Câu ngắn 32: Cẩn thận đấy",
+qEn: "The floor in the kitchen was just mopped and is still wet.",
+qVi: "Sàn nhà trong bếp vừa mới lau xong và vẫn còn ướt.",
+aEn: "Be careful!",
+aVi: "Cẩn thận đấy nhé!",
+keywordsAsk: ["floor", "mopped", "wet"],
+keywordsAns: ["be careful", "careful"]
+},
+// 33. Don't move!
+{
+id: 502,
+subTopic: "Câu ngắn 33: Đứng yên / Đừng cử động",
+qEn: "The lighting is perfect right now, I'm going to snap your photo!",
+qVi: "Ánh sáng lúc này hoàn hảo rồi, tôi chuẩn bị bấm máy chụp ảnh bạn đây!",
+aEn: "Don't move!",
+aVi: "Đừng cử động! / Giữ nguyên tư thế!",
+keywordsAsk: ["lighting", "snap", "photo"],
+keywordsAns: ["don't move", "dont move"]
+},
+// 34. Guess what?
+{
+id: 503,
+subTopic: "Câu ngắn 34: Đoán xem chuyện gì nào?",
+qEn: "You look super excited today! Do you have big news to share?",
+qVi: "Hôm nay trông bạn cực kỳ hào hứng! Bạn có tin lớn muốn chia sẻ à?",
+aEn: "Guess what?",
+aVi: "Đoán xem chuyện gì nào?",
+keywordsAsk: ["super excited", "big news", "share"],
+keywordsAns: ["guess what"]
+},
+// 35. I doubt it.
+{
+id: 504,
+subTopic: "Câu ngắn 35: Tôi nghi ngờ điều đó / Khó lắm",
+qEn: "Do you think it will stop raining before our outdoor picnic?",
+qVi: "Bạn có nghĩ trời sẽ tạnh mưa trước buổi dã ngoại ngoài trời của chúng ta không?",
+aEn: "I doubt it.",
+aVi: "Tôi nghi ngờ điều đó lắm. / Khó mà tạnh được.",
+keywordsAsk: ["stop raining", "outdoor picnic", "do you think"],
+keywordsAns: ["i doubt it", "doubt it"]
+},
+// 36. Keep it up!
+{
+id: 505,
+subTopic: "Câu ngắn 36: Tiếp tục phát huy nhé",
+qEn: "I have practiced speaking English for thirty minutes every day this month!",
+qVi: "Tháng này ngày nào tôi cũng luyện nói tiếng Anh suốt 30 phút!",
+aEn: "Keep it up!",
+aVi: "Tiếp tục phát huy nhé!",
+keywordsAsk: ["practiced", "thirty minutes", "every day"],
+keywordsAns: ["keep it up"]
+},
+// 37. Let me see.
+{
+id: 506,
+subTopic: "Câu ngắn 37: Để tôi xem nào",
+qEn: "Which dessert on this menu looks the most delicious to you?",
+qVi: "Món tráng miệng nào trên thực đơn này trông ngon nhất đối với bạn?",
+aEn: "Let me see.",
+aVi: "Để tôi xem nào.",
+keywordsAsk: ["dessert", "menu", "most delicious"],
+keywordsAns: ["let me see"]
+},
+// 38. No problem.
+{
+id: 507,
+subTopic: "Câu ngắn 38: Không vấn đề gì",
+qEn: "Thank you so much for helping me carry these heavy boxes upstairs!",
+qVi: "Cảm ơn bạn rất nhiều vì đã giúp tôi khiêng những chiếc hộp nặng này lên lầu!",
+aEn: "No problem.",
+aVi: "Không vấn đề gì đâu.",
+keywordsAsk: ["helping me", "heavy boxes", "upstairs"],
+keywordsAns: ["no problem"]
+},
+// 39. That's all.
+{
+id: 508,
+subTopic: "Câu ngắn 39: Thế thôi / Hết rồi ạ",
+qEn: "Would you like to order anything else with your coffee and croissant?",
+qVi: "Quý khách có muốn gọi thêm món gì khác ngoài cà phê và bánh sừng bò không ạ?",
+aEn: "That's all.",
+aVi: "Thế thôi ạ. / Hết rồi ạ.",
+keywordsAsk: ["anything else", "order", "croissant"],
+keywordsAns: ["that's all", "thats all"]
+},
+                    // 40. Trust me.
+                    {
+                        id: 509,
+                        subTopic: "Câu ngắn 40: Hãy tin tôi",
+                        qEn: "Are you sure this shortcut through the alley is faster?",
+                        qVi: "Bạn có chắc đường tắt qua con hẻm này nhanh hơn không?",
+                        aEn: "Trust me.",
+                        aVi: "Hãy tin tôi đi.",
+                        keywordsAsk: ["shortcut", "alley", "faster", "sure"],
+                        keywordsAns: ["trust me"]
+                    },
+                    // 41. Come here.
+                    {
+                        id: 510,
+                        subTopic: "Câu ngắn 41: Lại đây nào",
+                        qEn: "Did you find the missing keys under the sofa?",
+                        qVi: "Bạn đã tìm thấy chùm chìa khóa bị mất dưới ghế sô-pha chưa?",
+                        aEn: "Come here.",
+                        aVi: "Lại đây nào.",
+                        keywordsAsk: ["find", "missing keys", "sofa"],
+                        keywordsAns: ["come here"]
+                    },
+                    // 42. Get out!
+                    {
+                        id: 511,
+                        subTopic: "Câu ngắn 42: Ra ngoài ngay / Không thể tin được",
+                        qEn: "I told you to stop snooping through my private diary!",
+                        qVi: "Tôi đã bảo bạn ngừng tò mò xem nhật ký riêng tư của tôi rồi mà!",
+                        aEn: "Get out!",
+                        aVi: "Ra ngoài ngay!",
+                        keywordsAsk: ["snooping", "private diary", "stop"],
+                        keywordsAns: ["get out"]
+                    },
+                    // 43. See you.
+                    {
+                        id: 512,
+                        subTopic: "Câu ngắn 43: Hẹn gặp lại",
+                        qEn: "I'm heading back to my office now. Have a productive afternoon!",
+                        qVi: "Bây giờ tôi quay lại văn phòng đây. Chúc buổi chiều làm việc hiệu quả nhé!",
+                        aEn: "See you.",
+                        aVi: "Hẹn gặp lại nhé.",
+                        keywordsAsk: ["heading back", "office", "productive afternoon"],
+                        keywordsAns: ["see you"]
+                    },
+                    // 44. Excuse me.
+                    {
+                        id: 513,
+                        subTopic: "Câu ngắn 44: Xin lỗi / Cho phép tôi qua",
+                        qEn: "The aisle on this train is quite crowded with passengers.",
+                        qVi: "Lối đi trên chuyến tàu này khá đông hành khách.",
+                        aEn: "Excuse me.",
+                        aVi: "Xin lỗi cho tôi đi nhờ qua một chút.",
+                        keywordsAsk: ["aisle", "train", "crowded", "passengers"],
+                        keywordsAns: ["excuse me"]
+                    },
+                    // 45. My bad.
+                    {
+                        id: 514,
+                        subTopic: "Câu ngắn 45: Lỗi của tôi",
+                        qEn: "Hey, you accidentally grabbed my coffee cup instead of yours!",
+                        qVi: "Này, bạn vô tình cầm nhầm cốc cà phê của tôi thay vì của bạn rồi!",
+                        aEn: "My bad.",
+                        aVi: "Lỗi của tôi. / Tôi sơ ý quá.",
+                        keywordsAsk: ["accidentally", "grabbed", "coffee cup"],
+                        keywordsAns: ["my bad"]
+                    },
+                    // 46. Sounds good.
+                    {
+                        id: 515,
+                        subTopic: "Câu ngắn 46: Nghe ổn đấy",
+                        qEn: "Let's meet at the library at 3 PM to review our presentation slides.",
+                        qVi: "Chúng ta gặp nhau ở thư viện lúc 3 giờ chiều để xem lại slide thuyết trình nhé.",
+                        aEn: "Sounds good.",
+                        aVi: "Nghe ổn đấy.",
+                        keywordsAsk: ["library", "3 pm", "review", "slides"],
+                        keywordsAns: ["sounds good"]
+                    },
+                    // 47. Maybe later.
+                    {
+                        id: 516,
+                        subTopic: "Câu ngắn 47: Có lẽ để sau nhé",
+                        qEn: "Do you want to play a quick game of chess right now?",
+                        qVi: "Bây giờ bạn có muốn chơi một ván cờ vua nhanh không?",
+                        aEn: "Maybe later.",
+                        aVi: "Có lẽ để sau nhé.",
+                        keywordsAsk: ["play", "chess", "right now"],
+                        keywordsAns: ["maybe later"]
+                    },
+                    // 48. Hurry up!
+                    {
+                        id: 517,
+                        subTopic: "Câu ngắn 48: Nhanh lên nào!",
+                        qEn: "The boarding gate closes in just three minutes!",
+                        qVi: "Cửa lên máy bay sẽ đóng lại chỉ sau ba phút nữa thôi!",
+                        aEn: "Hurry up!",
+                        aVi: "Nhanh lên nào!",
+                        keywordsAsk: ["boarding gate", "closes", "three minutes"],
+                        keywordsAns: ["hurry up"]
+                    },
+                    // 49. Calm down.
+                    {
+                        id: 518,
+                        subTopic: "Câu ngắn 49: Bình tĩnh nào",
+                        qEn: "I'm panicking because I can't find my boarding pass anywhere!",
+                        qVi: "Tôi đang hoảng loạn vì tìm mãi không thấy thẻ lên máy bay đâu cả!",
+                        aEn: "Calm down.",
+                        aVi: "Bình tĩnh nào.",
+                        keywordsAsk: ["panicking", "can't find", "boarding pass"],
+                        keywordsAns: ["calm down"]
+                    },
+                    // 50. Just relax.
+                    {
+                        id: 519,
+                        subTopic: "Câu ngắn 50: Cứ thư giãn đi",
+                        qEn: "I feel so nervous before going on stage to give my speech.",
+                        qVi: "Tôi cảm thấy hồi hộp quá trước khi bước lên sân khấu phát biểu.",
+                        aEn: "Just relax.",
+                        aVi: "Cứ thư giãn đi nào.",
+                        keywordsAsk: ["nervous", "stage", "speech"],
+                        keywordsAns: ["just relax", "relax"]
+                    },
+                    // 51. Listen up!
+                    {
+                        id: 520,
+                        subTopic: "Câu ngắn 51: Nghe đây này / Chú ý nào!",
+                        qEn: "Everyone in the classroom is still chatting loudly.",
+                        qVi: "Mọi người trong lớp học vẫn đang trò chuyện ồn ào.",
+                        aEn: "Listen up!",
+                        aVi: "Mọi người chú ý nghe đây!",
+                        keywordsAsk: ["classroom", "chatting", "loudly"],
+                        keywordsAns: ["listen up"]
+                    },
+                    // 52. Come in.
+                    {
+                        id: 521,
+                        subTopic: "Câu ngắn 52: Mời vào",
+                        qEn: "Knock, knock! May I enter your office for a moment?",
+                        qVi: "Cốc, cốc! Tôi có thể vào văn phòng của bạn một lát được không?",
+                        aEn: "Come in.",
+                        aVi: "Mời vào.",
+                        keywordsAsk: ["knock", "enter", "office"],
+                        keywordsAns: ["come in"]
+                    },
+                    // 53. Be yourself.
+                    {
+                        id: 522,
+                        subTopic: "Câu ngắn 53: Hãy là chính mình",
+                        qEn: "How should I act during my first meeting with the new team?",
+                        qVi: "Tôi nên cư xử thế nào trong buổi gặp đầu tiên với nhóm mới?",
+                        aEn: "Be yourself.",
+                        aVi: "Hãy cứ là chính mình.",
+                        keywordsAsk: ["act", "first meeting", "new team"],
+                        keywordsAns: ["be yourself"]
+                    },
+                    // 54. Who knows?
+                    {
+                        id: 523,
+                        subTopic: "Câu ngắn 54: Ai mà biết được?",
+                        qEn: "Do you think humans will live on Mars within the next twenty years?",
+                        qVi: "Bạn có nghĩ con người sẽ sống trên sao Hỏa trong vòng 20 năm tới không?",
+                        aEn: "Who knows?",
+                        aVi: "Ai mà biết được chứ?",
+                        keywordsAsk: ["humans", "mars", "twenty years"],
+                        keywordsAns: ["who knows"]
+                    },
+                    // 55. Really?
+                    {
+                        id: 524,
+                        subTopic: "Câu ngắn 55: Thật vậy sao?",
+                        qEn: "Our company is giving everyone an extra paid holiday next Monday!",
+                        qVi: "Công ty chúng ta sẽ cho mọi người nghỉ lễ hưởng lương thêm vào thứ Hai tới!",
+                        aEn: "Really?",
+                        aVi: "Thật vậy sao?",
+                        keywordsAsk: ["extra", "paid holiday", "monday"],
+                        keywordsAns: ["really"]
+                    },
+                    // 56. Wake up!
+                    {
+                        id: 525,
+                        subTopic: "Câu ngắn 56: Thức dậy đi nào!",
+                        qEn: "It's already 7:30 AM and your morning lecture starts at 8!",
+                        qVi: "Đã 7 giờ 30 sáng rồi và bài giảng buổi sáng của bạn bắt đầu lúc 8 giờ đấy!",
+                        aEn: "Wake up!",
+                        aVi: "Thức dậy đi nào!",
+                        keywordsAsk: ["7:30", "morning lecture", "starts"],
+                        keywordsAns: ["wake up"]
+},
+// 57. Check it.
+{
+id: 526,
+subTopic: "Câu ngắn 57: Kiểm tra đi nào",
+qEn: "I just sent the updated contract to your email inbox.",
+qVi: "Tôi vừa gửi bản hợp đồng đã cập nhật vào hộp thư email của bạn rồi.",
+aEn: "Check it.",
+aVi: "Kiểm tra xem đi.",
+keywordsAsk: ["sent", "contract", "email inbox"],
+keywordsAns: ["check it"]
+},
+// 58. Take it.
+{
+id: 527,
+subTopic: "Câu ngắn 58: Cầm lấy đi / Nhận lấy đi",
+qEn: "You dropped your umbrella on the way out, here!",
+qVi: "Bạn làm rơi ô trên đường đi ra ngoài này, cầm lấy đi!",
+aEn: "Take it.",
+aVi: "Cầm lấy đi nhé.",
+keywordsAsk: ["dropped", "umbrella", "way out"],
+keywordsAns: ["take it"]
+},
+// 59. I think so.
+{
+id: 528,
+subTopic: "Câu ngắn 59: Tôi nghĩ vậy",
+qEn: "Is the pharmacy on the corner still open at 9 PM?",
+qVi: "Hiệu thuốc ở góc đường lúc 9 giờ tối vẫn còn mở cửa chứ?",
+aEn: "I think so.",
+aVi: "Tôi nghĩ là có.",
+keywordsAsk: ["pharmacy", "corner", "open", "9 pm"],
+keywordsAns: ["i think so", "think so"]
+},
+// 60. Count me in!
+{
+id: 529,
+subTopic: "Câu ngắn 60: Cho tôi tham gia với!",
+qEn: "We're organizing a weekend camping trip to Da Lat. Want to join?",
+qVi: "Chúng tôi đang tổ chức chuyến cắm trại cuối tuần ở Đà Lạt. Bạn muốn tham gia không?",
+aEn: "Count me in!",
+aVi: "Cho tôi một suất tham gia với!",
+keywordsAsk: ["camping trip", "da lat", "join"],
+keywordsAns: ["count me in"]
+},
+// 61. Your turn.
+{
+id: 530,
+subTopic: "Câu ngắn 61: Đến lượt bạn rồi",
+qEn: "I just finished rolling the dice and moving my chess piece.",
+qVi: "Tôi vừa gieo xúc xắc và di chuyển quân cờ của mình xong rồi.",
+aEn: "Your turn.",
+aVi: "Đến lượt bạn đấy.",
+keywordsAsk: ["rolling", "dice", "moving", "piece"],
+keywordsAns: ["your turn"]
+},
+// 62. You first.
+{
+id: 531,
+subTopic: "Câu ngắn 62: Bạn trước đi",
+qEn: "Who wants to taste this new exotic tropical fruit?",
+qVi: "Ai muốn nếm thử loại trái cây nhiệt đới mới lạ này nào?",
+aEn: "You first.",
+aVi: "Bạn thử trước đi.",
+keywordsAsk: ["taste", "exotic", "tropical fruit"],
+keywordsAns: ["you first"]
+},
+// 63. Right now.
+{
+id: 532,
+subTopic: "Câu ngắn 63: Ngay bây giờ",
+qEn: "When do you need me to submit this urgent expense form?",
+qVi: "Khi nào bạn cần tôi nộp mẫu kê khai chi phí khẩn cấp này?",
+aEn: "Right now.",
+aVi: "Ngay bây giờ luôn.",
+keywordsAsk: ["when", "submit", "urgent", "form"],
+keywordsAns: ["right now"]
+},
+// 64. Almost done.
+{
+id: 533,
+subTopic: "Câu ngắn 64: Sắp xong rồi",
+qEn: "How much longer will it take you to finish painting that wall?",
+qVi: "Bạn mất bao lâu nữa thì sơn xong bức tường đó?",
+aEn: "Almost done.",
+aVi: "Sắp xong rồi.",
+keywordsAsk: ["how much longer", "finish", "painting", "wall"],
+keywordsAns: ["almost done"]
+},
+// 65. Just kidding!
+{
+id: 534,
+subTopic: "Câu ngắn 65: Chỉ đùa thôi mà!",
+qEn: "What?! You actually ate my entire birthday cake by yourself?!",
+qVi: "Cái gì?! Bạn thực sự đã ăn hết sạch cả cái bánh sinh nhật của tôi một mình à?!",
+aEn: "Just kidding!",
+aVi: "Chỉ đùa thôi mà!",
+keywordsAsk: ["entire", "birthday cake", "by yourself"],
+keywordsAns: ["just kidding"]
+},
+// 66. No wonder.
+{
+id: 535,
+subTopic: "Câu ngắn 66: Thảo nào / Hèn chi",
+qEn: "The main highway was closed all morning due to road repairs.",
+qVi: "Đường cao tốc chính bị đóng suốt buổi sáng để sửa đường.",
+aEn: "No wonder.",
+aVi: "Thảo nào (kẹt xe thế).",
+keywordsAsk: ["highway", "closed", "road repairs"],
+keywordsAns: ["no wonder"]
+},
+// 67. That's life!
+{
+id: 536,
+subTopic: "Câu ngắn 67: Cuộc sống mà!",
+qEn: "It always starts pouring rain the exact day I wash my car.",
+qVi: "Trời luôn đổ mưa rào đúng vào ngày tôi vừa rửa xe xong.",
+aEn: "That's life!",
+aVi: "Cuộc sống mà! / Đời là thế đấy!",
+keywordsAsk: ["pouring rain", "exact day", "wash my car"],
+keywordsAns: ["that's life", "thats life"]
+},
+// 68. Poor you!
+{
+id: 537,
+subTopic: "Câu ngắn 68: Tội nghiệp bạn quá!",
+qEn: "I had to work overtime until midnight and still got stuck in traffic.",
+qVi: "Tôi phải làm thêm giờ tới nửa đêm mà về vẫn còn bị kẹt xe.",
+aEn: "Poor you!",
+aVi: "Tội nghiệp bạn quá!",
+keywordsAsk: ["overtime", "midnight", "stuck in traffic"],
+keywordsAns: ["poor you"]
+},
+// 70. Way to go!
+{
+id: 538,
+subTopic: "Câu ngắn 70: Tuyệt vời lắm / Giỏi lắm!",
+qEn: "I passed my driving test on the very first attempt!",
+qVi: "Tôi đã thi đỗ bằng lái xe ngay trong lần thi đầu tiên!",
+aEn: "Way to go!",
+aVi: "Tuyệt vời lắm! / Quá đỉnh!",
+keywordsAsk: ["passed", "driving test", "first attempt"],
+keywordsAns: ["way to go"]
+},
+// 71. That makes sense.
+{
+id: 539,
+subTopic: "Câu ngắn 71: Nghe có lý đấy",
+qEn: "We should book the flight early because ticket prices double in December.",
+qVi: "Chúng ta nên đặt vé máy bay sớm vì giá vé tăng gấp đôi vào tháng Mười Hai.",
+aEn: "That makes sense.",
+aVi: "Điều đó nghe rất có lý.",
+keywordsAsk: ["book", "flight early", "december"],
+keywordsAns: ["that makes sense", "makes sense"]
+},
+// 72. I don't know.
+{
+id: 540,
+subTopic: "Câu ngắn 72: Tôi không biết",
+qEn: "Who left this blue umbrella in the conference room?",
+qVi: "Ai đã để quên chiếc ô màu xanh này trong phòng họp vậy?",
+aEn: "I don't know.",
+aVi: "Tôi không biết nữa.",
+keywordsAsk: ["who left", "blue umbrella", "conference room"],
+keywordsAns: ["i don't know", "don't know", "dont know"]
+},
+// 73a. I don't care.
+{
+id: 541,
+subTopic: "Câu ngắn 73a: Tôi không quan tâm",
+qEn: "Do you prefer watching an action movie or a comedy tonight?",
+qVi: "Tối nay bạn thích xem phim hành động hay phim hài hơn?",
+aEn: "I don't care.",
+aVi: "Tôi sao cũng được / Tôi không bận tâm.",
+keywordsAsk: ["action movie", "comedy", "prefer"],
+keywordsAns: ["i don't care", "don't care", "dont care"]
+},
+// 73b. Not at all.
+{
+id: 542,
+subTopic: "Câu ngắn 73b: Không có gì đâu / Không hề",
+qEn: "Do you mind if I open the window for some fresh air?",
+qVi: "Bạn có phiền không nếu tôi mở cửa sổ cho thoáng khí?",
+aEn: "Not at all.",
+aVi: "Không phiền chút nào.",
+keywordsAsk: ["do you mind", "open the window", "fresh air"],
+keywordsAns: ["not at all"]
+},
+// 74. Maybe next time.
+{
+id: 543,
+subTopic: "Câu ngắn 74: Có lẽ để lần sau nhé",
+qEn: "Sorry you couldn't make it to our beach barbecue tonight!",
+qVi: "Tiếc quá tối nay bạn không tới dự tiệc nướng bãi biển cùng chúng tôi được!",
+aEn: "Maybe next time.",
+aVi: "Có lẽ hẹn lần sau nhé.",
+keywordsAsk: ["couldn't make it", "barbecue", "tonight"],
+keywordsAns: ["maybe next time", "next time"]
+},
+// 75. I'm not sure.
+{
+id: 544,
+subTopic: "Câu ngắn 75: Tôi không chắc lắm",
+qEn: "Will the train arrive on platform 3 or platform 4?",
+qVi: "Tàu sẽ đến ở sân ga số 3 hay sân ga số 4 vậy?",
+aEn: "I'm not sure.",
+aVi: "Tôi không chắc lắm.",
+keywordsAsk: ["platform 3", "platform 4", "arrive"],
+keywordsAns: ["i'm not sure", "im not sure", "not sure"]
+},
+// 76. Let me know.
+{
+id: 545,
+subTopic: "Câu ngắn 76: Hãy báo cho tôi biết nhé",
+qEn: "I will check my schedule and confirm if I can attend tomorrow's dinner.",
+qVi: "Tôi sẽ kiểm tra lịch và xác nhận xem có dự bữa tối ngày mai được không.",
+aEn: "Let me know.",
+aVi: "Có gì báo cho tôi biết nhé.",
+keywordsAsk: ["check my schedule", "confirm", "dinner"],
+keywordsAns: ["let me know"]
+},
+// 77. Take your time.
+{
+id: 546,
+subTopic: "Câu ngắn 77: Cứ từ từ / Cứ thong thả nhé",
+qEn: "Sorry to keep you waiting while I look through the menu.",
+qVi: "Xin lỗi vì đã để bạn phải chờ trong lúc tôi xem thực đơn.",
+aEn: "Take your time.",
+aVi: "Bạn cứ thong thả xem đi.",
+keywordsAsk: ["keep you waiting", "look through", "menu"],
+keywordsAns: ["take your time"]
+},
+// 78. I'm on it.
+{
+id: 547,
+subTopic: "Câu ngắn 78: Tôi đang làm ngay đây",
+qEn: "Could you send the updated sales report to the client right away?",
+qVi: "Bạn có thể gửi báo cáo doanh số cập nhật cho khách hàng ngay được không?",
+aEn: "I'm on it.",
+aVi: "Tôi đang xử lý ngay đây.",
+keywordsAsk: ["sales report", "client", "right away"],
+keywordsAns: ["i'm on it", "im on it", "on it"]
+},
+// 79. See you soon.
+{
+id: 548,
+subTopic: "Câu ngắn 79: Hẹn sớm gặp lại",
+qEn: "I'm boarding my flight back to Tuy Hoa right now!",
+qVi: "Bây giờ tôi đang lên chuyến bay về lại Tuy Hòa đây!",
+aEn: "See you soon.",
+aVi: "Hẹn sớm gặp lại nhé.",
+keywordsAsk: ["boarding", "flight", "tuy hoa"],
+keywordsAns: ["see you soon"]
+},
+// 80. Oh, my God!
+{
+id: 549,
+subTopic: "Câu ngắn 80: Ôi trời ơi!",
+qEn: "Look outside! A giant rainbow just appeared right over the ocean!",
+qVi: "Nhìn ra ngoài kìa! Một chiếc cầu vồng khổng lồ vừa xuất hiện ngay trên mặt biển!",
+aEn: "Oh, my God!",
+aVi: "Ôi trời ơi! (Đẹp quá!)",
+keywordsAsk: ["giant rainbow", "appeared", "ocean"],
+keywordsAns: ["oh my god", "oh, my god"]
+},
+// 81. Good for you!
+{
+id: 550,
+subTopic: "Câu ngắn 81: Chúc mừng bạn / Tốt cho bạn quá!",
+qEn: "I finally quit drinking sugary sodas and started jogging every morning!",
+qVi: "Cuối cùng tôi cũng bỏ được nước ngọt có ga và bắt đầu chạy bộ mỗi sáng!",
+aEn: "Good for you!",
+aVi: "Thật tốt cho bạn quá! / Chúc mừng bạn nhé!",
+keywordsAsk: ["quit", "sugary sodas", "jogging"],
+keywordsAns: ["good for you"]
+}
+
+
+]
+}
 
         };
 
