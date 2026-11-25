@@ -180,7 +180,10 @@
     <option value="q_aa">aa. PHỎNG VẤN XIN VIỆC </option>
     <option value="q_bb">bb. GIAO TIẾP QUA ĐIỆN THOẠI </option>
     <option value="q_cc">cc. THỜI TIẾT & KHÍ HẬU </option>
-    <option value="q_dd">dd. CÁC CÂU TRẢ LỜI NGẮN </option>
+    <option value="q_dd">dd. CÁC CÂU HỎI NGẮN THƯỜNG DÙNG </option>
+    <option value="q_ee">ee. CÁC CÂU TRẢ LỜI NGẮN </option>
+    <option value="q_ff">ff. CẢM XÚC & LỜI KHEN </option>
+    <option value="q_gg">gg. THỂ THAO & SỨC KHỎE </option>
 
 </select>
 
@@ -4165,9 +4168,348 @@ items: [
                   }
                 ]
             },
-            q_dd: {
-                id: "q_dd",
-                title: "dd. CÁC CÂU TRẢ LỜI NGẮN (Short Responses)",
+                        q_ee: {
+                id: "q_ee",
+                title: "ee. CÁC CÂU HỎI NGẮN THƯỜNG DÙNG (Common Short Questions)",
+                items: [
+                    // 1. What happened?
+                    {
+                        id: 573,
+                        subTopic: "Câu hỏi ngắn 1: Hỏi chuyện gì vừa xảy ra",
+                        qEn: "What happened?",
+                        qVi: "Chuyện gì đã xảy ra vậy?",
+                        aEn: "My motorbike had a flat tire on the way to work.",
+                        aVi: "Xe máy của tôi bị xịt lốp trên đường đi làm.",
+                        keywordsAsk: ["what happened", "happened"],
+                        keywordsAns: ["flat tire", "accident", "dropped", "broke", "late", "motorbike"]
+                    },
+                    // 2. What's the matter?
+                    {
+                        id: 574,
+                        subTopic: "Câu hỏi ngắn 2: Hỏi thăm khi thấy ai đó buồn/mệt",
+                        qEn: "What's the matter?",
+                        qVi: "Có chuyện gì thế? / Bạn bị làm sao vậy?",
+                        aEn: "I have a terrible headache and feel a bit dizzy.",
+                        aVi: "Tôi bị đau đầu dữ dội và cảm thấy hơi chóng mặt.",
+                        keywordsAsk: ["what's the matter", "whats the matter", "matter"],
+                        keywordsAns: ["headache", "dizzy", "sick", "tired", "lost", "nothing"]
+                    },
+                    // 3. What's new?
+                    {
+                        id: 575,
+                        subTopic: "Câu hỏi ngắn 3: Hỏi tin tức mới",
+                        qEn: "What's new?",
+                        qVi: "Dạo này có gì mới không?",
+                        aEn: "Not much, I just started a new English speaking course.",
+                        aVi: "Không có gì nhiều, tôi vừa mới bắt đầu một khóa học nói tiếng Anh.",
+                        keywordsAsk: ["what's new", "whats new"],
+                        keywordsAns: ["not much", "nothing much", "started", "new job", "course", "same"]
+                    },
+                    // 4. Are you serious?
+                    {
+                        id: 576,
+                        subTopic: "Câu hỏi ngắn 4: Hỏi xác nhận sự thật",
+                        qEn: "Are you serious?",
+                        qVi: "Bạn nói nghiêm túc đấy à? / Thật không đấy?",
+                        aEn: "Yes, I'm completely serious! Look at the official email.",
+                        aVi: "Vâng, tôi hoàn toàn nghiêm túc! Hãy nhìn vào email chính thức này xem.",
+                        keywordsAsk: ["are you serious", "serious"],
+                        keywordsAns: ["completely serious", "yes", "email", "true", "joking", "kidding"]
+                    },
+                    // 5. Are you ready?
+                    {
+                        id: 577,
+                        subTopic: "Câu hỏi ngắn 5: Hỏi đã sẵn sàng chưa",
+                        qEn: "Are you ready?",
+                        qVi: "Bạn đã sẵn sàng chưa?",
+                        aEn: "Almost! Give me just one more minute to grab my jacket.",
+                        aVi: "Gần xong rồi! Cho tôi thêm đúng một phút nữa để lấy áo khoác.",
+                        keywordsAsk: ["are you ready", "ready"],
+                        keywordsAns: ["almost", "one more minute", "jacket", "yes", "let's go", "ready"]
+                    },
+                    // 6. Who's calling?
+                    {
+                        id: 578,
+                        subTopic: "Câu hỏi ngắn 6: Hỏi ai đang gọi điện",
+                        qEn: "Who's calling?",
+                        qVi: "Ai đang gọi ở đầu dây bên kia vậy ạ?",
+                        aEn: "This is Quang calling from FPT University.",
+                        aVi: "Tôi là Quảng gọi từ trường Đại học FPT ạ.",
+                        keywordsAsk: ["who's calling", "whos calling", "calling"],
+                        keywordsAns: ["this is", "calling from", "university", "name", "speaking"]
+                    },
+                    // 7. What for?
+                    {
+                        id: 579,
+                        subTopic: "Câu hỏi ngắn 7: Hỏi để làm gì",
+                        qEn: "What for?",
+                        qVi: "Để làm gì vậy?",
+                        aEn: "To celebrate our team's successful project completion.",
+                        aVi: "Để ăn mừng việc nhóm chúng ta hoàn thành dự án thành công.",
+                        keywordsAsk: ["what for"],
+                        keywordsAns: ["celebrate", "project", "meeting", "gift", "party", "trip"]
+                    },
+                    // 8. How long?
+                    {
+                        id: 580,
+                        subTopic: "Câu hỏi ngắn 8: Hỏi mất bao lâu",
+                        qEn: "How long?",
+                        qVi: "Mất khoảng bao lâu vậy?",
+                        aEn: "It takes about twenty minutes by motorbike.",
+                        aVi: "Mất khoảng 20 phút đi bằng xe máy ạ.",
+                        keywordsAsk: ["how long"],
+                        keywordsAns: ["twenty minutes", "minutes", "hours", "days", "weeks", "20"]
+                    },
+                    // 9. How often?
+                    {
+                        id: 581,
+                        subTopic: "Câu hỏi ngắn 9: Hỏi mức độ thường xuyên",
+                        qEn: "How often?",
+                        qVi: "Bao lâu một lần? / Có thường xuyên không?",
+                        aEn: "Three times a week, usually on Monday, Wednesday, and Friday.",
+                        aVi: "Ba lần một tuần, thường vào thứ Hai, thứ Tư và thứ Sáu.",
+                        keywordsAsk: ["how often"],
+                        keywordsAns: ["three times", "twice", "every day", "week", "once", "3"]
+                    },
+                    // 10. Where to?
+                    {
+                        id: 582,
+                        subTopic: "Câu hỏi ngắn 10: Hỏi đi đâu (Tài xế/Bạn bè)",
+                        qEn: "Where to?",
+                        qVi: "Chúng ta đi đâu đây ạ?",
+                        aEn: "Take me to the central train station, please.",
+                        aVi: "Làm ơn chở tôi ra ga tàu hỏa trung tâm nhé.",
+                        keywordsAsk: ["where to"],
+                        keywordsAns: ["train station", "airport", "hotel", "beach", "market", "center"]
+                    },
+                    // 11. What else?
+                    {
+                        id: 583,
+                        subTopic: "Câu hỏi ngắn 11: Hỏi còn gì nữa không",
+                        qEn: "What else?",
+                        qVi: "Còn gì nữa không?",
+                        aEn: "We also need two bottles of mineral water and some fresh fruit.",
+                        aVi: "Chúng ta cũng cần hai chai nước khoáng và một ít trái cây tươi.",
+                        keywordsAsk: ["what else"],
+                        keywordsAns: ["water", "fruit", "nothing else", "that's all", "coffee", "two"]
+                    },
+                    // 12. Who cares?
+                    {
+                        id: 584,
+                        subTopic: "Câu hỏi ngắn 12: Ai thèm quan tâm chứ?",
+                        qEn: "Who cares?",
+                        qVi: "Ai thèm bận tâm chứ? / Có sao đâu?",
+                        aEn: "You're right, let's just focus on enjoying our weekend.",
+                        aVi: "Bạn nói đúng, chúng ta cứ tập trung tận hưởng ngày cuối tuần đi.",
+                        keywordsAsk: ["who cares"],
+                        keywordsAns: ["right", "focus", "enjoying", "weekend", "agree", "true"]
+                    },
+                    // 13. Why me?
+                    {
+                        id: 585,
+                        subTopic: "Câu hỏi ngắn 13: Sao lại là tôi?",
+                        qEn: "Why me?",
+                        qVi: "Tại sao lại chọn tôi vậy?",
+                        aEn: "Because you are the most experienced speaker on our team.",
+                        aVi: "Vì bạn là người thuyết trình có nhiều kinh nghiệm nhất trong nhóm.",
+                        keywordsAsk: ["why me"],
+                        keywordsAns: ["experienced", "speaker", "team", "best", "trust", "because"]
+                    },
+                    // 14. Any news?
+                    {
+                        id: 586,
+                        subTopic: "Câu hỏi ngắn 14: Có tin tức gì chưa?",
+                        qEn: "Any news?",
+                        qVi: "Đã có tin tức gì mới chưa?",
+                        aEn: "Yes, the manager just approved our travel budget!",
+                        aVi: "Có rồi, quản lý vừa mới phê duyệt ngân sách chuyến đi của chúng ta!",
+                        keywordsAsk: ["any news"],
+                        keywordsAns: ["approved", "budget", "manager", "not yet", "good news", "yes"]
+                    },
+                    // 15. Guess who?
+                    {
+                        id: 587,
+                        subTopic: "Câu hỏi ngắn 15: Đoán xem ai nào?",
+                        qEn: "Guess who?",
+                        qVi: "Đoán xem ai đây nào?",
+                        aEn: "Hmm, let me guess—is that my old college roommate Minh?",
+                        aVi: "Ừm, để tôi đoán xem — có phải Minh bạn cùng phòng đại học cũ của tôi không?",
+                        keywordsAsk: ["guess who"],
+                        keywordsAns: ["guess", "minh", "roommate", "friend", "know", "voice"]
+                    },
+                    // 16. How's work?
+                    {
+                        id: 588,
+                        subTopic: "Câu hỏi ngắn 16: Công việc dạo này thế nào?",
+                        qEn: "How's work?",
+                        qVi: "Công việc dạo này thế nào rồi?",
+aEn: "A bit busy this month, but everything is going very smoothly.",
+aVi: "Tháng này hơi bận một chút, nhưng mọi thứ đều diễn ra rất suôn sẻ.",
+keywordsAsk: ["how's work", "hows work", "work"],
+keywordsAns: ["busy", "smoothly", "great", "good", "steady", "fine"]
+},
+// 17. How's family?
+{
+id: 589,
+subTopic: "Câu hỏi ngắn 17: Gia đình dạo này thế nào?",
+qEn: "How's family?",
+qVi: "Gia đình bạn dạo này khỏe cả chứ?",
+aEn: "Everyone is healthy and doing great, thank you for asking.",
+aVi: "Mọi người đều khỏe mạnh và rất tốt, cảm ơn bạn đã hỏi thăm.",
+keywordsAsk: ["how's family", "hows family", "family"],
+keywordsAns: ["healthy", "great", "well", "good", "thank", "everyone"]
+},
+// 18. Are you free?
+{
+id: 590,
+subTopic: "Câu hỏi ngắn 18: Bạn có đang rảnh không?",
+qEn: "Are you free?",
+qVi: "Lúc này bạn có rảnh không?",
+aEn: "Yes, I just finished my class. Do you want to grab a coffee?",
+aVi: "Có, tôi vừa dạy xong tiết học. Bạn muốn đi uống cà phê không?",
+keywordsAsk: ["are you free", "free"],
+keywordsAns: ["finished", "coffee", "yes", "busy", "sure", "class"]
+},
+// 19. Need help?
+{
+id: 591,
+subTopic: "Câu hỏi ngắn 19: Cần giúp một tay không?",
+qEn: "Need help?",
+qVi: "Bạn có cần giúp đỡ không?",
+aEn: "Yes, please help me hold this door open for a second.",
+aVi: "Có, làm ơn giữ giúp tôi cánh cửa này mở một lát nhé.",
+keywordsAsk: ["need help", "help"],
+keywordsAns: ["hold", "door", "thank", "good", "please", "carry"]
+},
+// 20. Want some?
+{
+id: 592,
+subTopic: "Câu hỏi ngắn 20: Ăn/uống một chút không?",
+qEn: "Want some?",
+qVi: "Bạn có muốn dùng một chút không?",
+aEn: "No thanks, I just had a big lunch.",
+aVi: "Không cảm ơn, tôi vừa mới ăn trưa no xong.",
+keywordsAsk: ["want some"],
+keywordsAns: ["no thanks", "lunch", "full", "yes", "please", "delicious"]
+},
+// 21. Got a minute?
+{
+id: 593,
+subTopic: "Câu hỏi ngắn 21: Có rảnh một phút không?",
+qEn: "Got a minute?",
+qVi: "Bạn có rảnh một phút để trao đổi không?",
+aEn: "Sure, come on in and tell me what's on your mind.",
+aVi: "Chắc chắn rồi, mời vào và nói cho tôi biết bạn đang nghĩ gì.",
+keywordsAsk: ["got a minute", "minute"],
+keywordsAns: ["come on in", "sure", "mind", "tell me", "yes", "speak"]
+},
+// 22. Any ideas?
+{
+id: 594,
+subTopic: "Câu hỏi ngắn 22: Có ý tưởng nào không?",
+qEn: "Any ideas?",
+qVi: "Mọi người có ý tưởng nào hay không?",
+aEn: "How about organizing an outdoor English club at the beach park?",
+aVi: "Hay là chúng ta tổ chức một câu lạc bộ tiếng Anh ngoài trời ở công viên biển nhé?",
+keywordsAsk: ["any ideas", "ideas"],
+keywordsAns: ["how about", "english club", "beach park", "outdoor", "suggest", "idea"]
+},
+// 23. What's the catch?
+{
+id: 595,
+subTopic: "Câu hỏi ngắn 23: Có điều kiện gì kèm theo không?",
+qEn: "What's the catch?",
+qVi: "Có điều kiện ẩn nào kèm theo không đấy?",
+aEn: "No catch at all—it is a completely free trial for thirty days.",
+aVi: "Không có điều kiện gì cả — đây là bản dùng thử hoàn toàn miễn phí trong 30 ngày.",
+keywordsAsk: ["what's the catch", "whats the catch", "catch"],
+keywordsAns: ["free trial", "thirty days", "no catch", "completely free", "30"]
+},
+// 24. For real?
+{
+id: 596,
+subTopic: "Câu hỏi ngắn 24: Thật sự luôn hả?",
+qEn: "For real?",
+qVi: "Thật sự luôn hả? / Không đùa chứ?",
+aEn: "For real! Our flight tickets got upgraded to business class for free!",
+aVi: "Thật sự luôn! Vé máy bay của chúng ta được nâng hạng thương gia miễn phí rồi!",
+keywordsAsk: ["for real"],
+keywordsAns: ["upgraded", "business class", "flight", "tickets", "true", "yes"]
+},
+// 25. So what?
+{
+id: 597,
+subTopic: "Câu hỏi ngắn 25: Thì sao nào?",
+qEn: "So what?",
+qVi: "Thì sao nào? / Có ảnh hưởng gì đâu?",
+aEn: "It means we have to leave an hour earlier tomorrow morning.",
+aVi: "Điều đó có nghĩa là sáng mai chúng ta phải khởi hành sớm hơn một tiếng.",
+keywordsAsk: ["so what"],
+keywordsAns: ["means", "leave", "earlier", "tomorrow", "morning", "hour"]
+},
+// 26. How come?
+{
+id: 598,
+subTopic: "Câu hỏi ngắn 26: Tại sao lại thế?",
+qEn: "How come?",
+qVi: "Làm sao lại thế? / Tại sao vậy?",
+aEn: "Because the main bridge is closed for maintenance this weekend.",
+aVi: "Vì cây cầu chính bị đóng cửa để bảo trì vào cuối tuần này.",
+keywordsAsk: ["how come"],
+keywordsAns: ["because", "bridge", "closed", "maintenance", "weekend"]
+},
+// 27. What's next?
+{
+id: 599,
+subTopic: "Câu hỏi ngắn 27: Tiếp theo là gì?",
+qEn: "What's next?",
+qVi: "Bước tiếp theo chúng ta làm gì?",
+aEn: "Next, we will practice speaking in pairs for ten minutes.",
+aVi: "Tiếp theo, chúng ta sẽ luyện nói theo cặp trong vòng 10 phút.",
+keywordsAsk: ["what's next", "whats next"],
+keywordsAns: ["practice", "speaking", "pairs", "ten minutes", "next", "10"]
+},
+// 28. Who's next?
+{
+id: 600,
+subTopic: "Câu hỏi ngắn 28: Đến lượt ai tiếp theo?",
+qEn: "Who's next?",
+qVi: "Ai là người tiếp theo ạ?",
+aEn: "I am next! Here is my queue number ticket.",
+aVi: "Đến lượt tôi ạ! Đây là phiếu số thứ tự của tôi.",
+keywordsAsk: ["who's next", "whos next"],
+keywordsAns: ["i am next", "queue", "ticket", "number", "me"]
+},
+// 29. Ready to order?
+{
+id: 601,
+subTopic: "Câu hỏi ngắn 29: Sẵn sàng gọi món chưa?",
+qEn: "Ready to order?",
+qVi: "Quý khách đã sẵn sàng gọi món chưa ạ?",
+aEn: "Yes, I would like a bowl of beef pho and an iced tea.",
+aVi: "Rồi ạ, cho tôi một tô phở bò và một ly trà đá.",
+keywordsAsk: ["ready to order", "order"],
+keywordsAns: ["beef pho", "pho", "iced tea", "bowl", "yes", "like"]
+},
+// 30. Anything else?
+{
+id: 602,
+subTopic: "Câu hỏi ngắn 30: Còn cần gì khác không?",
+qEn: "Anything else?",
+qVi: "Quý khách còn cần thêm gì khác nữa không ạ?",
+aEn: "No, that's everything. Could I have the bill, please?",
+aVi: "Không, đủ hết rồi ạ. Cho tôi xin hóa đơn tính tiền nhé?",
+keywordsAsk: ["anything else"],
+keywordsAns: ["everything", "bill", "that's all", "no", "receipt"]
+}
+]
+},
+
+
+
+                q_ee: {
+                id: "q_ee",
+                title: "ee. CÁC CÂU TRẢ LỜI NGẮN (Short Responses)",
                 items: [
                     // 1. Let's go!
                     {
@@ -5059,11 +5401,708 @@ aEn: "Good for you!",
 aVi: "Thật tốt cho bạn quá! / Chúc mừng bạn nhé!",
 keywordsAsk: ["quit", "sugary sodas", "jogging"],
 keywordsAns: ["good for you"]
+},
+                    // 82. Big mistake!
+                    {
+                        id: 551,
+                        subTopic: "Câu ngắn 82: Sai lầm lớn rồi!",
+                        qEn: "I forgot to save my presentation file before my laptop battery died!",
+                        qVi: "Tôi quên lưu tệp thuyết trình trước khi máy tính xách tay sập nguồn mất rồi!",
+                        aEn: "Big mistake!",
+                        aVi: "Sai lầm lớn rồi!",
+                        keywordsAsk: ["forgot to save", "presentation", "battery died"],
+                        keywordsAns: ["big mistake"]
+                    },
+                    // 83. Any problem?
+                    {
+                        id: 552,
+                        subTopic: "Câu ngắn 83: Có vấn đề gì không?",
+                        qEn: "You have been staring at that contract for twenty minutes with a frown.",
+                        qVi: "Bạn đã nhìn chằm chằm vào bản hợp đồng đó suốt 20 phút với vẻ cau mày rồi.",
+                        aEn: "Any problem?",
+                        aVi: "Có vấn đề gì à?",
+                        keywordsAsk: ["staring", "contract", "frown"],
+                        keywordsAns: ["any problem"]
+                    },
+                    // 84. Don't rush.
+                    {
+                        id: 553,
+                        subTopic: "Câu ngắn 84: Đừng vội vàng",
+                        qEn: "I'm trying to finish packing everything in five minutes so you don't have to wait.",
+                        qVi: "Tôi đang cố xếp xong mọi thứ trong 5 phút để bạn không phải chờ lâu.",
+                        aEn: "Don't rush.",
+                        aVi: "Đừng vội vàng. / Cứ từ từ thôi.",
+                        keywordsAsk: ["finish packing", "five minutes", "wait"],
+                        keywordsAns: ["don't rush", "dont rush"]
+                    },
+                    // 85. Go home.
+                    {
+                        id: 554,
+                        subTopic: "Câu ngắn 85: Về nhà đi",
+                        qEn: "It's already 10 PM and you still have a slight fever.",
+                        qVi: "Đã 10 giờ tối rồi mà bạn vẫn còn đang sốt nhẹ đấy.",
+                        aEn: "Go home.",
+                        aVi: "Về nhà nghỉ đi.",
+                        keywordsAsk: ["10 pm", "slight fever", "late"],
+                        keywordsAns: ["go home"]
+                    },
+                    // 86. Say something!
+                    {
+                        id: 555,
+                        subTopic: "Câu ngắn 86: Nói gì đi chứ!",
+                        qEn: "Why are you just standing there in complete silence after hearing the news?",
+                        qVi: "Sao bạn cứ đứng im lặng hoàn toàn như thế sau khi nghe tin vậy?",
+                        aEn: "Say something!",
+                        aVi: "Nói gì đi chứ!",
+                        keywordsAsk: ["standing there", "silence", "hearing"],
+                        keywordsAns: ["say something"]
+                    },
+                    // 87a. You too!
+                    {
+                        id: 556,
+                        subTopic: "Câu ngắn 87a: Bạn cũng vậy nhé!",
+                        qEn: "Have a safe flight and enjoy your holiday in Da Nang!",
+                        qVi: "Chúc bạn bay bình an và tận hưởng kỳ nghỉ ở Đà Nẵng nhé!",
+                        aEn: "You too!",
+                        aVi: "Bạn cũng vậy nhé!",
+                        keywordsAsk: ["safe flight", "enjoy", "holiday"],
+                        keywordsAns: ["you too"]
+                    },
+                    // 87b. I'm confused.
+                    {
+                        id: 557,
+                        subTopic: "Câu ngắn 87b: Tôi đang bối rối / Khó hiểu quá",
+                        qEn: "First you said the meeting is on Tuesday, and now you say it's on Thursday?",
+                        qVi: "Lúc đầu bạn bảo cuộc họp vào thứ Ba, giờ lại bảo vào thứ Năm à?",
+                        aEn: "I'm confused.",
+                        aVi: "Tôi bị rối rồi đấy. / Tôi không hiểu rõ nữa.",
+                        keywordsAsk: ["tuesday", "thursday", "meeting"],
+                        keywordsAns: ["i'm confused", "im confused", "confused"]
+                    },
+                    // 88. Got it!
+                    {
+                        id: 558,
+                        subTopic: "Câu ngắn 88: Hiểu rồi! / Đã rõ!",
+                        qEn: "Remember to turn off the air conditioner and lock the back door before leaving.",
+                        qVi: "Nhớ tắt máy điều hòa và khóa cửa sau trước khi rời đi nhé.",
+                        aEn: "Got it!",
+                        aVi: "Đã rõ! / Tôi hiểu rồi!",
+                        keywordsAsk: ["turn off", "lock", "back door"],
+                        keywordsAns: ["got it"]
+                    },
+                    // 89. Help me!
+                    {
+                        id: 559,
+                        subTopic: "Câu ngắn 89: Giúp tôi với!",
+                        qEn: "This heavy wooden bookshelf is slipping out of my hands!",
+                        qVi: "Cái giá sách gỗ nặng này đang trượt khỏi tay tôi rồi!",
+                        aEn: "Help me!",
+                        aVi: "Giúp tôi một tay với!",
+                        keywordsAsk: ["heavy", "bookshelf", "slipping"],
+                        keywordsAns: ["help me"]
+                    },
+                    // 90. It's impossible!
+                    {
+                        id: 560,
+                        subTopic: "Câu ngắn 90: Không thể nào! / Bất khả thi!",
+                        qEn: "Can you finish writing a two-hundred-page book in just two days?",
+                        qVi: "Bạn có thể viết xong một cuốn sách dày 200 trang chỉ trong hai ngày không?",
+                        aEn: "It's impossible!",
+                        aVi: "Điều đó là bất khả thi! / Không thể nào!",
+                        keywordsAsk: ["two-hundred-page", "book", "two days"],
+                        keywordsAns: ["it's impossible", "its impossible", "impossible"]
+                    },
+                    // 91. Don't forget!
+                    {
+                        id: 561,
+                        subTopic: "Câu ngắn 91: Đừng quên nhé!",
+                        qEn: "I'll bring the signed documents to your office tomorrow morning.",
+                        qVi: "Sáng mai tôi sẽ mang các tài liệu đã ký tới văn phòng của bạn.",
+                        aEn: "Don't forget!",
+                        aVi: "Đừng quên đấy nhé!",
+                        keywordsAsk: ["bring", "documents", "tomorrow morning"],
+                        keywordsAns: ["don't forget", "dont forget"]
+                    },
+                    // 92. How come?
+                    {
+                        id: 562,
+                        subTopic: "Câu ngắn 92: Làm sao vậy? / Tại sao thế?",
+                        qEn: "The outdoor music concert tonight was suddenly canceled.",
+                        qVi: "Buổi hòa nhạc ngoài trời tối nay bỗng nhiên bị hủy bỏ rồi.",
+                        aEn: "How come?",
+                        aVi: "Tại sao thế? / Sao lại vậy?",
+                        keywordsAsk: ["music concert", "suddenly", "canceled"],
+                        keywordsAns: ["how come"]
+                    },
+                    // 93. Good answer!
+                    {
+                        id: 563,
+                        subTopic: "Câu ngắn 93: Câu trả lời hay đấy!",
+                        qEn: "When asked about my biggest strength, I said I stay calm under pressure and solve problems fast.",
+                        qVi: "Khi được hỏi về điểm mạnh nhất, tôi nói mình giữ bình tĩnh dưới áp lực và giải quyết vấn đề nhanh.",
+                        aEn: "Good answer!",
+                        aVi: "Câu trả lời hay đấy!",
+                        keywordsAsk: ["biggest strength", "under pressure", "solve"],
+                        keywordsAns: ["good answer"]
+                    },
+                    // 94. Hi there!
+                    {
+                        id: 564,
+                        subTopic: "Câu ngắn 94: Chào bạn nhé!",
+                        qEn: "Good morning! Fancy seeing you at this coffee shop!",
+                        qVi: "Chào buổi sáng! Thật tình cờ khi gặp bạn ở quán cà phê này!",
+                        aEn: "Hi there!",
+                        aVi: "Chào bạn nhé!",
+                        keywordsAsk: ["good morning", "fancy seeing", "coffee shop"],
+                        keywordsAns: ["hi there"]
+                    },
+                    // 95. Is it?
+                    {
+                        id: 565,
+                        subTopic: "Câu ngắn 95: Thế à? / Vậy sao?",
+                        qEn: "That new Vietnamese restaurant across the street is famous for its crispy banh mi.",
+                        qVi: "Nhà hàng Việt Nam mới bên kia đường nổi tiếng với món bánh mì giòn rụm đấy.",
+                        aEn: "Is it?",
+                        aVi: "Vậy sao? / Thế à?",
+                        keywordsAsk: ["restaurant", "famous", "banh mi"],
+                        keywordsAns: ["is it"]
+                    },
+                    // 96. Isn't it?
+                    {
+                        id: 566,
+                        subTopic: "Câu ngắn 96: Phải không nào?",
+                        qEn: "The sea breeze at Tuy Hoa beach this evening is wonderfully cool!",
+                        qVi: "Gió biển ở bãi biển Tuy Hòa tối nay mát rượi tuyệt vời!",
+                        aEn: "Isn't it?",
+                        aVi: "Phải không nào? / Đúng thế nhỉ?",
+                        keywordsAsk: ["sea breeze", "tuy hoa", "cool"],
+                        keywordsAns: ["isn't it", "isnt it"]
+                    },
+                    // 97. It's over.
+                    {
+id: 567,
+subTopic: "Câu ngắn 97: Kết thúc rồi / Xong xuôi rồi",
+qEn: "Did the final referee whistle just blow for the championship match?",
+qVi: "Tiếng còi mãn cuộc của trọng tài trận chung kết vừa vang lên phải không?",
+aEn: "It's over.",
+aVi: "Kết thúc rồi. / Hết trận rồi.",
+keywordsAsk: ["referee", "whistle", "championship match"],
+keywordsAns: ["it's over", "its over"]
+},
+// 98. How stupid!
+{
+id: 568,
+subTopic: "Câu ngắn 98: Ngớ ngẩn thật! / Dại dột quá!",
+qEn: "I locked my house keys inside the room and closed the door behind me!",
+qVi: "Tôi để quên chìa khóa nhà ở bên trong phòng rồi đóng sập cửa lại mất rồi!",
+aEn: "How stupid!",
+aVi: "Ngớ ngẩn thật đấy! / Đãng trí quá!",
+keywordsAsk: ["locked", "house keys", "closed the door"],
+keywordsAns: ["how stupid", "stupid"]
+},
+// 99. Get ready!
+{
+id: 569,
+subTopic: "Câu ngắn 99: Chuẩn bị sẵn sàng đi!",
+qEn: "The photographer is about to count to three for our group picture.",
+qVi: "Nhiếp ảnh gia sắp đếm đến ba để chụp ảnh tập thể cho chúng ta rồi.",
+aEn: "Get ready!",
+aVi: "Chuẩn bị sẵn sàng nào!",
+keywordsAsk: ["photographer", "count to three", "group picture"],
+keywordsAns: ["get ready"]
+},
+// 100. Follow instructions.
+{
+id: 570,
+subTopic: "Câu ngắn 100: Làm theo hướng dẫn",
+qEn: "How do I assemble this new wooden desk safely without breaking any parts?",
+qVi: "Làm sao để tôi lắp ráp chiếc bàn gỗ mới này an toàn mà không làm gãy bộ phận nào?",
+aEn: "Follow instructions.",
+aVi: "Hãy làm theo hướng dẫn sử dụng.",
+keywordsAsk: ["assemble", "wooden desk", "breaking"],
+keywordsAns: ["follow instructions", "instructions"]
+},
+// 101. Carry on.
+{
+id: 571,
+subTopic: "Câu ngắn 101: Tiếp tục đi nào",
+qEn: "Sorry for interrupting your presentation, please continue speaking.",
+qVi: "Xin lỗi vì đã ngắt lời bài thuyết trình của bạn, mời bạn nói tiếp đi.",
+aEn: "Carry on.",
+aVi: "Tiếp tục đi nào.",
+keywordsAsk: ["interrupting", "presentation", "continue"],
+keywordsAns: ["carry on"]
+},
+// 103. Another time.
+{
+id: 572,
+subTopic: "Câu ngắn 103: Để dịp khác nhé",
+qEn: "Would you like to stay for another cup of tea before heading home?",
+qVi: "Bạn có muốn ở lại uống thêm một tách trà nữa trước khi về nhà không?",
+aEn: "Another time.",
+aVi: "Để dịp khác nhé.",
+keywordsAsk: ["stay", "cup of tea", "heading home"],
+keywordsAns: ["another time"]}]
+},
+            q_ff: {
+                id: "q_ff",
+                title: "ff. CẢM XÚC & LỜI KHEN (Emotions & Compliments)",
+                items: [
+                    // --- PHẦN 1: BÀY TỎ CẢM XÚC (EMOTIONS & FEELINGS) ---
+                    // 1. Vui mừng / Hào hứng
+                    {
+                        id: 603,
+                        subTopic: "Cảm xúc 1: Vui mừng & Hào hứng (Excited)",
+                        qEn: "You have a huge smile on your face today! Why are you so excited?",
+                        qVi: "Hôm nay trên mặt bạn nở một nụ cười rạng rỡ! Sao bạn lại hào hứng thế?",
+                        aEn: "I'm thrilled because my family is coming to visit me this weekend!",
+                        aVi: "Mình đang rất phấn khởi vì cuối tuần này gia đình mình sẽ tới thăm!",
+                        keywordsAsk: ["smile", "why are you", "so excited", "happy"],
+                        keywordsAns: ["thrilled", "excited", "family", "visit", "weekend", "happy", "glad"]
+                    },
+                    // 2. Lo lắng / Hồi hộp trước sự kiện
+                    {
+                        id: 604,
+                        subTopic: "Cảm xúc 2: Hồi hộp & Lo lắng (Nervous)",
+                        qEn: "How are you feeling before your big English presentation?",
+                        qVi: "Bạn cảm thấy thế nào trước bài thuyết trình tiếng Anh quan trọng của mình?",
+                        aEn: "I feel a bit nervous, so I'm taking deep breaths to stay calm.",
+                        aVi: "Tôi cảm thấy hơi hồi hộp một chút, nên tôi đang hít thở sâu để giữ bình tĩnh.",
+                        keywordsAsk: ["feeling before", "english presentation", "nervous"],
+                        keywordsAns: ["nervous", "anxious", "deep breaths", "calm", "confident", "ready"]
+                    },
+                    // 3. Mệt mỏi / Kiệt sức sau ngày dài
+                    {
+                        id: 605,
+                        subTopic: "Cảm xúc 3: Mệt mỏi (Exhausted)",
+                        qEn: "You look completely exhausted after that long seminar. Are you okay?",
+                        qVi: "Trông bạn hoàn toàn kiệt sức sau buổi hội thảo dài đó. Bạn ổn chứ?",
+                        aEn: "I'm just drained and ready for a hot shower and a good night's sleep.",
+                        aVi: "Tôi chỉ thấy hơi đuối sức và chỉ muốn tắm nước nóng rồi ngủ một giấc thật ngon.",
+                        keywordsAsk: ["exhausted", "seminar", "are you okay", "tired"],
+                        keywordsAns: ["drained", "tired", "exhausted", "shower", "sleep", "rest", "okay"]
+                    },
+                    // 4. Bất ngờ / Ngạc nhiên
+                    {
+                        id: 606,
+                        subTopic: "Cảm xúc 4: Ngạc nhiên bất ngờ (Surprised)",
+                        qEn: "What was your reaction when everyone threw a surprise birthday party for you?",
+                        qVi: "Phản ứng của bạn thế nào khi mọi người tổ chức tiệc sinh nhật bất ngờ cho bạn?",
+                        aEn: "I was totally speechless and touched by everyone's kindness!",
+                        aVi: "Tôi hoàn toàn lặng người vì bất ngờ và vô cùng xúc động trước tình cảm của mọi người!",
+                        keywordsAsk: ["reaction", "surprise birthday", "party"],
+                        keywordsAns: ["speechless", "touched", "surprised", "amazed", "kindness", "shocked", "happy"]
+                    },
+                    // 5. Tự hào về bản thân / Thành tích
+                    {
+                        id: 607,
+                        subTopic: "Cảm xúc 5: Tự hào (Proud)",
+                        qEn: "How did you feel when you crossed the finish line of your first marathon?",
+                        qVi: "Bạn cảm thấy thế nào khi chạy qua vạch đích của giải chạy marathon đầu tiên?",
+                        aEn: "I felt overwhelmingly proud of myself for never giving up!",
+                        aVi: "Tôi cảm thấy vô cùng tự hào về bản thân vì đã không bao giờ bỏ cuộc!",
+                        keywordsAsk: ["finish line", "marathon", "how did you feel"],
+                        keywordsAns: ["proud", "myself", "never giving up", "accomplished", "amazing", "happy"]
+                    },
+                    // 6. Thất vọng nhẹ & Cách vượt qua
+                    {
+                        id: 608,
+                        subTopic: "Cảm xúc 6: Thất vọng & Lạc quan (Disappointed)",
+                        qEn: "Were you disappointed when the beach trip got postponed due to rain?",
+                        qVi: "Bạn có thấy thất vọng khi chuyến đi biển bị hoãn lại vì trời mưa không?",
+                        aEn: "A little disappointed, yes, but we can always reschedule it for next sunny Sunday.",
+                        aVi: "Có hơi hụt hẫng một chút, nhưng chúng ta luôn có thể dời sang Chủ Nhật nắng đẹp tuần tới.",
+                        keywordsAsk: ["disappointed", "postponed", "rain", "beach trip"],
+                        keywordsAns: ["disappointed", "reschedule", "sunny", "sunday", "next", "okay", "little"]
+                    },
+                    // 7. Cảm kích / Biết ơn sự giúp đỡ
+                    {
+                        id: 609,
+                        subTopic: "Cảm xúc 7: Biết ơn (Grateful)",
+                        qEn: "I stayed behind to help you finish organizing the classroom materials.",
+                        qVi: "Tôi đã ở lại giúp bạn sắp xếp xong tài liệu lớp học rồi đấy.",
+                        aEn: "I'm so grateful for your thoughtfulness! I couldn't have done it without you.",
+                        aVi: "Tôi thực sự rất biết ơn sự chu đáo của bạn! Nếu không có bạn tôi khó mà làm xong được.",
+                        keywordsAsk: ["stayed behind", "help you", "organizing", "materials"],
+                        keywordsAns: ["grateful", "thank", "thoughtfulness", "appreciate", "without you", "kind"]
+                    },
+                    // 8. Nhẹ nhõm sau khi hoàn thành việc khó
+                    {
+                        id: 610,
+                        subTopic: "Cảm xúc 8: Nhẹ nhõm (Relieved)",
+                        qEn: "Now that the final exams are all graded, how do you feel?",
+                        qVi: "Bây giờ tất cả bài thi cuối kỳ đã chấm xong hết rồi, bạn thấy sao?",
+                        aEn: "I feel so relieved! It's like a huge weight has been lifted off my shoulders.",
+                        aVi: "Tôi thấy nhẹ nhõm vô cùng! Cứ như trút được một gánh nặng lớn khỏi vai vậy.",
+                        keywordsAsk: ["final exams", "graded", "how do you feel"],
+                        keywordsAns: ["relieved", "weight", "lifted", "shoulders", "relaxed", "free", "great"]
+                    },
+                    // 9. Thư giãn / Bình yên
+                    {
+                        id: 611,
+                        subTopic: "Cảm xúc 9: Thư giãn & Bình yên (Peaceful)",
+                        qEn: "How do you feel sitting by the ocean watching the sunset?",
+                        qVi: "Bạn cảm thấy thế nào khi ngồi bên bờ biển ngắm hoàng hôn?",
+                        aEn: "It makes me feel completely peaceful and refreshed after a busy week.",
+                        aVi: "Điều đó khiến tôi cảm thấy hoàn toàn bình yên và tươi mới sau một tuần bận rộn.",
+                        keywordsAsk: ["sitting by the ocean", "sunset", "how do you feel"],
+                        keywordsAns: ["peaceful", "refreshed", "relaxed", "calm", "wonderful", "serene"]
+                    },
+                    // 10. Bối rối / Ngượng ngùng nhẹ
+                    {
+                        id: 612,
+                        subTopic: "Cảm xúc 10: Ngượng ngùng (Embarrassed)",
+                        qEn: "Why did your face turn so red during the morning greeting?",
+                        qVi: "Sao mặt bạn lại đỏ bừng lên trong lúc chào hỏi buổi sáng thế?",
+                        aEn: "I was so embarrassed because I accidentally called the director by the wrong name!",
+                        aVi: "Tôi ngượng chín mặt vì vô tình gọi nhầm tên giám đốc!",
+                        keywordsAsk: ["face turn", "red", "morning greeting"],
+                        keywordsAns: ["embarrassed", "wrong name", "accidentally", "director", "shy", "mistake"]
+                    },
+
+                    // --- PHẦN 2: LỜI KHEN NGỢI & ĐÁP LẠI (COMPLIMENTS) ---
+                    // 11. Khen khả năng nói tiếng Anh
+                    {
+                        id: 613,
+                        subTopic: "Lời khen 11: Khen nói tiếng Anh hay (Language Compliment)",
+                        qEn: "Your English pronunciation is so clear and natural! How long have you studied?",
+                        qVi: "Phát âm tiếng Anh của bạn rõ ràng và tự nhiên quá! Bạn học bao lâu rồi?",
+                        aEn: "Thank you so much! That really motivates me to keep practicing every day.",
+                        aVi: "Cảm ơn bạn rất nhiều! Lời khen đó thực sự tiếp thêm động lực để mình luyện tập mỗi ngày.",
+                        keywordsAsk: ["pronunciation", "clear and natural", "how long"],
+                        keywordsAns: ["thank", "motivates", "practicing", "kind", "appreciate", "glad"]
+                    },
+                    // 12. Khen trang phục / Phong cách ăn mặc
+                    {
+                        id: 614,
+                        subTopic: "Lời khen 12: Khen trang phục đẹp (Outfit Compliment)",
+                        qEn: "That traditional Ao Dai looks absolutely stunning on you!",
+                        qVi: "Chiếc áo dài truyền thống đó nhìn trên người bạn thật sự lộng lẫy!",
+                        aEn: "How sweet of you to say so! Thank you for the lovely compliment.",
+                        aVi: "Bạn thật khéo khen quá! Cảm ơn bạn vì lời khen dễ thương này nhé.",
+                        keywordsAsk: ["ao dai", "stunning", "looks", "outfit"],
+keywordsAns: ["sweet", "thank", "compliment", "lovely", "kind", "glad"]
+},
+// 13. Khen tài nấu ăn ngon
+{
+id: 615,
+subTopic: "Lời khen 13: Khen nấu ăn ngon (Cooking Compliment)",
+qEn: "This homemade spring roll dish is delicious! You're an amazing cook!",
+qVi: "Món chả giò tự làm này ngon tuyệt cú mèo! Bạn nấu ăn giỏi thật đấy!",
+aEn: "I'm so glad you enjoyed it! Please help yourself to some more.",
+aVi: "Mình rất vui vì bạn thấy ngon! Cứ tự nhiên dùng thêm nữa nhé.",
+keywordsAsk: ["spring roll", "delicious", "amazing cook"],
+keywordsAns: ["glad", "enjoyed", "help yourself", "more", "thank", "happy"]
+},
+// 14. Khen bài thuyết trình / Ý tưởng sáng tạo
+{
+id: 616,
+subTopic: "Lời khen 14: Khen ý tưởng công việc (Work Compliment)",
+qEn: "Your creative idea saved our entire marketing campaign! Brilliant work!",
+qVi: "Ý tưởng sáng tạo của bạn đã cứu cả chiến dịch tiếp thị của chúng ta! Làm xuất sắc lắm!",
+aEn: "Thank you! It was truly a team effort and everyone contributed.",
+aVi: "Cảm ơn bạn! Đó thực sự là nỗ lực chung của cả nhóm và ai cũng đã đóng góp.",
+keywordsAsk: ["creative idea", "campaign", "brilliant work"],
+keywordsAns: ["thank", "team effort", "contributed", "appreciate", "everyone", "glad"]
+},
+// 15. Khen không gian nhà cửa ấm cúng
+{
+id: 617,
+subTopic: "Lời khen 15: Khen nhà cửa đẹp (Home Compliment)",
+qEn: "You have decorated your living room so tastefully! It feels very cozy.",
+qVi: "Bạn trang trí phòng khách có gu thẩm mỹ quá! Cảm giác rất ấm cúng.",
+aEn: "Thanks a lot! We spent last weekend picking out the plants and paintings.",
+aVi: "Cảm ơn bạn nhiều! Cuối tuần trước vợ chồng mình vừa chọn cây xanh và tranh treo tường đấy.",
+keywordsAsk: ["decorated", "living room", "cozy", "tastefully"],
+keywordsAns: ["thanks", "plants", "paintings", "weekend", "glad", "welcome"]
+},
+// 16. Khen kiểu tóc mới
+{
+id: 618,
+subTopic: "Lời khen 16: Khen kiểu tóc mới (Hairstyle Compliment)",
+qEn: "Did you just get a haircut? That new style makes you look much younger!",
+qVi: "Bạn mới cắt tóc à? Kiểu tóc mới này trông bạn trẻ trung hơn hẳn đấy!",
+aEn: "Really? Thanks for noticing! I wasn't sure about it at first.",
+aVi: "Thật vậy sao? Cảm ơn bạn đã để ý nhé! Lúc đầu mình cũng hơi phân vân về kiểu này.",
+keywordsAsk: ["haircut", "new style", "younger"],
+keywordsAns: ["noticing", "thanks", "really", "wasn't sure", "glad", "thank"]
+},
+// 17. Khen sự kiên nhẫn và tận tâm
+{
+id: 619,
+subTopic: "Lời khen 17: Khen tính cách tận tâm (Character Compliment)",
+qEn: "You are always so patient and helpful with every single student.",
+qVi: "Thầy/bạn lúc nào cũng kiên nhẫn và tận tình với từng học sinh một.",
+aEn: "That means a lot to me, thank you! Seeing them improve is my greatest joy.",
+aVi: "Lời nhận xét đó rất có ý nghĩa với mình, cảm ơn bạn! Thấy các em tiến bộ là niềm vui lớn nhất của mình.",
+keywordsAsk: ["patient", "helpful", "student"],
+keywordsAns: ["means a lot", "thank", "improve", "joy", "appreciate", "kind"]
+},
+// 18. Khen khả năng giải quyết vấn đề nhanh
+{
+id: 620,
+subTopic: "Lời khen 18: Khen xử lý tình huống khéo (Problem-Solving Compliment)",
+qEn: "You handled that difficult customer so calmly and professionally!",
+qVi: "Bạn đã xử lý vị khách hàng khó tính đó thật bình tĩnh và chuyên nghiệp!",
+aEn: "Thank you for saying that. Staying calm really helps solve things faster.",
+aVi: "Cảm ơn bạn đã khen. Giữ bình tĩnh thực sự giúp giải quyết mọi việc nhanh hơn.",
+keywordsAsk: ["handled", "customer", "calmly", "professionally"],
+keywordsAns: ["thank", "staying calm", "solve", "faster", "appreciate", "glad"]
+},
+// 19. Khen giọng hát / Tài năng âm nhạc
+{
+id: 621,
+subTopic: "Lời khen 19: Khen tài năng nghệ thuật (Talent Compliment)",
+qEn: "I didn't know you could play the acoustic guitar so well! You're very talented!",
+qVi: "Mình không biết là bạn chơi đàn ghi-ta thùng hay đến thế đấy! Bạn có năng khiếu thật!",
+aEn: "You're flattering me! I just play for fun in my spare time.",
+aVi: "Bạn quá khen rồi! Mình chỉ chơi cho vui vào thời gian rảnh thôi.",
+keywordsAsk: ["acoustic guitar", "talented", "play"],
+keywordsAns: ["flattering", "for fun", "spare time", "thank", "hobby", "practice"]
+},
+// 20. Lời khen tổng kết & Chúc thành công
+{
+id: 622,
+subTopic: "Lời khen 20: Khen tinh thần học hỏi (Dedication Compliment)",
+qEn: "Your dedication to learning new skills every day is truly inspiring!",
+qVi: "Sự tận tâm học hỏi kỹ năng mới mỗi ngày của bạn thực sự truyền cảm hứng!",
+aEn: "Thank you so much! Let's keep inspiring and supporting each other.",
+aVi: "Cảm ơn bạn rất nhiều! Chúng ta hãy tiếp tục truyền cảm hứng và ủng hộ lẫn nhau nhé.",
+keywordsAsk: ["dedication", "inspiring", "new skills"],
+keywordsAns: ["thank", "inspiring", "supporting", "each other", "together", "appreciate"]
 }
+]
+},
+            q_gg: {
+                id: "q_gg",
+                title: "gg. THỂ THAO & SỨC KHỎE (Sports & Health)",
+                items: [
+                    // --- PHẦN 1: THỂ THAO & VẬN ĐỘNG (SPORTS & FITNESS) ---
+                    // 1. Môn thể thao yêu thích nhất
+                    {
+                        id: 623,
+                        subTopic: "Thể thao 1: Môn yêu thích (Favorite Sport)",
+                        qEn: "What is your favorite sport to play or watch on weekends?",
+                        qVi: "Môn thể thao yêu thích nhất của bạn để chơi hoặc xem vào cuối tuần là gì?",
+                        aEn: "I love playing badminton with my friends and watching football matches on TV.",
+                        aVi: "Tôi thích chơi cầu lông với bạn bè và xem các trận bóng đá trên TV.",
+                        keywordsAsk: ["favorite sport", "play or watch", "weekends", "sport"],
+                        keywordsAns: ["badminton", "football", "soccer", "tennis", "swimming", "playing", "watching"]
+                    },
+                    // 2. Thói quen chạy bộ buổi sáng
+                    {
+                        id: 624,
+                        subTopic: "Thể thao 2: Chạy bộ buổi sáng (Morning Jogging)",
+                        qEn: "How often do you go jogging along the beach park?",
+                        qVi: "Bạn có thường xuyên đi chạy bộ dọc công viên bãi biển không?",
+                        aEn: "I jog for thirty minutes almost every morning at 5:30 AM to stay fit.",
+                        aVi: "Tôi chạy bộ khoảng 30 phút hầu như mỗi sáng lúc 5 giờ 30 để giữ dáng.",
+                        keywordsAsk: ["jogging", "beach park", "how often", "run"],
+                        keywordsAns: ["thirty minutes", "every morning", "stay fit", "jog", "run", "5:30", "30"]
+                    },
+                    // 3. Tập luyện tại phòng Gym
+                    {
+                        id: 625,
+                        subTopic: "Thể thao 3: Tập Gym (Working Out at the Gym)",
+                        qEn: "Do you prefer working out at the gym or exercising outdoors?",
+                        qVi: "Bạn thích tập luyện ở phòng gym hay tập thể dục ngoài trời hơn?",
+                        aEn: "I enjoy lifting weights at the gym three times a week to build muscle strength.",
+                        aVi: "Tôi thích tập tạ ở phòng gym ba lần một tuần để tăng cường sức mạnh cơ bắp.",
+                        keywordsAsk: ["gym", "working out", "exercising outdoors", "prefer"],
+                        keywordsAns: ["lifting weights", "gym", "three times", "muscle", "strength", "outdoors", "3"]
+                    },
+                    // 4. Rủ bạn đi đánh cầu lông / đá bóng
+                    {
+                        id: 626,
+                        subTopic: "Thể thao 4: Rủ chơi thể thao (Inviting to Play)",
+                        qEn: "Would you like to join our badminton match at the sports center tonight?",
+                        qVi: "Tối nay bạn có muốn tham gia trận cầu lông của nhóm mình ở trung tâm thể thao không?",
+                        aEn: "Count me in! Let me grab my racket and shuttlecocks right after work.",
+                        aVi: "Cho mình tham gia với! Để mình lấy vợt và cầu ngay sau giờ làm nhé.",
+                        keywordsAsk: ["badminton match", "sports center", "join", "tonight"],
+                        keywordsAns: ["count me in", "racket", "shuttlecocks", "after work", "sure", "yes", "join"]
+                    },
+                    // 5. Bơi lội mùa hè
+                    {
+                        id: 627,
+                        subTopic: "Thể thao 5: Bơi lội (Swimming)",
+                        qEn: "Do you know how to swim, and where do you usually go swimming?",
+                        qVi: "Bạn có biết bơi không, và bạn thường đi bơi ở đâu?",
+                        aEn: "Yes, I swim very well. I usually swim in the ocean early in the morning.",
+                        aVi: "Có, tôi bơi rất giỏi. Tôi thường bơi ở biển vào sáng sớm.",
+                        keywordsAsk: ["swim", "swimming", "where do you"],
+                        keywordsAns: ["ocean", "sea", "pool", "morning", "swim", "well", "yes"]
+                    },
+                    // 6. Đạp xe thư giãn cuối tuần
+                    {
+                        id: 628,
+                        subTopic: "Thể thao 6: Đạp xe đạp (Cycling)",
+                        qEn: "How far do you usually cycle on Sunday mornings?",
+                        qVi: "Vào các buổi sáng Chủ Nhật bạn thường đạp xe bao xa?",
+                        aEn: "I usually ride about fifteen kilometers through the quiet countryside roads.",
+                        aVi: "Tôi thường đạp xe khoảng 15 cây số qua những con đường làng yên tĩnh.",
+                        keywordsAsk: ["cycle", "how far", "sunday mornings", "bike"],
+                        keywordsAns: ["fifteen", "kilometers", "countryside", "roads", "ride", "cycle", "15"]
+                    },
+                    // 7. Tập Yoga & Giãn cơ
+                    {
+                        id: 629,
+                        subTopic: "Thể thao 7: Tập Yoga (Yoga & Flexibility)",
+                        qEn: "Why did you decide to start practicing yoga?",
+                        qVi: "Tại sao bạn lại quyết định bắt đầu tập yoga vậy?",
+                        aEn: "Yoga helps relieve back pain, improves flexibility, and reduces daily stress.",
+                        aVi: "Yoga giúp giảm đau lưng, tăng sự dẻo dai và giảm căng thẳng hằng ngày.",
+                        keywordsAsk: ["practicing yoga", "yoga", "why"],
+                        keywordsAns: ["back pain", "flexibility", "reduces", "stress", "relieve", "relax"]
+                    },
+                    // 8. Khởi động trước khi vận động mạnh
+                    {
+                        id: 630,
+                        subTopic: "Thể thao 8: Khởi động kỹ (Warming Up)",
+                        qEn: "Why is it so important to warm up before playing intense sports?",
+                        qVi: "Tại sao việc khởi động trước khi chơi các môn thể thao cường độ cao lại quan trọng?",
+                        aEn: "Warming up stretches your muscles and prevents painful sprains or injuries.",
+                        aVi: "Khởi động giúp giãn cơ và ngăn ngừa bong gân hoặc chấn thương đau đớn.",
+                        keywordsAsk: ["warm up", "important", "intense sports", "before"],
+                        keywordsAns: ["stretches", "muscles", "prevents", "sprains", "injuries", "safe"]
+                    },
+                    // 9. Hỏi kết quả trận đấu bóng đá
+                    {
+                        id: 631,
+                        subTopic: "Thể thao 9: Bình luận trận đấu (Match Score)",
+                        qEn: "Did you watch last night's football match? What was the final score?",
+                        qVi: "Bạn có xem trận bóng đá tối qua không? Tỷ số chung cuộc là bao nhiêu?",
+                        aEn: "Yes! Our national team won two to one in an exciting comeback!",
+                        aVi: "Có chứ! Đội tuyển quốc gia của chúng ta đã thắng 2-1 trong một màn lội ngược dòng đầy kịch tính!",
+                        keywordsAsk: ["football match", "final score", "last night"],
+                        keywordsAns: ["won", "two to one", "comeback", "exciting", "score", "match", "2", "1"]
+                    },
+                    // 10. Chấn thương nhẹ khi chơi thể thao
+                    {
+                        id: 632,
+                        subTopic: "Thể thao 10: Xử lý chấn thương (Sports Injury)",
+                        qEn: "Ouch! You're limping. Did you twist your ankle during the game?",
+                        qVi: "Ái chà! Bạn đang đi khập khiễng kìa. Bạn bị trẹo mắt cá chân trong lúc thi đấu à?",
+                        aEn: "Yeah, I landed awkwardly, so I need to put an ice pack on it and rest for a few days.",
+                        aVi: "Ừ, mình tiếp đất sai tư thế nên cần chườm đá và nghỉ ngơi vài ngày.",
+                        keywordsAsk: ["limping", "twist your ankle", "ankle", "game"],
+                        keywordsAns: ["ice pack", "rest", "landed", "ankle", "few days", "sprained"]
+                    },
 
-
+                    // --- PHẦN 2: CHĂM SÓC SỨC KHỎE & LỐI SỐNG LÀNH MẠNH (HEALTH & WELLNESS) ---
+                    // 11. Chế độ ăn uống lành mạnh
+                    {
+                        id: 633,
+                        subTopic: "Sức khỏe 11: Ăn uống lành mạnh (Healthy Diet)",
+                        qEn: "What do you do to maintain a healthy and balanced diet?",
+                        qVi: "Bạn làm gì để duy trì một chế độ ăn uống lành mạnh và cân bằng?",
+                        aEn: "I eat plenty of green vegetables, fresh fruit, and lean protein while cutting back on sugar.",
+                        aVi: "Tôi ăn nhiều rau xanh, trái cây tươi và đạm nạc đồng thời cắt giảm đồ ngọt.",
+                        keywordsAsk: ["healthy", "balanced diet", "diet", "maintain"],
+                        keywordsAns: ["vegetables", "fruit", "protein", "sugar", "healthy", "eat", "cutting back"]
+                    },
+                    // 12. Thói quen uống đủ nước mỗi ngày
+                    {
+                        id: 634,
+                        subTopic: "Sức khỏe 12: Uống đủ nước (Staying Hydrated)",
+                        qEn: "How much water do you try to drink every single day?",
+                        qVi: "Mỗi ngày bạn cố gắng uống bao nhiêu nước?",
+                        aEn: "I always carry a water bottle and drink at least two liters of water daily.",
+                        aVi: "Tôi luôn mang theo bình nước và uống ít nhất hai lít nước mỗi ngày.",
+                        keywordsAsk: ["how much water", "drink", "every single day"],
+                        keywordsAns: ["two liters", "liters", "water bottle", "daily", "hydrated", "2"]
+},
+// 13. Giấc ngủ chất lượng
+{
+id: 635,
+subTopic: "Sức khỏe 13: Giấc ngủ đủ giấc (Quality Sleep)",
+qEn: "How many hours of sleep do you usually get each night?",
+qVi: "Mỗi đêm bạn thường ngủ được bao nhiêu tiếng?",
+aEn: "I aim for seven to eight hours of sleep and avoid looking at my phone before bed.",
+aVi: "Tôi đặt mục tiêu ngủ từ 7 đến 8 tiếng và tránh nhìn điện thoại trước khi đi ngủ.",
+keywordsAsk: ["hours of sleep", "sleep", "each night"],
+keywordsAns: ["seven", "eight", "hours", "phone", "before bed", "rest", "7", "8"]
+},
+// 14. Khám sức khỏe định kỳ
+{
+id: 636,
+subTopic: "Sức khỏe 14: Khám định kỳ (Annual Check-up)",
+qEn: "When was the last time you went for a general health check-up?",
+qVi: "Lần gần nhất bạn đi khám sức khỏe tổng quát là khi nào?",
+aEn: "I get a full medical check-up once a year to make sure everything is normal.",
+aVi: "Tôi đi kiểm tra sức khỏe toàn diện mỗi năm một lần để đảm bảo mọi chỉ số đều bình thường.",
+keywordsAsk: ["health check-up", "general", "last time", "medical"],
+keywordsAns: ["once a year", "medical", "check-up", "normal", "yearly", "doctor"]
+},
+// 15. Giảm căng thẳng / Stress công việc
+{
+id: 637,
+subTopic: "Sức khỏe 15: Giải tỏa căng thẳng (Stress Relief)",
+qEn: "How do you usually relieve stress after a busy week of teaching?",
+qVi: "Bạn thường giải tỏa căng thẳng như thế nào sau một tuần giảng dạy bận rộn?",
+aEn: "Listening to soft instrumental music and walking along the beach really helps me unwind.",
+aVi: "Nghe nhạc không lời nhẹ nhàng và đi dạo dọc bờ biển thực sự giúp tôi thư giãn.",
+keywordsAsk: ["relieve stress", "stress", "busy week"],
+keywordsAns: ["music", "walking", "beach", "unwind", "relax", "meditation", "rest"]
+},
+// 16. Bảo vệ mắt khi dùng máy tính nhiều
+{
+id: 638,
+subTopic: "Sức khỏe 16: Bảo vệ thị lực (Eye Care)",
+qEn: "Working on a computer all day can strain your eyes. How do you protect them?",
+qVi: "Làm việc trên máy tính cả ngày dễ làm mỏi mắt. Bạn bảo vệ mắt bằng cách nào?",
+aEn: "I follow the 20-20-20 rule and take short breaks to look at green trees outside.",
+aVi: "Tôi áp dụng quy tắc 20-20-20 và nghỉ giải lao ngắn để nhìn ra cây xanh bên ngoài.",
+keywordsAsk: ["strain your eyes", "protect", "computer", "eyes"],
+keywordsAns: ["20-20-20", "short breaks", "green trees", "rest", "glasses", "screen"]
+},
+// 17. Bổ sung vitamin & tăng đề kháng
+{
+id: 639,
+subTopic: "Sức khỏe 17: Tăng sức đề kháng (Boosting Immunity)",
+qEn: "What do you do to boost your immune system during the rainy season?",
+qVi: "Bạn làm gì để tăng cường hệ miễn dịch trong mùa mưa?",
+aEn: "I drink fresh orange juice for Vitamin C and eat warm ginger soup.",
+aVi: "Tôi uống nước cam tươi để bổ sung Vitamin C và ăn canh gừng ấm.",
+keywordsAsk: ["immune system", "boost", "rainy season"],
+keywordsAns: ["orange juice", "vitamin c", "ginger", "warm", "fruit", "vitamins"]
+},
+// 18. Hạn chế thức ăn nhanh & đồ uống có đường
+{
+id: 640,
+subTopic: "Sức khỏe 18: Hạn chế đồ ngọt & dầu mỡ (Cutting Junk Food)",
+qEn: "Have you tried cutting down on fast food and sugary drinks?",
+qVi: "Bạn đã thử cắt giảm thức ăn nhanh và đồ uống nhiều đường chưa?",
+aEn: "Yes, I replaced sugary sodas with unsweetened green tea and feel much more energetic.",
+aVi: "Rồi, tôi đã thay nước ngọt có ga bằng trà xanh không đường và thấy tràn đầy năng lượng hơn hẳn.",
+keywordsAsk: ["fast food", "sugary drinks", "cutting down", "junk food"],
+keywordsAns: ["green tea", "unsweetened", "energetic", "replaced", "water", "healthy"]
+},
+// 19. Tư thế ngồi đúng khi làm việc
+{
+id: 641,
+subTopic: "Sức khỏe 19: Giữ đúng tư thế (Good Posture)",
+qEn: "How can office workers prevent neck and shoulder pain?",
+qVi: "Nhân viên văn phòng có thể phòng ngừa đau cổ và vai gáy bằng cách nào?",
+aEn: "Keep your back straight, adjust your screen to eye level, and stretch every hour.",
+aVi: "Hãy giữ thẳng lưng, điều chỉnh màn hình ngang tầm mắt và vươn vai giãn cơ mỗi tiếng.",
+keywordsAsk: ["neck", "shoulder pain", "office workers", "prevent"],
+keywordsAns: ["back straight", "eye level", "stretch", "every hour", "posture", "chair"]
+},
+// 20. Lời khuyên sống khỏe mỗi ngày
+{
+id: 642,
+subTopic: "Sức khỏe 20: Bí quyết sống khỏe (Secret to Good Health)",
+qEn: "What is your number one tip for staying healthy and active at any age?",
+qVi: "Bí quyết số một của bạn để luôn khỏe mạnh và năng động ở mọi lứa tuổi là gì?",
+aEn: "Stay physically active every day, eat fresh food, and always keep a positive mindset!",
+aVi: "Hãy vận động thể chất mỗi ngày, ăn thực phẩm tươi sạch và luôn giữ tinh thần lạc quan!",
+keywordsAsk: ["number one tip", "staying healthy", "active", "any age"],
+keywordsAns: ["active", "fresh food", "positive mindset", "exercise", "daily", "optimistic"]
+}
 ]
 }
+
 
         };
 
