@@ -183,6 +183,8 @@
     <option value="q_ee">ee. THỂ THAO & SỨC KHỎE </option>
     <option value="q_ff">ff. CÁC CÂU HỎI NGẮN THƯỜNG DÙNG </option>
     <option value="q_gg">gg. CÁC CÂU TRẢ LỜI NGẮN </option>
+    <option value="q_hh">hh. GIAO TIẾP VỚI TRẺ EM </option>
+
 
 </select>
 
@@ -669,7 +671,7 @@
                         keywordsAsk: ["sports", "traveling", "travel", "exercise"],
                         keywordsAns: ["yes", "i like", "i love", "enjoy", "sport", "travel", "jogging", "walking", "gym", "no"]
                     },
-                                          // 1. Hỏi và đáp về thích, nuôi thú cưng
+                    // 1. Hỏi và đáp về thích, nuôi thú cưng
                     {
                         id: 643,
                         subTopic: "Sở thích 1: Nuôi thú cưng (Pets & Animals)",
@@ -6179,8 +6181,189 @@ keywordsAsk: ["number one tip", "staying healthy", "active", "any age"],
 keywordsAns: ["active", "fresh food", "positive mindset", "exercise", "daily", "optimistic"]
 }
 ]
+},
+            q_hh: {
+                id: "q_hh",
+                title: "hh. GIAO TIẾP VỚI TRẺ EM (Talking with Kids)",
+                items: [
+                    // 1. Chào hỏi, hỏi tên & đánh vần tên
+                    {
+                        id: 650,
+                        subTopic: "Trẻ em 1: Chào hỏi & Đánh vần tên (Name & Spelling)",
+                        qEn: "Hello there! What is your name, and can you spell it for me?",
+                        qVi: "Chào cháu! Cháu tên là gì, và cháu có thể đánh vần tên mình cho chú nghe được không?",
+                        aEn: "Hello! My name is Minh, and it is spelled M-I-N-H.",
+                        aVi: "Chào chú ạ! Cháu tên là Minh, và tên cháu đánh vần là M-I-N-H ạ.",
+                        keywordsAsk: ["your name", "spell it", "hello", "spell"],
+                        keywordsAns: ["my name", "minh", "spelled", "hello", "m-i-n-h"]
+                    },
+                    // 2. Hỏi tuổi, lớp và tên trường
+                    {
+                        id: 651,
+                        subTopic: "Trẻ em 2: Tuổi, Lớp & Trường học (Age, Grade & School)",
+                        qEn: "How old are you, what grade are you in, and what is the name of your school?",
+                        qVi: "Cháu bao nhiêu tuổi rồi, cháu học lớp mấy, và trường của cháu tên là gì?",
+                        aEn: "I am ten years old, I'm in grade five, and I study at Le Quy Don Primary School.",
+                        aVi: "Cháu 10 tuổi rồi ạ, cháu học lớp 5, và cháu học ở trường Tiểu học Lê Quý Đôn.",
+                        keywordsAsk: ["how old", "grade", "name of your school", "school"],
+                        keywordsAns: ["ten", "years old", "grade", "five", "primary school", "study", "10", "5"]
+                    },
+                    // 3. Hỏi vị trí trường & phương tiện đi học
+                    {
+                        id: 652,
+                        subTopic: "Trẻ em 3: Địa chỉ trường & Phương tiện (School Location & Commute)",
+                        qEn: "Where is your school located, and how do you go to school every day?",
+                        qVi: "Trường của cháu ở đâu, và hằng ngày cháu đi học bằng phương tiện gì?",
+                        aEn: "My school is near the city center, and my dad takes me there by motorbike every morning.",
+                        aVi: "Trường cháu ở gần trung tâm thành phố, và mỗi sáng bố chở cháu đi học bằng xe máy ạ.",
+                        keywordsAsk: ["where is your school", "how do you go", "go to school"],
+                        keywordsAns: ["city center", "motorbike", "bicycle", "walk", "bus", "dad", "mom", "near"]
+                    },
+                    // 4. Hỏi môn học giỏi nhất
+                    {
+                        id: 653,
+                        subTopic: "Trẻ em 4: Môn học giỏi nhất (Best Subject)",
+                        qEn: "What school subject are you best at?",
+                        qVi: "Ở trường cháu học giỏi nhất môn gì?",
+                        aEn: "I am really good at English and Mathematics because I love solving puzzles.",
+                        aVi: "Cháu học giỏi nhất môn Tiếng Anh và Toán vì cháu thích giải các câu đố ạ.",
+                        keywordsAsk: ["best at", "good at", "favorite subject", "subject"],
+                        keywordsAns: ["english", "mathematics", "math", "science", "art", "music", "good at", "puzzles"]
+                    },
+                    // 5. Hỏi môn học chưa giỏi / khó nhất
+                    {
+                        id: 654,
+                        subTopic: "Trẻ em 5: Môn học chưa giỏi (Weakest Subject)",
+                        qEn: "Which subject do you find the most difficult or aren't very good at?",
+                        qVi: "Môn học nào cháu thấy khó nhất hoặc cháu học chưa được giỏi lắm?",
+                        aEn: "I'm not very good at History because there are too many dates to remember.",
+                        aVi: "Cháu học chưa giỏi môn Lịch sử lắm vì có quá nhiều mốc ngày tháng phải nhớ ạ.",
+                        keywordsAsk: ["difficult", "not very good", "weakest", "hardest"],
+                        keywordsAns: ["history", "geography", "literature", "dates", "remember", "difficult", "hard"]
+                    },
+                    // 6. Hỏi địa chỉ nhà ở đâu
+                    {
+                        id: 655,
+                        subTopic: "Trẻ em 6: Nhà ở đâu (Home Address)",
+                        qEn: "Where do you live? Is your house far from here?",
+                        qVi: "Nhà cháu ở đâu? Nhà cháu có xa đây không?",
+                        aEn: "I live on Hung Vuong Street, only about five minutes away from here.",
+                        aVi: "Nhà cháu ở đường Hùng Vương, cách đây chỉ khoảng 5 phút đi đường thôi ạ.",
+                        keywordsAsk: ["where do you live", "house", "far from here"],
+                        keywordsAns: ["street", "five minutes", "away", "near", "close", "live", "5"]
+                    },
+                    // 7. Hỏi tuổi và nghề nghiệp của cha mẹ
+                    {
+                        id: 656,
+                        subTopic: "Trẻ em 7: Tuổi & Nghề của Cha Mẹ (Parents' Ages & Jobs)",
+                        qEn: "How old are your parents, and what do they do for a living?",
+                        qVi: "Bố mẹ cháu bao nhiêu tuổi rồi, và bố mẹ làm nghề gì?",
+                        aEn: "My dad is forty and works as an engineer, and my mom is thirty-eight and is a nurse.",
+                        aVi: "Bố cháu 40 tuổi làm kỹ sư, còn mẹ cháu 38 tuổi làm y tá ạ.",
+                        keywordsAsk: ["parents", "how old", "do for a living", "dad", "mom"],
+                        keywordsAns: ["forty", "thirty-eight", "engineer", "nurse", "teacher", "doctor", "business", "40", "38"]
+                    },
+                    // 8. Hỏi về ông bà nội & đang sống cùng ai
+                    {
+                        id: 657,
+                        subTopic: "Trẻ em 8: Ông bà nội & Người sống cùng (Grandparents & Household)",
+                        qEn: "Are your paternal grandparents still alive, and who are you living with right now?",
+                        qVi: "Ông bà nội của cháu vẫn còn khỏe chứ, và hiện tại cháu đang ở với ai?",
+                        aEn: "Yes, my grandparents are still healthy! I live with my parents, my grandparents, and my little sister.",
+                        aVi: "Vâng, ông bà nội cháu vẫn còn khỏe ạ! Cháu đang sống cùng bố mẹ, ông bà nội và em gái nhỏ.",
+                        keywordsAsk: ["grandparents", "still alive", "living with", "who"],
+                        keywordsAns: ["grandparents", "healthy", "parents", "sister", "brother", "live with", "yes"]
+                    },
+                    // 9. Hỏi những ngày nghỉ làm gì
+                    {
+                        id: 658,
+                        subTopic: "Trẻ em 9: Hoạt động ngày nghỉ (Weekend Activities)",
+                        qEn: "What do you usually do on weekends or days off from school?",
+                        qVi: "Vào những ngày nghỉ học cháu thường làm gì?",
+                        aEn: "I usually finish my homework first, then read comic books and ride my bicycle.",
+                        aVi: "Cháu thường làm xong bài tập về nhà trước, sau đó đọc truyện tranh và đạp xe ạ.",
+                        keywordsAsk: ["weekends", "days off", "usually do", "free time"],
+                        keywordsAns: ["homework", "comic books", "bicycle", "watch cartoons", "play", "games", "read"]
+                    },
+                    // 10. Hỏi thích đi chơi ở đâu và đi với ai
+                    {
+                        id: 659,
+                        subTopic: "Trẻ em 10: Chỗ đi chơi & Người đi cùng (Fun Places & Companions)",
+                        qEn: "Where do you like going out to play, and who do you go with?",
+                        qVi: "Cháu thích đi chơi ở đâu nhất, và cháu thường đi cùng với ai?",
+                        aEn: "I love going to the beach park and the zoo with my parents and my cousins.",
+                        aVi: "Cháu thích đi công viên biển và sở thú cùng với bố mẹ và các anh chị em họ của cháu ạ.",
+                        keywordsAsk: ["going out to play", "where", "who do you go with", "play"],
+                        keywordsAns: ["beach park", "zoo", "amusement park", "parents", "cousins", "friends", "park"]
+                    },
+                    // 11. Hỏi thích những món ăn vặt gì
+                    {
+                        id: 660,
+                        subTopic: "Trẻ em 11: Món ăn vặt yêu thích (Favorite Snacks)",
+                        qEn: "What are your favorite snacks and sweet treats?",
+                        qVi: "Cháu thích ăn những món ăn vặt và đồ ngọt gì nhất?",
+                        aEn: "I love chocolate ice cream, crispy french fries, and fresh mango smoothies.",
+                        aVi: "Cháu thích kem sô-cô-la, khoai tây chiên giòn và sinh tố xoài tươi ạ.",
+                        keywordsAsk: ["favorite snacks", "snacks", "sweet treats", "eat"],
+                        keywordsAns: ["ice cream", "chocolate", "french fries", "fries", "smoothies", "cookies", "candy", "snacks"]
+                    },
+                    // 12. Hỏi có ước mơ gì không
+                    {
+                        id: 661,
+                        subTopic: "Trẻ em 12: Ước mơ tuổi thơ (Childhood Dreams)",
+                        qEn: "Do you have any big dreams for yourself?",
+                        qVi: "Cháu có ước mơ lớn nào cho bản thân không?",
+                        aEn: "Yes! My dream is to speak English fluently and travel around the world.",
+                        aVi: "Có ạ! Ước mơ của cháu là nói tiếng Anh thật trôi chảy và đi du lịch vòng quanh thế giới.",
+                        keywordsAsk: ["big dreams", "dream", "dreams"],
+keywordsAns: ["dream", "english", "fluently", "travel", "around the world", "yes", "space"]
+},
+// 13. Hỏi tương lai muốn làm nghề gì
+{
+id: 662,
+subTopic: "Trẻ em 13: Nghề nghiệp tương lai (Future Job)",
+qEn: "What job do you want to do when you grow up in the future?",
+qVi: "Khi lớn lên trong tương lai cháu muốn làm nghề gì?",
+aEn: "When I grow up, I want to become a pilot or a computer programmer.",
+aVi: "Khi lớn lên cháu muốn trở thành một phi công hoặc một lập trình viên máy tính ạ.",
+keywordsAsk: ["grow up", "future", "what job", "want to do"],
+keywordsAns: ["pilot", "programmer", "doctor", "teacher", "scientist", "astronaut", "engineer", "become"]
+},
+// 14. Hỏi lý do thích nghề nghiệp đó
+{
+id: 663,
+subTopic: "Trẻ em 14: Lý do chọn nghề (Reason for Future Career)",
+qEn: "Why do you want to choose that job?",
+qVi: "Vì sao cháu lại muốn chọn công việc đó?",
+aEn: "Because I want to fly big airplanes across the sky and visit many new countries!",
+aVi: "Vì cháu muốn được lái những chiếc máy bay lớn trên bầu trời và ghé thăm nhiều đất nước mới ạ!",
+keywordsAsk: ["why", "choose that job", "reason"],
+keywordsAns: ["because", "fly", "airplanes", "sky", "countries", "help people", "create", "love"]
+},
+// 15. Lời khen ngợi & động viên trẻ em
+{
+id: 664,
+subTopic: "Trẻ em 15: Khen ngợi & Động viên (Encouraging Kids)",
+qEn: "You are such a smart and polite kid! Study hard to make your dream come true, okay?",
+qVi: "Cháu thật là một đứa trẻ thông minh và lễ phép! Hãy chăm chỉ học tập để biến ước mơ thành hiện thực nhé, được không?",
+aEn: "Yes, I promise I will study very hard! Thank you!",
+aVi: "Vâng ạ, cháu hứa sẽ học tập thật chăm chỉ! Cháu cảm ơn chú!",
+keywordsAsk: ["smart", "polite", "study hard", "dream come true"],
+keywordsAns: ["promise", "study hard", "thank you", "yes", "will", "thank"]
+},
+// 16. Xin phép rời đi vì có việc & Chào tạm biệt
+{
+id: 665,
+subTopic: "Trẻ em 16: Chào tạm biệt bé (Saying Goodbye to Kids)",
+qEn: "Well, I have some work to take care of now, so I have to go. Goodbye, little buddy!",
+qVi: "Thôi, chú có chút việc phải đi giải quyết bây giờ rồi. Tạm biệt cháu nhé!",
+aEn: "Goodbye! Have a great day and see you again soon!",
+aVi: "Cháu chào chú ạ! Chúc chú một ngày tốt lành và hẹn sớm gặp lại chú!",
+keywordsAsk: ["work to take care", "have to go", "goodbye", "buddy"],
+keywordsAns: ["goodbye", "bye", "great day", "see you", "soon", "take care"]
 }
-
+]
+}
 
         };
 
